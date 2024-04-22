@@ -1,0 +1,42 @@
+.baseCss{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.darkMode {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+.flexCenter{
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    width: 100vw;
+    height: 100px;
+}
+.ulParent{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.listStyleBasic {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hide{
+    color: aliceblue;
+}
+.hide:hover {
+    color: red;
+}

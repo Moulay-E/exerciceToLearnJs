@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body class="baseCss">
+    <div class="baseCss " id="darkModeSwitchId">
+        <nav class="navigation flexRow">
+           <div class="flexCenter">menu</div>
+           <ul class="flexRow ulParent listStyleBasic flexCenter ">
+            <li>
+                <a href="#">String</a>
+                <ul class="hide listStyleBasic ">
+                    <li> <a href="#">string 1</a></li>
+                    <li><a href="#">string 2</a></li>
+                </ul>
+            </li>
+          
+            <li>
+                <a href="#">number</a>
+                <ul class="listStyleBasic hide">
+                    <li> <a href="#">number 1</a></li>
+                    <li> <a href="#">number 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">loop</a>
+                <ul class="listStyleBasic hide">
+                    <li><a href="#">loop 1</a></li>
+                    <li><a href="#">loop 1</a></li>
+                </ul>
+            </li>
+           </ul>
+        </nav>
+        <h1 >hello word</h1>
+        <button onclick="DarkModeSwitch('darkModeSwitchId')">mode sombre ou clair</button>
+   
+    <div id="test">
+        <p>test</p>
+    </div>
+
+    <div  >
+        <h2>Bulble sort</h2>
+        <div id="bubleSort" >
+
+            <form>
+                <input type="text" id="champChiffre" >
+                <button type="button" onclick="showData(data)"> afficher data</button>
+                <p>result: <span id="result"></span> </p>
+            </form>
+            <button onclick="bubbleSort(bubbleArr)" >trie</button>
+        </div>
+    </div>
+</div>
+    
+
+</body>
+<script src='script.js'></script>
+<script src='basicScript.js'></script>
+
+</html>
