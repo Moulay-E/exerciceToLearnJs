@@ -1,0 +1,4 @@
+{
+    "code": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i] );\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    }\n    while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
+  }
+  
