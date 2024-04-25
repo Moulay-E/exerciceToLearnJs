@@ -14,7 +14,7 @@
         <nav class="navigation flexRow flexCenter">
             <div class="flexCenter">menu</div>
             <ul class="flexRow ulParent liStyleNone flexCenter">
-                <li class="borderLR">
+                <li class="navigation__ul__menu">
                     <a class="displayBlock" href="#">String</a>
                     <ul class="liStyleNone hide__submenu navigation__submenu borderLR">
                         <li><a href="#">string 1</a></li>
@@ -22,18 +22,18 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="navigation__ul__menu">
                     <a href="#">number</a>
                     <ul class="liStyleNone hide__submenu navigation__submenu">
                         <li><a href="#">number 1</a></li>
                         <li><a href="#">number 2</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">loop</a>
+                <li class="navigation__ul__menu">
+                    <a href="#">Algorithmes</a>
                     <ul class="liStyleNone hide__submenu navigation__submenu">
-                        <li><a href="#">loop 1</a></li>
-                        <li><a href="#">loop 1</a></li>
+                        <li><a href="#">Algorithme 1</a></li>
+                        <li><a href="#">Algorithme 2</a></li>
                     </ul>
                 </li>
             </ul>
@@ -42,7 +42,9 @@
             </button>
         </nav>
         <main class="mainDisplay flexColumn flexCenter">
-            <h1>hello word</h1>
+            <div class="main__title borderRadius">
+                <h1>hello word</h1>
+            </div>
 
             <div id="test">
                 <p>test</p>
@@ -106,6 +108,20 @@
 
         </main>
     </div>
+
+    <footer>
+        <ul class="footer__ul">
+            <li>
+                <a href="#">github</a>
+            </li>
+            <li>
+                <a href="#">github</a>
+            </li>
+            <li>
+                <a href="#">github</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 <script src="script.js"></script>
 <script src="basicScript.js"></script>
