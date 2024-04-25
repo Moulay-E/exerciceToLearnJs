@@ -1,126 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-  </head>
+</head>
 
-  <body class="baseCss">
+<body class="baseCss" onload="loadCodeScippet()">
     <div class="baseCss flexColumn" id="darkModeSwitchId">
-      <nav class="navigation flexRow flexCenter">
-        <div class="flexCenter">menu</div>
-        <ul class="flexRow ulParent liStyleNone flexCenter">
-          <li class="borderLR">
-            <a class="displayBlock" href="#">String</a>
-            <ul class="liStyleNone hide__submenu navigation__submenu borderLR">
-              <li><a href="#">string 1</a></li>
-              <li><a href="#">string 2</a></li>
-            </ul>
-          </li>
+        <nav class="navigation flexRow flexCenter">
+            <div class="flexCenter">menu</div>
+            <ul class="flexRow ulParent liStyleNone flexCenter">
+                <li class="borderLR">
+                    <a class="displayBlock" href="#">String</a>
+                    <ul class="liStyleNone hide__submenu navigation__submenu borderLR">
+                        <li><a href="#">string 1</a></li>
+                        <li><a href="#">string 2</a></li>
+                    </ul>
+                </li>
 
-          <li>
-            <a href="#">number</a>
-            <ul class="liStyleNone hide__submenu navigation__submenu">
-              <li><a href="#">number 1</a></li>
-              <li><a href="#">number 2</a></li>
+                <li>
+                    <a href="#">number</a>
+                    <ul class="liStyleNone hide__submenu navigation__submenu">
+                        <li><a href="#">number 1</a></li>
+                        <li><a href="#">number 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">loop</a>
+                    <ul class="liStyleNone hide__submenu navigation__submenu">
+                        <li><a href="#">loop 1</a></li>
+                        <li><a href="#">loop 1</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li>
-            <a href="#">loop</a>
-            <ul class="liStyleNone hide__submenu navigation__submenu">
-              <li><a href="#">loop 1</a></li>
-              <li><a href="#">loop 1</a></li>
-            </ul>
-          </li>
-        </ul>
-        <button id="darkModeBtn" class="borderRadius" onclick="darkModeSwitch()">
-          dark mode
-        </button>
-      </nav>
-      <main class="mainDisplay flexColumn flexCenter">
-        <h1>hello word</h1>
+            <button id="darkModeBtn" class="borderRadius" onclick="darkModeSwitch()">
+                dark mode
+            </button>
+        </nav>
+        <main class="mainDisplay flexColumn flexCenter">
+            <h1>hello word</h1>
 
-        <div id="test">
-          <p>test</p>
-        </div>
-
-        <div class="example__container flexCenter flexColumn">
-            <div class="example__container__title borderRadius">
-                <h2>Bulble sort</h2>
+            <div id="test">
+                <p>test</p>
             </div>
-          <div id="bubleSort">
-            <form>
-              <input type="text" id="champChiffre" />
-              <button type="button" onclick="showData(data)">
-                afficher data
-              </button>
-              <p>result: <span id="result"></span></p>
-            </form>
-            <button onclick="bubbleSort(bubbleArr)">trie</button>
-          </div>
-          <div id="codeContainerId" class="example__container__code hide borderRadius">
-            <div class="example__container__code__header">
-                <h3 class="example__container__code__h3">Code</h3>
-                <button class="example__container__code__btn borderRadius" onclick="showCode()">hide</button>
-            </div>
-            <pre>
-                <code>
-                    // JavaScript code here
-                    function bubbleSort(arr){
-                        const n = arr.length;
-                        let swapped;
-                    
-                        do {
-                            swapped = false; 
-                            let count = 0;
-                            for(let i = 0; i < n-1 ; i++){
-                                if(arr[i] > arr[i +1] ){
-                                    [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];
-                                    swapped = true;
-                                    console.log(swapped);
-                                    console.log(arr[i] );
-                                }
-                                count++;
-                            }
-                            
-                            console.log(count, "count");
-                        }
-                        while(swapped);
-                        console.log(arr, "arr");
-                        return arr;
-                    }
-                    function showData(data){
-                        let valeurTyped = document.getElementById("champChiffre").value;
-                        let nombre = valeurTyped.split(",");
-                        let arrValueTyped = [];
-                        console.log(nombre);
-                        for(let i = 0; i < nombre.length; i++){
-                            arrValueTyped.push(parseFloat(nombre[i]))
-                        }
-                        console.log(arrValueTyped, "before");
-                    
-                        bubbleSort(arrValueTyped);
-                    
-                        result.innerHTML = arrValueTyped;
-                    
-                    }
-                </code>
-             </pre>
-          </div>
-          <div id="showMoreId" class="showMore flexDisplay borderRadius" onclick="showCode()">
-            <h3>afficher code</h3>
-          </div>
-        </div>
 
-        
-      </main>
+            <div class="example__container flexCenter flexColumn">
+                <div class="example__container__title borderRadius">
+                    <h2>Bulble sort</h2>
+                </div>
+                <div id="bubleSort">
+                    <form>
+                        <input type="text" id="champChiffre" />
+                        <button type="button" onclick="showData(data)">
+                            afficher data
+                        </button>
+                        <p>result: <span id="result"></span></p>
+                    </form>
+                    <button onclick="bubbleSort(bubbleArr)">trie</button>
+                </div>
+                <div  class="example__container__code hide borderRadius codeContainerJs">
+                    <div class="example__container__code__header">
+                        <h3 class="example__container__code__h3">Code</h3>
+                        <button class="example__container__code__btn borderRadius" >hide</button>
+                    </div>
+                    <pre>
+                     <code></code>
+                    </pre>
+                </div>
+                <div  class="showMore flexDisplay borderRadius" >
+                    <h3>afficher code</h3>
+                </div>
+            </div>
+
+            <div class="example__container flexCenter flexColumn">
+                <div class="example__container__title borderRadius">
+                    <h2>Bulble sort</h2>
+                </div>
+                <div id="bubleSort">
+                    <form>
+                        <input type="text" id="champChiffre" />
+                        <button type="button" onclick="showData(data)">
+                            afficher data
+                        </button>
+                        <p>result: <span id="result"></span></p>
+                    </form>
+                    <button onclick="bubbleSort(bubbleArr)">trie</button>
+                </div>
+                <div  class="example__container__code hide borderRadius codeContainerJs">
+                    <div class="example__container__code__header">
+                        <h3 class="example__container__code__h3">Code</h3>
+                        <button class="example__container__code__btn borderRadius" >hide</button>
+                    </div>
+                    <pre>
+                     <code></code>
+                    </pre>
+                </div>
+                <div  class="showMore flexDisplay borderRadius"  >
+                    <h3>afficher code</h3>
+                </div>
+            </div>
+
+        </main>
     </div>
-  </body>
-  <script src="script.js"></script>
-  <script src="basicScript.js"></script>
-  <!-- <script src="fetchData.js"></script> -->
+</body>
+<script src="script.js"></script>
+<script src="basicScript.js"></script>
+<script src="./scripts/fetchData.js"></script>
 
 </html>
