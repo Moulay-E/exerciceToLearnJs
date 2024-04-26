@@ -29,12 +29,12 @@ function bubbleSort(arr){
     return arr;
 }
 
-// bubbleSort(bubbleArr);
 
 let result = document.getElementById("result");
 let resText = "";
 let data = [1,3,1]
-function showData(data){
+
+function showData(){
     let valeurTyped = document.getElementById("champChiffre").value;
     let nombre = valeurTyped.split(",");
     let arrValueTyped = [];
