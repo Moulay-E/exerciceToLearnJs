@@ -1,8 +1,20 @@
-function loadCodeScippet(){
-    fetch("./data/data.json")
+function loadAndDisplayCodeFromJson(arrayName){
+    fetch("/data/data.json")
     .then(response => response.json())
     .then(data => {
-        document.querySelector("code").textContent = data.code
+        if(data[arrayName] ){
+            data[arrayName].forEach(item =>{
+                console.log(item);
+                Object.entries(item).forEach(([key, value]) => {
+                    console.log(`Clé: ${key}, Valeur: ${value}`);
+                    document.getElementById(key).textContent = value;
+                })
+
+            } )
+        }
+        else {
+            console.log("Le tableau demandé n'existe pas dans le JSON.");
+          }
     })
     .catch(error => console.log("Error loading the code snippet"))
 }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Interactive JavaScript Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+</head>
+
+<body class="baseCss" onload="loadAndDisplayCodeFromJson('string')">
+    <div class="baseCss flexColumn" id="darkModeSwitchId">
+        <nav class="navigation flexRow flexCenter">
+            <div class="flexCenter"><a href="./../index.html" >Acceuil</a> </div>
+            <ul class="flexRow ulParent liStyleNone flexCenter">
+                <li class="navigation__ul__menu">
+                    <a class="displayBlock" href="#">String</a>
+                    <ul class="liStyleNone hide__submenu navigation__submenu borderLR">
+                        <li><a href="#">string 1</a></li>
+                        <li><a href="#">string 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="navigation__ul__menu">
+                    <a href="#">number</a>
+                    <ul class="liStyleNone hide__submenu navigation__submenu">
+                        <li><a href="#">number 1</a></li>
+                        <li><a href="#">number 2</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__ul__menu">
+                    <a href="#">Algorithmes</a>
+                    <ul class="liStyleNone hide__submenu navigation__submenu">
+                        <li><a href="#">Algorithme 1</a></li>
+                        <li><a href="#">Algorithme 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="darkModeBtn" class="borderRadius" onclick="darkModeSwitch()">
+                dark mode
+            </button>
+        </nav>
+        <main class="mainDisplay flexColumn flexCenter">
+            <div class="main__title borderRadius">
+                <h1>hello word</h1>
+            </div>
+
+            <div id="test">
+                <p>test</p>
+            </div>
+
+            <div class="example__container flexCenter flexColumn">
+                <div class="example__container__title borderRadius">
+                    <h2>Taille d'une string</h2>
+                </div>
+                <div id="bubleSort">
+                    <form>
+                        <input type="text" id="stringSize" />
+                        <button type="button" onclick="stringLength()">
+                            afficher data
+                        </button>
+                        <p>result: <span id="stringSizeResult"></span></p>
+                    </form>
+                </div>
+                <div  class="example__container__code hide borderRadius codeContainerJs">
+                    <div class="example__container__code__header">
+                        <h3 class="example__container__code__h3">Code</h3>
+                        <button class="example__container__code__btn borderRadius" >hide</button>
+                    </div>
+                    <pre>
+                     <code id="lengthFunctionId"></code>
+                    </pre>
+                </div>
+                <div  class="showMore flexDisplay borderRadius"  >
+                    <h3>afficher code</h3>
+                </div>
+            </div>
+
+            <div class="example__container flexCenter flexColumn">
+                <div class="example__container__title borderRadius">
+                    <h2>Position lettre dans un string</h2>
+                </div>
+                <div id="bubleSort">
+                    <form>
+                        <input type="text" id="characterInString" />
+                        <button type="button" onclick="findCharacterInString()">
+                            afficher data
+                        </button>
+                        <p>result: <span id="characterInStringResult"></span></p>
+                    </form>
+                </div>
+                <div  class="example__container__code hide borderRadius codeContainerJs">
+                    <div class="example__container__code__header">
+                        <h3 class="example__container__code__h3">Code</h3>
+                        <button class="example__container__code__btn borderRadius" >hide</button>
+                    </div>
+                    <pre>
+                     <code id="findCharacterInStringFunctionId"></code>
+                    </pre>
+                </div>
+                <div  class="showMore flexDisplay borderRadius"  >
+                    <h3>afficher code</h3>
+                </div>
+            </div>
+
+            <div class="example__container flexCenter flexColumn">
+                <div class="example__container__title borderRadius">
+                    <h2>Extracting string part</h2>
+                </div>
+                <div id="bubleSort">
+                    <form>
+                        <input type="text" id="extractStringPartId" />
+                        <button type="button" onclick="extractingStringPart()">
+                            afficher data
+                        </button>
+                        <p>result: <span id="extractStringPartIdgResult"></span></p>
+                    </form>
+                </div>
+                <div  class="example__container__code hide borderRadius codeContainerJs">
+                    <div class="example__container__code__header">
+                        <h3 class="example__container__code__h3">Code</h3>
+                        <button class="example__container__code__btn borderRadius" >hide</button>
+                    </div>
+                    <pre>
+                     <code id="extractingStringPartFunctionId"></code>
+                    </pre>
+                </div>
+                <div  class="showMore flexDisplay borderRadius"  >
+                    <h3>afficher code</h3>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <ul class="footer__ul">
+            <li>
+                <a href="#">github</a>
+            </li>
+            <li>
+                <a href="#">github</a>
+            </li>
+            <li>
+                <a href="#">github</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="../script.js"></script>
+<script src="../basicScript.js"></script>
+<script src=".././scripts/fetchData.js"></script>
+<script src=".././scripts/string.js"></script>
+
+
+</html>

@@ -1,3 +1,25 @@
 {
-    "code": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}\nfunction showData(e){\n    let l = document.getElementById(\"champChiffre\").value.split(\",\");\n    let o = [];\n    console.log(l);\n    for(let e = 0; e < l.length; e++){\n        o.push(parseFloat(l[e]));\n    }\n    console.log(o, \"before\");\n    bubbleSort(o);\n    result.innerHTML = o;\n}"
+    "algorithme": [
+        { 
+            "algorithmeBubeSortId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
+        },
+        { 
+            "algorithmeShowCodeId": "// LJavaScript code here\n\nfunction showData(e){\n    let l = document.getElementById(\"champChiffre\").value.split(\",\");\n    let o = [];\n    console.log(l);\n    for(let e = 0; e < l.length; e++){\n        o.push(parseFloat(l[e]));\n    }\n    console.log(o, \"before\");\n    bubbleSort(o);\n    result.innerHTML = o;\n}"
+        }
+    ],
+    "string": [
+        {
+            "lengthFunctionId": "// JavaScript code here\n\nfunction stringLength(param){\n    let data = document.getElementById(\"stringSize\").value;\n    let textLength = data.length;\n    let textResult = document.getElementById(\"stringSizeResult\");\n    textResult.innerText = textLength;\n}"
+        },
+          
+        {
+            "findCharacterInStringFunctionId": "// JavaScript code here\n\nfunction findCharacterInString(){\n    let data = document.getElementById(\"characterInString\").value;\n    let charAt = data.charAt(1);\n    let charCodeAt = data.charCodeAt(1);\n    let at = data.at(1);\n    let propertyAccess = data[1];\n    let textResult = document.getElementById(\"characterInStringResult\");\n    textResult.innerHTML = `Tout est à l'index 1: <br> charAt: ${charAt} <br>\n        charCodeAt: ${charCodeAt}<br> at: ${at} <br> property access (imprévisible): ${propertyAccess}  ` ;\n}"
+        }
+        ,
+        {
+            "extractingStringPartFunctionId": "// JavaScript code here\n\nfunction extractingStringPart(){\n    let data = document.getElementById(\"extractStringPartId\").value;\n    let slice = data.slice(1,5);\n    let sliceNegative = data.slice(-5);\n    let subString = data.substring(1,5);\n    let substr = data.substr(1,5);\n    let textResult = document.getElementById(\"extractStringPartIdgResult\");\n    textResult.innerHTML = `index 1 au début et 5 fin: \n    <br> slice sans param s'arrête à la fin: ${slice} <br>\n    slice negative start a la fin: ${sliceNegative}\n    <br> substring (negative est traité comme 0): ${subString} \n    <br> substr, deuxième paramètre est la longueur de la chaîne, négatif comme slice: ${substr}  ` ;\n}"
+        }
+          
+
+    ]
 }
