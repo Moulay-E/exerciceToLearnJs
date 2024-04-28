@@ -1,12 +1,12 @@
 function loadAndDisplayCodeFromJson(arrayName){
-    fetch("/data/data.json")
+    fetch("/data/dataCodeToShow.json")
     .then(response => response.json())
     .then(data => {
         if(data[arrayName] ){
             data[arrayName].forEach(item =>{
-                console.log(item);
+                // console.log(item);
                 Object.entries(item).forEach(([key, value]) => {
-                    console.log(`Clé: ${key}, Valeur: ${value}`);
+                    // console.log(`Clé: ${key}, Valeur: ${value}`);
                     document.getElementById(key).textContent = value;
                 })
 

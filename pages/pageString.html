@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
 </head>
 
-<body class="baseCss" onload="loadAndDisplayCodeFromJson('string')">
+<body class="baseCss" >
     <div class="baseCss flexColumn" id="darkModeSwitchId">
         <nav class="navigation flexRow flexCenter">
             <div class="flexCenter"><a href="./../index.html" >Acceuil</a> </div>
@@ -50,7 +50,7 @@
                 <p>test</p>
             </div>
 
-            <div class="example__container flexCenter flexColumn">
+            <!--<div class="example__container flexCenter flexColumn">
                 <div class="example__container__title borderRadius">
                     <h2>Taille d'une string</h2>
                 </div>
@@ -129,6 +129,10 @@
                 <div  class="showMore flexDisplay borderRadius"  >
                     <h3>afficher code</h3>
                 </div>
+            </div> -->
+
+            <div id="generateContent">
+
             </div>
 
         </main>
@@ -147,10 +151,21 @@
             </li>
         </ul>
     </footer>
+
+    <script>
+        loadAndDisplayCodeFromJson('string');
+        htmlMakerIteration('string');
+        document.addEventListener('DOMContentLoaded', function() {
+          ShowCodeAndHideHimself();
+          HideAndShowBtn();
+        });
+      </script>
+      
 </body>
 <script src="../script.js"></script>
+<script src="/scripts/fetch/fetchDataToShowCode.js"></script>
+<script src="/scripts/fetch/htmlMakerIteration.js"></script>
 <script src="../basicScript.js"></script>
-<script src=".././scripts/fetchData.js"></script>
 <script src=".././scripts/string.js"></script>
 
 

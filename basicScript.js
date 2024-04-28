@@ -4,7 +4,8 @@ document.body.classList.toggle("darkMode");
 }
 
 //add eventListener on button to hide the btn and show the code, she he added to every btn, and use "this" to target the btn and the class who contain the code to show
-document.addEventListener('DOMContentLoaded', function ShowCodeAndHideHimself(){
+// document.addEventListener('DOMContentLoaded',
+ function ShowCodeAndHideHimself(){
     const showMoreBtn = document.querySelectorAll('.showMore');
     showMoreBtn.forEach(function(btn) {
         btn.addEventListener('click', function(){
@@ -21,9 +22,11 @@ document.addEventListener('DOMContentLoaded', function ShowCodeAndHideHimself(){
             }
         })
     })
-})
+}
+// )
 //same as top but for hide the code and show the button
-document.addEventListener('DOMContentLoaded', function HideAndShowBtn(){
+// document.addEventListener('DOMContentLoaded',
+ function HideAndShowBtn(){
     const hideCode = document.querySelectorAll('.example__container__code__btn');
     hideCode.forEach(function(btn) {
         btn.addEventListener('click', function(){
@@ -43,7 +46,8 @@ document.addEventListener('DOMContentLoaded', function HideAndShowBtn(){
             }
         })
     })
-})
+}
+// )
 
   
 

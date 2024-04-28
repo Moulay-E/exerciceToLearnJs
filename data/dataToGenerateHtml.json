@@ -1,0 +1,23 @@
+{
+    "algorithme":[],
+    "string":[
+        {
+            "inputValueId": "stringSize",
+            "onclickFonctionToCall": "stringLength()",
+            "outputResultId": "stringSizeResult",
+            "idToMarkCodeArea": "lengthFunctionId"
+        },
+        {
+            "inputValueId": "characterInString",
+            "onclickFonctionToCall": "findCharacterInString()",
+            "outputResultId": "characterInStringResult",
+            "idToMarkCodeArea": "findCharacterInStringFunctionId"
+        },
+        {
+            "inputValueId": "extractStringPartId",
+            "onclickFonctionToCall": "extractingStringPart()",
+            "outputResultId": "extractStringPartIdgResult",
+            "idToMarkCodeArea": "extractingStringPartFunctionId"
+        }
+    ]
+}
