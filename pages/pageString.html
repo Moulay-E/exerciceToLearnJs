@@ -7,9 +7,13 @@
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    <script src="/scripts/fetch/fetchDataToShowCode.js"></script>
+    <script  src="/scripts/fetch/htmlMakerIteration.js"></script>
 </head>
 
-<body class="baseCss" >
+<body class="baseCss"  >
+    <!-- <script>htmlMakerIteration('string');</script> -->
+
     <div class="baseCss flexColumn" id="darkModeSwitchId">
         <nav class="navigation flexRow flexCenter">
             <div class="flexCenter"><a href="./../index.html" >Acceuil</a> </div>
@@ -50,7 +54,7 @@
                 <p>test</p>
             </div>
 
-            <!--<div class="example__container flexCenter flexColumn">
+            <!-- <div class="example__container flexCenter flexColumn">
                 <div class="example__container__title borderRadius">
                     <h2>Taille d'une string</h2>
                 </div>
@@ -152,20 +156,20 @@
         </ul>
     </footer>
 
-    <script>
-        loadAndDisplayCodeFromJson('string');
-        htmlMakerIteration('string');
+    <script >
         document.addEventListener('DOMContentLoaded', function() {
-          ShowCodeAndHideHimself();
-          HideAndShowBtn();
+            htmlMakerIteration('string').then(()=>{
+                loadAndDisplayCodeFromJson('string');
+                ShowCodeAndHideHimself();
+                HideAndShowBtn();
+            })
         });
       </script>
       
 </body>
 <script src="../script.js"></script>
-<script src="/scripts/fetch/fetchDataToShowCode.js"></script>
-<script src="/scripts/fetch/htmlMakerIteration.js"></script>
-<script src="../basicScript.js"></script>
+
+<script  src="../basicScript.js"></script>
 <script src=".././scripts/string.js"></script>
 
 

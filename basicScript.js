@@ -7,6 +7,7 @@ document.body.classList.toggle("darkMode");
 // document.addEventListener('DOMContentLoaded',
  function ShowCodeAndHideHimself(){
     const showMoreBtn = document.querySelectorAll('.showMore');
+    console.log(showMoreBtn);
     showMoreBtn.forEach(function(btn) {
         btn.addEventListener('click', function(){
             this.classList.toggle("hide");
