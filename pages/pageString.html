@@ -7,7 +7,7 @@
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
-    <script src="/scripts/fetch/fetchDataToShowCode.js"></script>
+    <script type="module" src="/scripts/dynamicContent/displayCodeDynamically.js"></script>
     <script  src="/scripts/fetch/htmlMakerIteration.js"></script>
 </head>
 
@@ -156,10 +156,12 @@
         </ul>
     </footer>
 
-    <script >
+    <script type="module"  >
+        import {displayCodeDynamically} from "/scripts/dynamicContent/displayCodeDynamically.js";
+        
         document.addEventListener('DOMContentLoaded', function() {
             htmlMakerIteration('string').then(()=>{
-                loadAndDisplayCodeFromJson('string');
+                displayCodeDynamically('string');
                 ShowCodeAndHideHimself();
                 HideAndShowBtn();
             })
