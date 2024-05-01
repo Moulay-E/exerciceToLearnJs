@@ -1,6 +1,5 @@
-// import { ShowCodeAndHideHimself } from "../../basicScript.js";
 
- function htmlMakerIteration(arrayName){
+function displayFunctionDynamically(arrayName){
     return fetch("/data/dataToGenerateHtml.json")
     .then(response => response.json())
     .then(data => {
@@ -9,18 +8,18 @@
             let result;
                 data[arrayName].forEach(item =>{
                     console.log(item);
-                    result += 
+                    result = 
                         `<div class="example__container flexCenter flexColumn">
                             <div class="example__container__title borderRadius">
                                 <h2>Extracting string part</h2>
                             </div>
                             <div id="bubleSort">
                                 <form>
-                                    <input type="text" id="${item.inputValueId}" />
-                                    <button type="button" onclick="${item.onclickFonctionToCall}">
+                                    <input type="text" id= " ${item.inputValueId} " />
+                                    <button type="button" onclick="${new Function(item.onclickFonctionToCall)} ">
                                         afficher data
                                     </button>
-                                    <p>result: <span id="${item.outputResultId}"></span></p>
+                                    <p>result: <span id=" ${item.outputResultId} "></span></p>
                                 </form>
                             </div>
                             <div  class="example__container__code hide borderRadius codeContainerJs">
@@ -37,9 +36,10 @@
                             </div>
                         </div> `
                 ;
-                
+              htmlId.innerHTML += result;
+               
+
             })
-            htmlId.innerHTML = result;
         }
         else {
             console.log("Le tableau demandé n'existe pas dans le JSON.");

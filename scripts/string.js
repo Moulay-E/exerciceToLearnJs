@@ -1,8 +1,10 @@
-function stringLength(param){
+function stringLength(){
+    console.log("call");
     let data = document.getElementById("stringSize").value;
     let textLength = data.length;
     let textResult = document.getElementById("stringSizeResult");
     textResult.innerText = textLength;
+    console.log("executer tring length");
 }
 
 function findCharacterInString(){
