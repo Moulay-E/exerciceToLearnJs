@@ -3,19 +3,19 @@
     "string":[
         {
             "inputValueId": "stringSize",
-            "onclickFonctionToCall": "stringLength()",
+            "onclickFonctionToCall": "stringLength",
             "outputResultId": "stringSizeResult",
             "idToMarkCodeArea": "lengthFunctionId"
         },
         {
             "inputValueId": "characterInString",
-            "onclickFonctionToCall": "findCharacterInString()",
+            "onclickFonctionToCall": "findCharacterInString",
             "outputResultId": "characterInStringResult",
             "idToMarkCodeArea": "findCharacterInStringFunctionId"
         },
         {
             "inputValueId": "extractStringPartId",
-            "onclickFonctionToCall": "extractingStringPart()",
+            "onclickFonctionToCall": "extractingStringPart",
             "outputResultId": "extractStringPartIdgResult",
             "idToMarkCodeArea": "extractingStringPartFunctionId"
         }

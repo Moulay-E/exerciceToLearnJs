@@ -1,5 +1,5 @@
 import { fetchData } from "../fetch/fetchData.js";
-export async function displayCodeDynamically(arrayName){
+export async function generateCodeDynamically(arrayName){
     let dataCodeUrl = "/data/dataCodeToShow.json";
     try{
         const data = await fetchData(dataCodeUrl);

@@ -7,8 +7,8 @@
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
-    <script type="module" src="/scripts/dynamicContent/displayCodeDynamically.js"></script>
-    <script  src="/scripts/fetch/htmlMakerIteration.js"></script>
+    <script type="module" src="/scripts/dynamicContent/generateCodeDynamically.js"></script>
+    <script type="module" src="/scripts/dynamicContent/generateHtmlDynamically.js"></script>
 </head>
 
 <body class="baseCss"  >
@@ -54,87 +54,6 @@
                 <p>test</p>
             </div>
 
-            <!-- <div class="example__container flexCenter flexColumn">
-                <div class="example__container__title borderRadius">
-                    <h2>Taille d'une string</h2>
-                </div>
-                <div id="bubleSort">
-                    <form>
-                        <input type="text" id="stringSize" />
-                        <button type="button" onclick="stringLength()">
-                            afficher data
-                        </button>
-                        <p>result: <span id="stringSizeResult"></span></p>
-                    </form>
-                </div>
-                <div  class="example__container__code hide borderRadius codeContainerJs">
-                    <div class="example__container__code__header">
-                        <h3 class="example__container__code__h3">Code</h3>
-                        <button class="example__container__code__btn borderRadius" >hide</button>
-                    </div>
-                    <pre>
-                     <code id="lengthFunctionId"></code>
-                    </pre>
-                </div>
-                <div  class="showMore flexDisplay borderRadius"  >
-                    <h3>afficher code</h3>
-                </div>
-            </div>
-
-            <div class="example__container flexCenter flexColumn">
-                <div class="example__container__title borderRadius">
-                    <h2>Position lettre dans un string</h2>
-                </div>
-                <div id="bubleSort">
-                    <form>
-                        <input type="text" id="characterInString" />
-                        <button type="button" onclick="findCharacterInString()">
-                            afficher data
-                        </button>
-                        <p>result: <span id="characterInStringResult"></span></p>
-                    </form>
-                </div>
-                <div  class="example__container__code hide borderRadius codeContainerJs">
-                    <div class="example__container__code__header">
-                        <h3 class="example__container__code__h3">Code</h3>
-                        <button class="example__container__code__btn borderRadius" >hide</button>
-                    </div>
-                    <pre>
-                     <code id="findCharacterInStringFunctionId"></code>
-                    </pre>
-                </div>
-                <div  class="showMore flexDisplay borderRadius"  >
-                    <h3>afficher code</h3>
-                </div>
-            </div>
-
-            <div class="example__container flexCenter flexColumn">
-                <div class="example__container__title borderRadius">
-                    <h2>Extracting string part</h2>
-                </div>
-                <div id="bubleSort">
-                    <form>
-                        <input type="text" id="extractStringPartId" />
-                        <button type="button" onclick="extractingStringPart()">
-                            afficher data
-                        </button>
-                        <p>result: <span id="extractStringPartIdgResult"></span></p>
-                    </form>
-                </div>
-                <div  class="example__container__code hide borderRadius codeContainerJs">
-                    <div class="example__container__code__header">
-                        <h3 class="example__container__code__h3">Code</h3>
-                        <button class="example__container__code__btn borderRadius" >hide</button>
-                    </div>
-                    <pre>
-                     <code id="extractingStringPartFunctionId"></code>
-                    </pre>
-                </div>
-                <div  class="showMore flexDisplay borderRadius"  >
-                    <h3>afficher code</h3>
-                </div>
-            </div> -->
-
             <div id="generateContent">
 
             </div>
@@ -157,11 +76,12 @@
     </footer>
 
     <script type="module"  >
-        import {displayCodeDynamically} from "/scripts/dynamicContent/displayCodeDynamically.js";
-        
+        import {generateCodeDynamically} from "/scripts/dynamicContent/generateCodeDynamically.js";
+        import {generateHtmlDynamically} from "/scripts/dynamicContent/generateHtmlDynamically.js";
+
         document.addEventListener('DOMContentLoaded', function() {
-            htmlMakerIteration('string').then(()=>{
-                displayCodeDynamically('string');
+            generateHtmlDynamically('string').then(()=>{
+                generateCodeDynamically('string');
                 ShowCodeAndHideHimself();
                 HideAndShowBtn();
             })

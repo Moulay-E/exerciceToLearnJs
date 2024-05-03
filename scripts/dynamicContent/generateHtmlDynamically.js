@@ -1,12 +1,12 @@
 // import { ShowCodeAndHideHimself } from "../../basicScript.js";
-
- function htmlMakerIteration(arrayName){
-    return fetch("/data/dataToGenerateHtml.json")
-    .then(response => response.json())
-    .then(data => {
-        if(data[arrayName] ){
-            let htmlId = document.getElementById("generateContent");
-            let result;
+import { fetchData } from "../fetch/fetchData.js";
+export async function  generateHtmlDynamically(arrayName){
+    const dataHtmlUrl = "/data/dataToGenerateHtml.json";
+try {
+    const data = await fetchData(dataHtmlUrl);
+    if(data && data[arrayName]){
+        let htmlId = document.getElementById("generateContent");
+            let result= "";
                 data[arrayName].forEach(item =>{
                     console.log(item);
                     result += 
@@ -17,7 +17,7 @@
                             <div id="bubleSort">
                                 <form>
                                     <input type="text" id="${item.inputValueId}" />
-                                    <button type="button" onclick="${item.onclickFonctionToCall}">
+                                    <button type="button" id="${item.inputValueId}Btn">
                                         afficher data
                                     </button>
                                     <p>result: <span id="${item.outputResultId}"></span></p>
@@ -40,11 +40,24 @@
                 
             })
             htmlId.innerHTML = result;
-        }
-        else {
-            console.log("Le tableau demandé n'existe pas dans le JSON.");
-          }
-          console.log('fin');
-    })
-    .catch(error => console.log("Error loading the code snippet"))
-}
+
+             // Attaching event listeners after the HTML is added to the document
+            data[arrayName].forEach(item => {
+                const button = document.getElementById(item.inputValueId+'Btn');
+                if (button) {
+                    button.addEventListener('click', window[item.onclickFonctionToCall]);
+                    console.log(item.onclickFonctionToCall);
+                }
+                else{
+                    console.log("Btn id for function or function in the json is not there.");
+                }
+            });
+    }
+    else{
+        console.log("Array does not exist in the JSON.");
+    }
+    
+ } catch (error) {
+    console.log(`Error loading the data from the json to generate html: ${error}`)
+ }
+}  
