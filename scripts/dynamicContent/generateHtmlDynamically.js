@@ -1,18 +1,19 @@
 // import { ShowCodeAndHideHimself } from "../../basicScript.js";
 import { fetchData } from "../fetch/fetchData.js";
+import { ShowCodeAndHideHimself, HideAndShowBtn } from "./generateBtnDynamically.js";
 export async function  generateHtmlDynamically(arrayName){
     const dataHtmlUrl = "/data/dataToGenerateHtml.json";
 try {
     const data = await fetchData(dataHtmlUrl);
     if(data && data[arrayName]){
-        let htmlId = document.getElementById("generateContent");
+        let htmlId = document.getElementById("generateContentJs");
             let result= "";
                 data[arrayName].forEach(item =>{
-                    console.log(item);
+                    // console.log(item);
                     result += 
                         `<div class="example__container flexCenter flexColumn">
                             <div class="example__container__title borderRadius">
-                                <h2>Extracting string part</h2>
+                                <h2>${item.title}</h2>
                             </div>
                             <div id="bubleSort">
                                 <form>
@@ -46,12 +47,13 @@ try {
                 const button = document.getElementById(item.inputValueId+'Btn');
                 if (button) {
                     button.addEventListener('click', window[item.onclickFonctionToCall]);
-                    console.log(item.onclickFonctionToCall);
                 }
                 else{
                     console.log("Btn id for function or function in the json is not there.");
                 }
             });
+            ShowCodeAndHideHimself();
+            HideAndShowBtn()
     }
     else{
         console.log("Array does not exist in the JSON.");

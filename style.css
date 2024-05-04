@@ -169,3 +169,8 @@ footer{
     align-items: center;
     list-style: none;
 }
+
+.generateContent{
+    width: 100%;
+    gap: 50px;
+}

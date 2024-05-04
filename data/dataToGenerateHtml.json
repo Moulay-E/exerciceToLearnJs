@@ -2,22 +2,54 @@
     "algorithme":[],
     "string":[
         {
+            "title": "String Length",
             "inputValueId": "stringSize",
             "onclickFonctionToCall": "stringLength",
             "outputResultId": "stringSizeResult",
             "idToMarkCodeArea": "lengthFunctionId"
         },
         {
+            "title": "String charCodeAt, At()",
             "inputValueId": "characterInString",
             "onclickFonctionToCall": "findCharacterInString",
             "outputResultId": "characterInStringResult",
             "idToMarkCodeArea": "findCharacterInStringFunctionId"
         },
         {
+            "title": "String slice, substring , substr",
             "inputValueId": "extractStringPartId",
             "onclickFonctionToCall": "extractingStringPart",
-            "outputResultId": "extractStringPartIdgResult",
+            "outputResultId": "extractStringPartIdResult",
             "idToMarkCodeArea": "extractingStringPartFunctionId"
+        },
+        {
+            "title": "String toUpper, toLower and concat",
+            "inputValueId": "upperAndLowerCaseValueId",
+            "onclickFonctionToCall": "upperAndLowerCase",
+            "outputResultId": "upperAndLowerCaseIdResult",
+            "idToMarkCodeArea": "upperAndLowerCaseFunctionId"
+        },
+        {
+            "title": "String all trim methods",
+            "inputValueId": "allTrimMethodsValueId",
+            "onclickFonctionToCall": "allTrimMethods",
+            "outputResultId": "allTrimMethodsIdResult",
+            "idToMarkCodeArea": "allTrimMethodsFunctionId"
+        },
+        {
+            "title": "String all pads methods",
+            "inputValueId": "allPadMethodsValueId",
+            "onclickFonctionToCall": "allPadMethods",
+            "outputResultId": "allPadMethodsIdResult",
+            "idToMarkCodeArea": "allPadMethodsFunctionId"
+        },
+        {
+            "title": "String repeat methods",
+            "inputValueId": "repeatStringValueId",
+            "onclickFonctionToCall": "repeatString",
+            "outputResultId": "repeatStringIdResult",
+            "idToMarkCodeArea": "repeatStringFunctionId"
         }
+
     ]
 }

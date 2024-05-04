@@ -54,8 +54,7 @@
                 <p>test</p>
             </div>
 
-            <div id="generateContent">
-
+            <div id="generateContentJs" class="generateContent flexColumn">
             </div>
 
         </main>
@@ -82,15 +81,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             generateHtmlDynamically('string').then(()=>{
                 generateCodeDynamically('string');
-                ShowCodeAndHideHimself();
-                HideAndShowBtn();
             })
         });
       </script>
       
 </body>
 <script src="../script.js"></script>
-
 <script  src="../basicScript.js"></script>
 <script src=".././scripts/string.js"></script>
 

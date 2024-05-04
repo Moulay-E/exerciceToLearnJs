@@ -18,7 +18,23 @@
         ,
         {
             "extractingStringPartFunctionId": "// JavaScript code here\n\nfunction extractingStringPart(){\n    let data = document.getElementById(\"extractStringPartId\").value;\n    let slice = data.slice(1,5);\n    let sliceNegative = data.slice(-5);\n    let subString = data.substring(1,5);\n    let substr = data.substr(1,5);\n    let textResult = document.getElementById(\"extractStringPartIdgResult\");\n    textResult.innerHTML = `index 1 au début et 5 fin: \n    <br> slice sans param s'arrête à la fin: ${slice} <br>\n    slice negative start a la fin: ${sliceNegative}\n    <br> substring (negative est traité comme 0): ${subString} \n    <br> substr, deuxième paramètre est la longueur de la chaîne, négatif comme slice: ${substr}  ` ;\n}"
+        },
+        {
+            "upperAndLowerCaseFunctionId": "// JavaScript code here\n\nfunction upperAndLowerCase(){\n    const showResult = document.getElementById(\"upperAndLowerCaseIdgResult\");\n    const data = document.getElementById(\"upperAndLowerCaseValueId\").value;\n    let toUpper = data.toUpperCase();\n    let toLower = data.toLowerCase();\n    showResult.innerHTML = `En majuscule : ${toUpper} . </br>\n        En minuscule: ${toLower} . `;\n}"
+        },
+        {
+            "allTrimMethodsFunctionId": "// JavaScript code here\n\nfunction allTrimMethods(){\n    const showResult = document.getElementById(\"allTrimMethodsIdResult\");\n    const data = document.getElementById(\"allTrimMethodsValueId\").value;\n    let textWithSpace = \"   voici un texte   \";\n    let addedSpace = textWithSpace.concat(\" \", data, \"  \");\n    let noSpaceAround = addedSpace.trim();\n    let noSpaceAtStart = addedSpace.trimStart();\n    let noSpaceAtEnd = addedSpace.trimEnd();\n    showResult.innerHTML = `Texte avec espace : ${addedSpace} . </br>\n        Sans espace autour: ${noSpaceAround}.</br>\n        Sans espace au début  : ${noSpaceAtStart}. </br>\n        Sans espace à la fin  : ${noSpaceAtEnd}.`;\n}"
+        },
+        {
+            "allPadMethodsFunctionId": "// JavaScript code here\n\nfunction allPadMethods(){\n    const showResult = document.getElementById(\"allPadMethodsIdResult\");\n    const data = document.getElementById(\"allPadMethodsValueId\").value;\n    let text = \"text a afficher \";\n    let textPadStart = text.padStart(40, data);\n    let textPadEnd = text.padEnd(40, data);\n    showResult.innerHTML = `Texte de base : ${text} . </br>\n        Texte avec pad au début 40x: ${textPadStart}.</br>\n        Texte avec pad à la fin 40x  : ${textPadEnd}. </br>.`;\n}"
+        },
+        {
+            "repeatStringFunctionId": "// JavaScript code here\n\nfunction repeatString(){\n    const showResult = document.getElementById(\"repeatStringIdResult\");\n    const data = document.getElementById(\"repeatStringValueId\").value;\n    let resultRepeat = data.repeat(5);\n    showResult.innerHTML = `Texte de base : ${data} . </br>\n        Texte répété 5x: ${resultRepeat}.</br>`;\n}"
         }
+          
+          
+          
+          
           
 
     ]
