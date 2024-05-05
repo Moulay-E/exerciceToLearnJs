@@ -76,4 +76,42 @@ function repeatString(){
     showResult.innerHTML = `Texte de base : ${data} . </br>
         Texte répété 5x: ${resultRepeat}.</br>`
 }
-      
+
+function replaceString(){
+    const showResult = document.getElementById("replaceStringIdResult");
+    const data = document.getElementById("replaceStringValueId").value;
+    let baseText = "Hello world of my world !"
+    let resultCaseSensitive = baseText.replace("world", data);
+    let resultCaseInsensitive = baseText.replace(/world/i, data);
+    let resultReplaceAllG = baseText.replace(/world/g, data);
+    let resultReplaceAll = baseText.replaceAll("world", data);
+
+
+    showResult.innerHTML = `Texte de base : ${baseText} . </br>
+        Replace avec case sensible: ${resultCaseSensitive}.</br>
+        Replace avec case insensible: ${resultCaseInsensitive}.</br>
+        Replace all avec /g: ${resultReplaceAllG}.</br>
+        Replace all sans /g: ${resultReplaceAll}.</br>`
+}
+     
+
+function splitString(){
+    const showResult = document.getElementById("splitStringIdResult");
+    const data = document.getElementById("splitStringValueId").value;
+    let splitOnSpace = data.split(" ");
+    let splitOnCharacter = data.split("");
+    let splitInFirstIndex = data.split();
+
+    let textsplitdOnCharacter = "";
+    for (let i = 0; i < splitOnCharacter.length; i++) {
+        textsplitdOnCharacter += splitOnCharacter[i] + " "
+    }
+    let textsplitdOnSpace = "";
+    for (let i = 0; i < splitOnSpace.length; i++) {
+        textsplitdOnSpace += splitOnSpace[i] + " | "
+    }
+    showResult.innerHTML = `Texte de base : ${data} . </br>
+        Texte au 1er index: ${splitInFirstIndex}.</br>
+        Texte couper a chaque lettre: ${textsplitdOnCharacter}.</br>
+        Texte couper a chaque espace: ${textsplitdOnSpace}.</br>`
+}

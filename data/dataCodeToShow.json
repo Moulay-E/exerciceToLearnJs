@@ -30,7 +30,15 @@
         },
         {
             "repeatStringFunctionId": "// JavaScript code here\n\nfunction repeatString(){\n    const showResult = document.getElementById(\"repeatStringIdResult\");\n    const data = document.getElementById(\"repeatStringValueId\").value;\n    let resultRepeat = data.repeat(5);\n    showResult.innerHTML = `Texte de base : ${data} . </br>\n        Texte répété 5x: ${resultRepeat}.</br>`;\n}"
+        },
+        {
+            "replaceStringFunctionId": "// JavaScript code here\n\nfunction replaceString(){\n    const showResult = document.getElementById(\"repeatStringIdResult\");\n    const data = document.getElementById(\"repeatStringValueId\").value;\n    let baseText = \"Hello world of my world !\";\n    let resultCaseSensitive = baseText.replace(\"world\", data);\n    let resultCaseInsensitive = baseText.replace(/world/i, data);\n    let resultReplaceAllG = baseText.replace(/world/g, data);\n    let resultReplaceAll = baseText.replaceAll(\"world\", data);\n\n\n    showResult.innerHTML = `Texte de base : ${baseText} . </br>\n        Replace avec case sensible: ${resultCaseSensitive}.</br>\n        Replace avec case insensible: ${resultCaseInsensitive}.</br>\n        Replace all avec /g: ${resultReplaceAllG}.</br>\n        Replace all sans /g: ${resultReplaceAll}.</br>`;\n}"
+        },
+        {
+            "splitStringFunctionId": "// JavaScript code here\n\nfunction splitString(){\n    const showResult = document.getElementById(\"splitStringIdResult\");\n    const data = document.getElementById(\"splitStringValueId\").value;\n    let splitOnSpace = data.split(\" \");\n    let splitOnCharacter = data.split(\"\");\n    let splitInFirstIndex = data.split();\n\n    let textsplitdOnCharacter = \"\";\n    for (let i = 0; i < splitOnCharacter.length; i++) {\n        textsplitdOnCharacter += splitOnCharacter[i] + \" \";\n    }\n    let textsplitdOnSpace = \"\";\n    for (let i = 0; i < splitOnSpace.length; i++) {\n        textsplitdOnSpace += splitOnSpace[i] + \" | \";\n    }\n    showResult.innerHTML = `Texte de base : ${data} . </br>\n        Texte au 1er index: ${splitInFirstIndex}.</br>\n        Texte coupé à chaque lettre: ${textsplitdOnCharacter}.</br>\n        Texte coupé à chaque espace: ${textsplitdOnSpace}.</br>`;\n}"
         }
+          
+          
           
           
           

@@ -15,6 +15,9 @@ try {
                             <div class="example__container__title borderRadius">
                                 <h2>${item.title}</h2>
                             </div>
+                            <div>
+                                <p> ${item.paragraph} </p>
+                            </div>                           
                             <div id="bubleSort">
                                 <form>
                                     <input type="text" id="${item.inputValueId}" />

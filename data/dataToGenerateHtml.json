@@ -4,12 +4,14 @@
         {
             "title": "String Length",
             "inputValueId": "stringSize",
+            "paragraph":"The length property returns the length of a string:",
             "onclickFonctionToCall": "stringLength",
             "outputResultId": "stringSizeResult",
             "idToMarkCodeArea": "lengthFunctionId"
         },
         {
             "title": "String charCodeAt, At()",
+            "paragraph":"There are 4 methods for extracting string characters:</br> The at(position) Method.</br> The charAt(position) Method.</br> The charCodeAt(position) Method. </br> Using property access [] like in arrays but a little unpredictable",
             "inputValueId": "characterInString",
             "onclickFonctionToCall": "findCharacterInString",
             "outputResultId": "characterInStringResult",
@@ -17,6 +19,7 @@
         },
         {
             "title": "String slice, substring , substr",
+            "paragraph":"There are 3 methods for extracting a part of a string:</br> slice(start, end)</br>substring(start, end)</br>substr(start, length)",
             "inputValueId": "extractStringPartId",
             "onclickFonctionToCall": "extractingStringPart",
             "outputResultId": "extractStringPartIdResult",
@@ -24,6 +27,7 @@
         },
         {
             "title": "String toUpper, toLower and concat",
+            "paragraph":"A string is converted to upper case with toUpperCase(): </br> A string is converted to lower case with toLowerCase(): </br> concat() joins two or more strings:",
             "inputValueId": "upperAndLowerCaseValueId",
             "onclickFonctionToCall": "upperAndLowerCase",
             "outputResultId": "upperAndLowerCaseIdResult",
@@ -31,6 +35,7 @@
         },
         {
             "title": "String all trim methods",
+            "paragraph":"The trim() method removes whitespace from both sides of a string:",
             "inputValueId": "allTrimMethodsValueId",
             "onclickFonctionToCall": "allTrimMethods",
             "outputResultId": "allTrimMethodsIdResult",
@@ -38,6 +43,7 @@
         },
         {
             "title": "String all pads methods",
+            "paragraph":"It pads a string with another string (multiple times) until it reaches a given length.",
             "inputValueId": "allPadMethodsValueId",
             "onclickFonctionToCall": "allPadMethods",
             "outputResultId": "allPadMethodsIdResult",
@@ -45,10 +51,27 @@
         },
         {
             "title": "String repeat methods",
+            "paragraph":"The repeat() method returns a string with a number of copies of a string.</br>The repeat() method returns a new string.</br>The repeat() method does not change the original string.",
             "inputValueId": "repeatStringValueId",
             "onclickFonctionToCall": "repeatString",
             "outputResultId": "repeatStringIdResult",
             "idToMarkCodeArea": "repeatStringFunctionId"
+        },
+        {
+            "title": "String replace methods",
+            "paragraph":"The replace() method replaces a specified value with another value in a string:",
+            "inputValueId": "replaceStringValueId",
+            "onclickFonctionToCall": "replaceString",
+            "outputResultId": "replaceStringIdResult",
+            "idToMarkCodeArea": "replaceStringFunctionId"
+        },
+        {
+            "title": "String split methods",
+            "paragraph":"A string can be converted to an array with the split() method:",
+            "inputValueId": "splitStringValueId",
+            "onclickFonctionToCall": "splitString",
+            "outputResultId": "splitStringIdResult",
+            "idToMarkCodeArea": "splitStringFunctionId"
         }
 
     ]
