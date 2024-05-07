@@ -1,3 +1,14 @@
+:root{
+    --primary-bg-color:#7469B6;
+    --secondary-bg-color:#E1AFD1;
+    --terciary-bg-color:#FFE6E6;
+    --quaternary--bg--color:#FFFFFF;
+
+    --primary-txt-color: #FFFFFF;
+    --secondary-txt-color:#7469B6;
+}
+
+
 a {
     color: inherit;
     text-decoration: none;
@@ -99,6 +110,8 @@ a {
 
 .main__title{
     border: 4px solid black;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
     text-align: center;
     width: 300px;
 }
@@ -108,22 +121,32 @@ a {
     gap: 20px;
 }
 .example__container__title{
-    background-color: darkgray;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
     width: 100%;
     text-align: center;
 
 }
+.subtitle{
+    text-align: center;
+    color: var(--secondary-txt-color);
+}
+.paragraph{
+    color: var(--secondary-txt-color);
+}
 .tryIt{
-    background-color: darkgray;
+    background-color: var(--secondary-bg-color);
+    color:var(--primary-txt-color);
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
     gap: 20px;
 }
 .result{
-    background-color: #f4f4f4;
+    background-color: var(--quaternary--bg--color);
+    color: var(--secondary-txt-color);
     border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
+    border-left: 8px solid var(--primary-bg-color);
     overflow: auto;
     width: 80%;
     text-align: left;
@@ -131,7 +154,8 @@ a {
 }
 
 .example__container__code{
-    background-color: darkgrey;
+    background-color: var(--terciary-bg-color);
+    color: var(--secondary-txt-color);
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
@@ -151,20 +175,23 @@ a {
     height: 50%;
 }
 pre {
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: var(--quaternary--bg--color); /* Light gray background */
     border: 1px solid #ddd; /* Gray border */
-    border-left: 3px solid #f36d33; /* W3Schools-like left border accent */
+    border-left: 8px solid var(--primary-bg-color); /* W3Schools-like left border accent */
     /* padding: 10px; */
     overflow: auto; /* Add a horizontal scrollbar if needed */
     width: 80%;  
+    padding-left: 8px;
 }
+
 
 .showMore{
     justify-content: center;
-    background-color: darkgray;
+    background-color: var(--terciary-bg-color);
+    color: var(--secondary-txt-color);
     width: 100%;
     cursor: pointer;
-    background-image: repeating-linear-gradient(45deg, #6b6666, #6b6666 10px, transparent 10px, transparent 50px);
+    background-image: repeating-linear-gradient(-45deg, var(--secondary-bg-color), var(--secondary-bg-color) 10px, transparent 10px, transparent 50px);
 }
 .flexDisplay{
     display: flex;
@@ -178,6 +205,8 @@ footer{
     height: 100px;
     border-top: 2px solid black;
     margin-top: 50px;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
 }
 .footer__ul{
     height: 100%;

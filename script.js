@@ -1,6 +1,3 @@
-let monTest = document.getElementById("test");
-monTest.innerHTML = "<p> lalalalla </p>";
-console.log("hello");
 
 
 let bubbleArr = [0, 3, 1, 4, 34, 1, 5 , 34, 55, 355, 2 , 3443];

@@ -16,17 +16,17 @@ try {
                                 <h2>${item.title}</h2>
                             </div>
                             <div>
-                            <h3>
-                                ${item.subtile ? item.subtile : ""}
+                            <h3 class="subtitle">
+                                ${item.subtitle ? item.subtitle : ""}
                             </h3>
-                                <p> ${item.paragraph} </p>
+                                <p class="paragraph"> ${item.paragraph} </p>
                             </div>                           
-                            <div id="bubleSort" class="tryIt borderRadius flexColumn flexCenter">
+                            <div class="tryIt borderRadius flexColumn flexCenter">
                                 <form>
-                                    <h4>try it </h4>
+                                    <h4>Try it </h4>
                                     <input type="text" id="${item.inputValueId}" />
                                     <button type="button" id="${item.inputValueId}Btn">
-                                        Show data
+                                        Show result
                                     </button>
                                 </form>
                                 <div class= "result">
