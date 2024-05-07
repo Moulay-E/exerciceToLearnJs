@@ -113,6 +113,23 @@ a {
     text-align: center;
 
 }
+.tryIt{
+    background-color: darkgray;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.result{
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    overflow: auto;
+    width: 80%;
+    text-align: left;
+    padding-left: 5px;
+}
+
 .example__container__code{
     background-color: darkgrey;
     width: 100%;

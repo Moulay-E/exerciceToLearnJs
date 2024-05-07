@@ -16,16 +16,22 @@ try {
                                 <h2>${item.title}</h2>
                             </div>
                             <div>
+                            <h3>
+                                ${item.subtile ? item.subtile : ""}
+                            </h3>
                                 <p> ${item.paragraph} </p>
                             </div>                           
-                            <div id="bubleSort">
+                            <div id="bubleSort" class="tryIt borderRadius flexColumn flexCenter">
                                 <form>
+                                    <h4>try it </h4>
                                     <input type="text" id="${item.inputValueId}" />
                                     <button type="button" id="${item.inputValueId}Btn">
-                                        afficher data
+                                        Show data
                                     </button>
-                                    <p>result: <span id="${item.outputResultId}"></span></p>
                                 </form>
+                                <div class= "result">
+                                    <p>Result: <span id="${item.outputResultId}"></span></p>
+                                </div>
                             </div>
                             <div  class="example__container__code hide borderRadius codeContainerJs">
                                 <div class="example__container__code__header">
@@ -37,7 +43,7 @@ try {
                                 </pre>
                             </div>
                             <div  class="showMore flexDisplay borderRadius"  >
-                                <h3>afficher code</h3>
+                                <h3>Show code</h3>
                             </div>
                         </div> `
                 ;
