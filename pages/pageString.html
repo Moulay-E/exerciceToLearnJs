@@ -21,33 +21,18 @@
                     dark mode
                 </button>
             </div>
-            <!-- <ul class="flexRow ulParent liStyleNone flexCenter">
-                <li class="navigation__ul__menu">
-                    <a class="displayBlock" href="#">String</a>
-                    <ul class="liStyleNone hide__submenu navigation__submenu borderLR">
-                        <li><a href="#">string 1</a></li>
-                        <li><a href="#">string 2</a></li>
-                    </ul>
-                </li>
 
-                <li class="navigation__ul__menu">
-                    <a href="#">number</a>
-                    <ul class="liStyleNone hide__submenu navigation__submenu">
-                        <li><a href="#">number 1</a></li>
-                        <li><a href="#">number 2</a></li>
-                    </ul>
-                </li>
-                <li class="navigation__ul__menu">
-                    <a href="#">Algorithmes</a>
-                    <ul class="liStyleNone hide__submenu navigation__submenu">
-                        <li><a href="#">Algorithme 1</a></li>
-                        <li><a href="#">Algorithme 2</a></li>
-                    </ul>
-                </li>
-            </ul> -->
             <div class="menu">
                 <div class="menu__btnContainer flexCenter">
                     <button id="showHideMenu" class="menu__btnContainer__btn borderRadius">menu</button>
+                </div>
+                <div id="showHamburger" class="menu__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div id="menuId" class=" hide menu__container">
                     <div  class=" menu__container__bar flexColumn flexCenter">
@@ -94,6 +79,7 @@
         generateHtmlDynamically('string').then(()=>{
             generateCodeDynamically('string');
             showHideMenu();
+            showHideHamburger()
         })
       </script>
       
