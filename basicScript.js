@@ -9,20 +9,6 @@ document.body.classList.toggle("darkMode");
         const menuToShowHide = document.getElementById("menuId");
         menuToShowHide.classList.toggle("hide"); 
         menuToShowHide.classList.toggle("showFlex"); 
-        console.log("menu execuerr");
+        ShowHideBtn.classList.toggle("open");
     })
 } 
-
-function showHideHamburger(){
-    const ShowHideBtn = document.getElementById("showHamburger")
-    ShowHideBtn.addEventListener('click', function(){
-        // const menuToShowHide = document.getElementById("menuId");
-        // menuToShowHide.classList.toggle("hide"); 
-        // menuToShowHide.classList.toggle("showFlex"); 
-        // console.log("menu execuerr");
-        ShowHideBtn.classList.toggle("open"); 
-        console.log("hh");
-
-    })
-} 
-

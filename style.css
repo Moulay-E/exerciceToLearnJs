@@ -124,15 +124,21 @@ a {
     display: block;
 }
 /* hamburger */
-.menu__hamburger{
-    
+
+.menu__btnContainer__hamburgerContainer {
+    width: 80px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
 }
 
-.menu__hamburger {
+.menu__btnContainer__hamburgerContainer__hamburger {
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -145,12 +151,12 @@ a {
   }
 
 
-.menu__hamburger span {
+.menu__btnContainer__hamburgerContainer__hamburger span {
     display: block;
     position: absolute;
     height: 9px;
     width: 50%;
-    background: #d3531a;
+    background: var(--quaternary--bg--color);
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -163,85 +169,79 @@ a {
   }
   
 
-  .menu__hamburger span:nth-child(even) {
+  .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(even) {
     left: 50%;
     border-radius: 0 9px 9px 0;
   }
   
-  .menu__hamburger span:nth-child(odd) {
+  .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(odd) {
     left:0px;
     border-radius: 9px 0 0 9px;
   }
   
-  .menu__hamburger span:nth-child(1), .menu__hamburger span:nth-child(2) {
+  .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(1), .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(2) {
     top: 0px;
   }
   
-  .menu__hamburger span:nth-child(3), .menu__hamburger span:nth-child(4) {
+  .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(3), .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(4) {
     top: 18px;
   }
   
-  .menu__hamburger span:nth-child(5), .menu__hamburger span:nth-child(6) {
+  .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(5), .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(6) {
     top: 36px;
   }
-  
-  .menu__hamburger.open span:nth-child(1),.menu__hamburger.open span:nth-child(6) {
+  /* selects the child spans of menu__btnContainer__hamburgerContainer__hamburger if the open class is present */
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(1),.menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(6) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   
-  .menu__hamburger.open span:nth-child(2),.menu__hamburger.open span:nth-child(5) {
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(2),.menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(5) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
   
-  .menu__hamburger.open span:nth-child(1) {
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(1) {
     left: 5px;
     top: 7px;
   }
   
-  .menu__hamburger.open span:nth-child(2) {
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(2) {
     left: calc(50% - 5px);
     top: 7px;
   }
   
-  .menu__hamburger.open span:nth-child(3) {
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(3) {
     left: -50%;
     opacity: 0;
   }
   
-  .menu__hamburger.open span:nth-child(4) {
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(4) {
     left: 100%;
     opacity: 0;
   }
   
-  .menu__hamburger.open span:nth-child(5) {
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(5) {
     left: 5px;
     top: 29px;
   }
   
-  .menu__hamburger.open span:nth-child(6) {
+  .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(6) {
     left: calc(50% - 5px);
     top: 29px;
   }
   
-
-
 
 .menu__btnContainer{
     width: 85%;
     height: 100px;
     justify-content: flex-end;
 }
-.menu__btnContainer__btn{
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
+
 .menu__container{
     background-color: aqua;
     overflow: auto;

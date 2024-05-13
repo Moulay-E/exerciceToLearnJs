@@ -24,16 +24,18 @@
 
             <div class="menu">
                 <div class="menu__btnContainer flexCenter">
-                    <button id="showHideMenu" class="menu__btnContainer__btn borderRadius">menu</button>
+                    <div class="menu__btnContainer__hamburgerContainer borderRadius">
+                        <div id="showHideMenu" class="menu__btnContainer__hamburgerContainer__hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
-                <div id="showHamburger" class="menu__hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                
                 <div id="menuId" class=" hide menu__container">
                     <div  class=" menu__container__bar flexColumn flexCenter">
                         <h2>Menu Bar</h2>
@@ -79,7 +81,6 @@
         generateHtmlDynamically('string').then(()=>{
             generateCodeDynamically('string');
             showHideMenu();
-            showHideHamburger()
         })
       </script>
       
