@@ -59,6 +59,13 @@ a {
     border-bottom: 4px solid black;
     justify-content:  space-between;
 }
+
+object {
+    width: 100px;
+    height: 100px;
+    fill: red;
+}
+
 .navigation__button{
     width: 200px;
     display: flex;
