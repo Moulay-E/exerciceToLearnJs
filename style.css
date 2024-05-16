@@ -50,7 +50,7 @@ a {
 }
 /* navbar */
 .navigation {
-    background-color: aliceblue;
+    background-color: var(--primary-bg-color);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -59,11 +59,13 @@ a {
     border-bottom: 4px solid black;
     justify-content:  space-between;
 }
-
-object {
-    width: 100px;
-    height: 100px;
-    fill: red;
+.navigation__home__img {
+    cursor: pointer;
+    height: 60px;
+}
+.navigation__darkmode__img{
+    cursor: pointer;
+    height: 65px;
 }
 
 .navigation__button{
@@ -250,11 +252,13 @@ object {
 }
 
 .menu__container{
-    background-color: aqua;
+    background-color: var(--secondary-bg-color);
     overflow: auto;
     width: auto;
     height: 100%;
     position: relative;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
 }
 .menu__container__bar{
 height: 100%;

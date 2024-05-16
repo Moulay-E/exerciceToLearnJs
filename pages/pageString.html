@@ -16,13 +16,15 @@
     <div class="baseCss flexColumn" id="darkModeSwitchId">
         <nav class="navigation flexRow flexCenter">
             <div class="navigation__button">
-                <div class="flexCenter"><a href="./../index.html" >Acceuil</a> </div>
-                <button id="darkModeBtn" class="borderRadius" onclick="darkModeSwitch()">
-                    dark mode
-                </button>
-                <object type="image/svg+xml" data="/assets/home-svg.svg" >
+                <div class="flexCenter">
+                    <a href="./../index.html" > 
+                        <img class="navigation__home__img" src="/assets/home-pink-svg.svg" alt="home"/>
+                    </a> 
+                </div>
+                <div class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
+                    <img class="navigation__darkmode__img" src="/assets/night-pink-mode-svg.svg" alt="dark-mode" />
+                </div>
 
-                </object>
             </div>
 
             <div class="menu">
