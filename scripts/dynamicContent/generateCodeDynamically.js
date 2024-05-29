@@ -1,6 +1,6 @@
 import { fetchData } from "../fetch/fetchData.js";
-export async function generateCodeDynamically(arrayName){
-    let dataCodeUrl = "/data/dataCodeToShow.json";
+export async function generateCodeDynamically(arrLocation , arrayName){
+    let dataCodeUrl = arrLocation;
     try{
         const data = await fetchData(dataCodeUrl);
         if(data && data[arrayName]){

@@ -1,9 +1,10 @@
 // import { ShowCodeAndHideHimself } from "../../basicScript.js";
 import { fetchData } from "../fetch/fetchData.js";
 import { ShowCodeAndHideHimself, HideAndShowBtn } from "./generateBtnDynamically.js";
-export async function  generateHtmlDynamically(arrayName){
-    const dataHtmlUrl = "/data/dataToGenerateHtml.json";
-try {
+export async function  generateHtmlDynamically(arrLocation, arrayName){
+    // const dataHtmlUrl = "/data/dataToGenerateHtml.json";
+    const dataHtmlUrl = arrLocation;
+    try {
     const data = await fetchData(dataHtmlUrl);
     if(data && data[arrayName]){
         let htmlId = document.getElementById("generateContentJs");

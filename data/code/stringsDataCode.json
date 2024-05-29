@@ -37,13 +37,8 @@
         {
             "splitStringFunctionId": "// JavaScript code here\n\nfunction splitString(){\n    const showResult = document.getElementById(\"splitStringIdResult\");\n    const data = document.getElementById(\"splitStringValueId\").value;\n    let splitOnSpace = data.split(\" \");\n    let splitOnCharacter = data.split(\"\");\n    let splitInFirstIndex = data.split();\n\n    let textsplitdOnCharacter = \"\";\n    for (let i = 0; i < splitOnCharacter.length; i++) {\n        textsplitdOnCharacter += splitOnCharacter[i] + \" \";\n    }\n    let textsplitdOnSpace = \"\";\n    for (let i = 0; i < splitOnSpace.length; i++) {\n        textsplitdOnSpace += splitOnSpace[i] + \" | \";\n    }\n    showResult.innerHTML = `Texte de base : ${data} . </br>\n        Texte au 1er index: ${splitInFirstIndex}.</br>\n        Texte coupé à chaque lettre: ${textsplitdOnCharacter}.</br>\n        Texte coupé à chaque espace: ${textsplitdOnSpace}.</br>`;\n}"
         }
-          
-          
-          
-          
-          
-          
-          
-
+    ],
+    "stringSearch": [
+        {}
     ]
 }
