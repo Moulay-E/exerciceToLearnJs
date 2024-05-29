@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
     <script type="module" src="/scripts/dynamicContent/generateCodeDynamically.js"></script>
     <script type="module" src="/scripts/dynamicContent/generateHtmlDynamically.js"></script>
+    <script  src="/scripts/dynamicContent/testDynamiquePage.js" ></script>
 </head>
 
 <body class="baseCss"  >
@@ -44,16 +45,16 @@
                 <div id="menuId" class=" hide menu__container">
                     <div  class=" menu__container__bar flexColumn flexCenter">
                         <h2>Menu Bar</h2>
-                        <a href="/pages/pageTestDynamique.html">page Dynamique</a>
-                        <a href="">hello</a>
-                        <a href="">hello</a>
-                        <a href="">hello</a>
-                        <a href="">hello</a>
+                        <a href="/" data-link onclick="route()" >home</a>
+                        <a href="/string" onclick="route()" >string</a>
+                        <a href="/algo" onclick="route()" >algo</a>
+                        <a href="/number" onclick="route()" >number</a>
                     </div>
                 </div>
             </div>
             
         </nav>
+        <p>Dynamax</p>
         <main class="mainDisplay flexColumn flexCenter">
             <div class="main__title borderRadius">
                 <h1>JavaScript String Methods</h1>
@@ -80,7 +81,7 @@
         </ul>
     </footer>
 
-    <script type="module" >
+    <!-- <script type="module" >
         import {generateCodeDynamically} from "/scripts/dynamicContent/generateCodeDynamically.js";
         import {generateHtmlDynamically} from "/scripts/dynamicContent/generateHtmlDynamically.js";
 
@@ -88,7 +89,7 @@
             generateCodeDynamically('string');
             showHideMenu();
         })
-      </script>
+      </script> -->
       
 </body>
 <script src="../script.js"></script>
