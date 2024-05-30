@@ -82,9 +82,11 @@
     <script type="module" >
         import {generateCodeDynamically} from "/scripts/dynamicContent/generateCodeDynamically.js";
         import {generateHtmlDynamically} from "/scripts/dynamicContent/generateHtmlDynamically.js";
+        const dataHtmlUrl = "/data/html/stringsDataHtml.json";
+        const dataCodeUrl = "/data/code/stringsDataCode.json";
 
-        generateHtmlDynamically('string').then(()=>{
-            generateCodeDynamically('string');
+        generateHtmlDynamically(dataHtmlUrl, 'string').then(()=>{
+            generateCodeDynamically(dataCodeUrl, 'string');
             showHideMenu();
         })
       </script>

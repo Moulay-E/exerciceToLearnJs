@@ -85,6 +85,41 @@
 
     ],
     "stringSearch": [
-        {}
+        {
+            "title": "String indexOf methods",
+            "subtitle": "lastIndexOf can take a second argument",
+            "paragraph":"The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found, exemple in this text: Please locate where 'locate' occurs! ",
+            "inputValueId": "indexOfStringValueId",
+            "onclickFonctionToCall": "stringIndexOf",
+            "outputResultId": "indexOfStringIdResult",
+            "idToMarkCodeArea": "indexOfStringFunctionId"
+        },
+        {
+            "title": "String  lastIndexOf methods",
+            "subtitle": "lastIndexOf can take a second argument",
+            "paragraph":"The lastIndexOf() method returns the index of the last occurrence of a specified text in a string, in this exeample : Please locate where 'locate' occurs!",
+            "inputValueId": "stringLastIndexOfValueId",
+            "onclickFonctionToCall": "stringLastIndexOf",
+            "outputResultId": "stringLastIndexOfIdResult",
+            "idToMarkCodeArea": "stringLastIndexOfFunctionId"
+        },
+        {
+            "title": "String  stringSearch methods",
+            "subtitle": "can take regular expression",
+            "paragraph":"The search() method searches a string for a string (or a regular expression) and returns the position of the match, in this exeample : Please locate where 'locate' occurs!",
+            "inputValueId": "stringSearchValueId",
+            "onclickFonctionToCall": "stringSearch",
+            "outputResultId": "stringSearchIdResult",
+            "idToMarkCodeArea": "stringSearchFunctionId"
+        },
+        {
+            "title": "String  stringMatch methods",
+            "subtitle": "accept regex, to search globaly",
+            "paragraph":"The match() method returns an array containing the results of matching a string against a string (or a regular expression)., in this exeample : The rain in SPAIN stays mainly in the plain",
+            "inputValueId": "stringMatchValueId",
+            "onclickFonctionToCall": "stringMatch",
+            "outputResultId": "stringMatchIdResult",
+            "idToMarkCodeArea": "stringMatchFunctionId"
+        }
     ]
 }
