@@ -36,3 +36,39 @@ function stringMatch() {
     showResult.innerHTML = `La string à selectionner est: ${indexFind} . </br>
         Apparait:${indexFind.length} `
 }
+
+function stringMatchAll() {
+    const data = document.getElementById("stringMatchAllValueId").value;
+    const showResult = document.getElementById("stringMatchAllIdResult");
+    let string = "I love cats. Cats are very easy to love. Cats are very popular.";
+    let regex = new RegExp(data, "gi");
+
+    let matchesIterator = string.matchAll(regex);
+    let indexFind = Array.from(matchesIterator);
+    console.log(data);
+
+    showResult.innerHTML = `La string à selectionner est: ${Array.from(indexFind)} . </br>
+        Apparait:${indexFind.length} `
+}
+
+function stringIncludes() {
+    const data = document.getElementById("stringIncludesValueId").value;
+    const showResult = document.getElementById("stringIncludesIdResult");
+    let string = "Hello world, welcome to the universe.";
+
+    let indexFind = string.includes(data);
+    console.log(data);
+
+    showResult.innerHTML = `Si la string selectionner apparait : ${indexFind} . `
+}
+
+function stringStartsWith() {
+    const data = document.getElementById("stringStartsWithValueId").value;
+    const showResult = document.getElementById("stringStartsWithIdResult");
+    let string = "Hello world, welcome to the universe.";
+
+    let indexFind = string.startsWith(data);
+    console.log(data);
+
+    showResult.innerHTML = `Si la string selectionner commence par la valeur indiquer : ${indexFind} . `
+}

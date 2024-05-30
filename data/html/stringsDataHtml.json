@@ -120,6 +120,33 @@
             "onclickFonctionToCall": "stringMatch",
             "outputResultId": "stringMatchIdResult",
             "idToMarkCodeArea": "stringMatchFunctionId"
+        },
+        {
+            "title": "String  stringMatchAll methods",
+            "subtitle": "need to be converted to array (array.from)",
+            "paragraph":"The matchAll() method returns an object iterator containing the results of matching a string against a string (or a regular expression). in this exeample : I love cats. Cats are very easy to love. Cats are very popular.",
+            "inputValueId": "stringMatchAllValueId",
+            "onclickFonctionToCall": "stringMatchAll",
+            "outputResultId": "stringMatchAllIdResult",
+            "idToMarkCodeArea": "stringMatchAllFunctionId"
+        },
+        {
+            "title": "String  stringIncludes methods",
+            "subtitle": "can take a second argument for start, is sensitive case, is not supported on IE",
+            "paragraph":"The includes() method returns true if a string contains a specified value. Otherwise it returns false. in this exeample : Hello world, welcome to the universe.",
+            "inputValueId": "stringIncludesValueId",
+            "onclickFonctionToCall": "stringIncludes",
+            "outputResultId": "stringIncludesIdResult",
+            "idToMarkCodeArea": "stringIncludesFunctionId"
+        },
+        {
+            "title": "String  stringIncludes methods",
+            "subtitle": "can take a second argument for start, is sensitive case, is not supported on IE",
+            "paragraph":"The startsWith() method returns true if a string begins with a specified value. Otherwise it returns false. in this exeample : Hello world, welcome to the universe.",
+            "inputValueId": "stringStartsWithValueId",
+            "onclickFonctionToCall": "stringStartsWith",
+            "outputResultId": "stringStartsWithIdResult",
+            "idToMarkCodeArea": "stringStartsWithFunctionId"
         }
     ]
 }
