@@ -44,8 +44,8 @@
                 <div id="menuId" class=" hide menu__container">
                     <div  class=" menu__container__bar flexColumn flexCenter">
                         <h2>Menu Bar</h2>
-                        <a href="/pages/string/stringSearch.html">string search</a>
-                        <a href="">hello</a>
+                        <a href="/pages/strings/pageString.html">string </a>
+                        <a href="/pages/strings/stringSearch.html">string </a>
                         <a href="">hello</a>
                         <a href="">hello</a>
                     </div>
@@ -55,7 +55,7 @@
         </nav>
         <main class="mainDisplay flexColumn flexCenter">
             <div class="main__title borderRadius">
-                <h1>JavaScript String Methods</h1>
+                <h1>JavaScript Numbers</h1>
             </div>
 
 
@@ -82,11 +82,11 @@
     <script type="module" >
         import {generateCodeDynamically} from "/scripts/dynamicContent/generateCodeDynamically.js";
         import {generateHtmlDynamically} from "/scripts/dynamicContent/generateHtmlDynamically.js";
-        const dataHtmlUrl = "/data/html/stringsDataHtml.json";
-        const dataCodeUrl = "/data/code/stringsDataCode.json";
+        const dataHtmlUrl = "/data/html/numbersDataCode.json";
+        const dataCodeUrl = "/data/code/numbersDataCode.Json";
 
-        generateHtmlDynamically(dataHtmlUrl, 'string').then(()=>{
-            generateCodeDynamically(dataCodeUrl, 'string');
+        generateHtmlDynamically(dataHtmlUrl, 'numbers').then(()=>{
+            generateCodeDynamically(dataCodeUrl, 'numbers');
             showHideMenu();
         })
       </script>
@@ -94,7 +94,7 @@
 </body>
 <script src="/script.js"></script>
 <script  src="/basicScript.js"></script>
-<script src="/scripts/string/string.js"></script>
+<script src="/scripts/numbers/numbers.js"></script>
 
 
 </html>

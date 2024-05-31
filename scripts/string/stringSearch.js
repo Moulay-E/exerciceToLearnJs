@@ -6,7 +6,6 @@ function stringIndexOf() {
     let indexFind = string.indexOf(data);
 
     showResult.innerHTML = `L'index est : ${indexFind}`
-
 }
 
 function stringLastIndexOf() {
@@ -45,7 +44,6 @@ function stringMatchAll() {
 
     let matchesIterator = string.matchAll(regex);
     let indexFind = Array.from(matchesIterator);
-    console.log(data);
 
     showResult.innerHTML = `La string à selectionner est: ${Array.from(indexFind)} . </br>
         Apparait:${indexFind.length} `
@@ -57,8 +55,6 @@ function stringIncludes() {
     let string = "Hello world, welcome to the universe.";
 
     let indexFind = string.includes(data);
-    console.log(data);
-
     showResult.innerHTML = `Si la string selectionner apparait : ${indexFind} . `
 }
 
@@ -68,7 +64,14 @@ function stringStartsWith() {
     let string = "Hello world, welcome to the universe.";
 
     let indexFind = string.startsWith(data);
-    console.log(data);
-
     showResult.innerHTML = `Si la string selectionner commence par la valeur indiquer : ${indexFind} . `
+}
+
+function stringEndsWith() {
+    const data = document.getElementById("stringEndsWithValueId").value;
+    const showResult = document.getElementById("stringEndsWithIdResult");
+    let string = "Hello world, welcome to the universe.";
+
+    let indexFind = string.endsWith(data);
+    showResult.innerHTML = `Si la string selectionner termine par la valeur indiquer : ${indexFind} . `
 }

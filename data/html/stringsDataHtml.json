@@ -147,6 +147,15 @@
             "onclickFonctionToCall": "stringStartsWith",
             "outputResultId": "stringStartsWithIdResult",
             "idToMarkCodeArea": "stringStartsWithFunctionId"
+        },
+        {
+            "title": "String  endsWith() methods",
+            "subtitle": "can take a second argument to check from the start if the characters end with the selected value int he area of the argument, is sensitive case, is not supported on IE",
+            "paragraph":"The endsWith() method returns true if a string ends with a specified value. Otherwise it returns false. in this exeample : Hello world, welcome to the universe.",
+            "inputValueId": "stringEndsWithValueId",
+            "onclickFonctionToCall": "stringEndsWith",
+            "outputResultId": "stringEndsWithIdResult",
+            "idToMarkCodeArea": "stringEndsWithFunctionId"
         }
     ]
 }

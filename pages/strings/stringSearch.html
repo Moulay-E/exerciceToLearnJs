@@ -44,8 +44,8 @@
                 <div id="menuId" class=" hide menu__container">
                     <div  class=" menu__container__bar flexColumn flexCenter">
                         <h2>Menu Bar</h2>
-                        <a href="/pages/string//pageString.html">string </a>
-                        <a href="">hello</a>
+                        <a href="/pages/strings/pageString.html">string </a>
+                        <a href="/pages/numbers/numbers.html">numbers</a>
                         <a href="">hello</a>
                         <a href="">hello</a>
                     </div>
@@ -86,7 +86,7 @@
         const dataCodeUrl = "/data/code/stringsDataCode.json";
 
         generateHtmlDynamically(dataHtmlUrl, 'stringSearch').then(()=>{
-            generateCodeDynamically(dataCodeUrl, 'string');
+            generateCodeDynamically(dataCodeUrl, 'stringSearch');
             showHideMenu();
         })
       </script>
@@ -94,7 +94,7 @@
 </body>
 <script src="/script.js"></script>
 <script  src="/basicScript.js"></script>
-<script src="/scripts/string/stringSearch.js"></script>
+<script src="/scripts/strings/stringSearch.js"></script>
 
 
 </html>

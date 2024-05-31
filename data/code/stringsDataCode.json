@@ -39,6 +39,29 @@
         }
     ],
     "stringSearch": [
-        {}
+        {
+            "indexOfStringFunctionId": "// JavaScript code here\n\nfunction stringIndexOf() {\n    console.log(\"hello\");\n    const data = document.getElementById(\"indexOfStringValueId\").value;\n    const showResult = document.getElementById(\"indexOfStringIdResult\");\n    let string =  \"Please locate where 'locate' occurs!\";\n    let indexFind = string.indexOf(data);\n\n    showResult.innerHTML = `L'index est : ${indexFind}`;\n}"
+        },
+        {
+            "stringLastIndexOfFunctionId": "// JavaScript code here\n\nfunction stringLastIndexOf() {\n    const data = document.getElementById(\"stringLastIndexOfValueId\").value;\n    const showResult = document.getElementById(\"stringLastIndexOfIdResult\");\n    let string =  \"Please locate where 'locate' occurs!\";\n    let indexFind = string.lastIndexOf(data);\n\n    showResult.innerHTML = `Le dernier index est : ${indexFind} .`;\n}"
+        },
+        {
+            "stringSearchFunctionId": "// JavaScript code here\n\nfunction stringSearch() {\n    const data = document.getElementById(\"stringSearchValueId\").value;\n    const showResult = document.getElementById(\"stringSearchIdResult\");\n    let string =  \"Please locate where 'locate' occurs!\";\n    let indexFind = string.search(data);\n\n    showResult.innerHTML = `L'index est : ${indexFind} .`;\n}"
+        },
+        {
+            "stringMatchFunctionId": "// JavaScript code here\n\nfunction stringMatch() {\n    const data = document.getElementById(\"stringMatchValueId\").value;\n    const showResult = document.getElementById(\"stringMatchIdResult\");\n    let string =  \"The rain in SPAIN stays mainly in the plain\";\n    let regex = new RegExp(data, 'g');\n    let indexFind = string.match(regex);\n\n    showResult.innerHTML = `La chaîne sélectionnée est : ${indexFind} . </br>\n        Elle apparaît ${indexFind.length} fois.`;\n}"
+        },
+        {
+            "stringMatchAllFunctionId": "// JavaScript code here\n\nfunction stringMatchAll() {\n    const data = document.getElementById(\"stringMatchAllValueId\").value;\n    const showResult = document.getElementById(\"stringMatchAllIdResult\");\n    let string = \"I love cats. Cats are very easy to love. Cats are very popular.\";\n    let regex = new RegExp(data, \"gi\");\n\n    let matchesIterator = string.matchAll(regex);\n    let indexFind = Array.from(matchesIterator);\n\n    showResult.innerHTML = `La chaîne sélectionnée est : ${Array.from(indexFind)} . </br>\n        Elle apparaît ${indexFind.length} fois.`;\n}"
+        },
+        {
+            "stringIncludesFunctionId": "// JavaScript code here\n\nfunction stringIncludes() {\n    const data = document.getElementById(\"stringIncludesValueId\").value;\n    const showResult = document.getElementById(\"stringIncludesIdResult\");\n    let string = \"Hello world, welcome to the universe.\";\n\n    let indexFind = string.includes(data);\n    showResult.innerHTML = `Si la chaîne sélectionnée apparaît : ${indexFind} .`;\n}"
+        },
+        {
+            "stringStartsWithFunctionId": "// JavaScript code here\n\nfunction stringStartsWith() {\n    const data = document.getElementById(\"stringStartsWithValueId\").value;\n    const showResult = document.getElementById(\"stringStartsWithIdResult\");\n    let string = \"Hello world, welcome to the universe.\";\n\n    let indexFind = string.startsWith(data);\n    showResult.innerHTML = `Si la chaîne sélectionnée commence par la valeur indiquée : ${indexFind} .`;\n}"
+        },
+        {
+            "stringEndsWithFunctionId": "// JavaScript code here\n\nfunction stringEndsWith() {\n    const data = document.getElementById(\"stringEndsWithValueId\").value;\n    const showResult = document.getElementById(\"stringEndsWithIdResult\");\n    let string = \"Hello world, welcome to the universe.\";\n\n    let indexFind = string.endsWith(data);\n    showResult.innerHTML = `Si la chaîne sélectionnée se termine par la valeur indiquée : ${indexFind} .`;\n}"
+        }
     ]
 }
