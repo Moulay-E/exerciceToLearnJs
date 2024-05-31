@@ -9,5 +9,16 @@
             "outputResultId": "stringSizeResult",
             "idToMarkCodeArea": "lengthFunctionId"
         }
+    ],
+    "numberMethods":[
+        {
+            "title": "The numberToString Method",
+            "subtitle": "The toString() method returns a number as a string.",
+            "paragraph":"All number methods can be used on any type of numbers (literals, variables, or expressions):",
+            "inputValueId": "numberToStringValueId",
+            "onclickFonctionToCall": "numberToString",
+            "outputResultId": "numberToStringIdResult",
+            "idToMarkCodeArea": "numberToStringFunctionId"
+        }
     ]
 }
