@@ -19,6 +19,96 @@
             "onclickFonctionToCall": "numberToString",
             "outputResultId": "numberToStringIdResult",
             "idToMarkCodeArea": "numberToStringFunctionId"
+        },
+        {
+            "title": "The numberToExponential Method",
+            "subtitle": "toExponential() returns a string, with a number rounded and written using exponential notation.",
+            "paragraph":"A parameter defines the number of characters behind the decimal point:",
+            "inputValueId": "numberToExponentialValueId",
+            "onclickFonctionToCall": "numberToExponential",
+            "outputResultId": "numberToExponentialIdResult",
+            "idToMarkCodeArea": "numberToExponentialFunctionId"
+        },
+        {
+            "title": "The numberToFixed Method",
+            "subtitle": "",
+            "paragraph":"toFixed() returns a string, with the number written with a specified number of decimals. In this example the number is : 555555.5555555555, you can choice how many number to show:",
+            "inputValueId": "numberToFixedValueId",
+            "onclickFonctionToCall": "numberToFixed",
+            "outputResultId": "numberToFixedIdResult",
+            "idToMarkCodeArea": "numberToFixedFunctionId"
+        },
+        {
+            "title": "The numberToPrecision Method",
+            "subtitle": "",
+            "paragraph":"toPrecision() returns a string, with a number written with a specified length. In this example the number is : 555555.5555555555, you can choice how many number to show: ",
+            "inputValueId": "numberToPrecisionValueId",
+            "onclickFonctionToCall": "numberToPrecision",
+            "outputResultId": "numberToPrecisionIdResult",
+            "idToMarkCodeArea": "numberToPrecisionFunctionId"
+        },
+        {
+            "title": "The numberTheValueOf Method",
+            "subtitle": "",
+            "paragraph":"valueOf() returns a number as a number.",
+            "inputValueId": "numberTheValueOfValueId",
+            "onclickFonctionToCall": "numberTheValueOf",
+            "outputResultId": "numberTheValueOfIdResult",
+            "idToMarkCodeArea": "numberTheValueOfFunctionId"
+        },
+        {
+            "title": "The numberNumber Method",
+            "subtitle": "The Number() method can be used to convert JavaScript variables to numbers:",
+            "paragraph":"Can be use on number and boolean or date. Dont work on other primitve",
+            "inputValueId": "numberNumberValueId",
+            "onclickFonctionToCall": "numberNumber",
+            "outputResultId": "numberNumberIdResult",
+            "idToMarkCodeArea": "numberNumberFunctionId"
+        },
+        {
+            "title": "The numberParseInt Method",
+            "subtitle": "Use Number.parseInt for modern coding conventions. Parse int does not count after the decimal point and can take a second argument called radix, for hexadecimaux ect...",
+            "paragraph":"parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:",
+            "inputValueId": "numberParseIntValueId",
+            "onclickFonctionToCall": "numberParseInt",
+            "outputResultId": "numberParseIntIdResult",
+            "idToMarkCodeArea": "numberParseIntFunctionId"
+        },
+        {
+            "title": "The numberParseFloat Method",
+            "subtitle": "Use Number.parseFloat for modern coding conventions. Parse float it reads the whole string and displays the numbers even after the decimal point",
+            "paragraph":"parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:",
+            "inputValueId": "numberParseFloatValueId",
+            "onclickFonctionToCall": "numberParseFloat",
+            "outputResultId": "numberParseFloatIdResult",
+            "idToMarkCodeArea": "numberParseFloatIntFunctionId"
+        },
+        {
+            "title": "The numberIsInteger Method",
+            "subtitle": "Can take number only",
+            "paragraph":"The Number.isInteger() method returns true if the argument is an integer.",
+            "inputValueId": "numberIsIntegerValueId",
+            "onclickFonctionToCall": "numberIsInteger",
+            "outputResultId": "numberIsIntegerIdResult",
+            "idToMarkCodeArea": "numberIsIntegerIntFunctionId"
+        },
+        {
+            "title": "The numberIsSafeInteger Method",
+            "subtitle": "Can take number only, safe integers are all integers from -(253 - 1) to +(253 - 1).",
+            "paragraph":"A safe integer is an integer that can be exactly represented as a double precision number.</br> The Number.isSafeInteger() method returns true if the argument is a safe integer.",
+            "inputValueId": "numberIsSafeIntegerValueId",
+            "onclickFonctionToCall": "numberIsSafeInteger",
+            "outputResultId": "numberIsSafeIntegerIdResult",
+            "idToMarkCodeArea": "numberIsSafeIntegerFunctionId"
+        },
+        {
+            "title": "The numberNumberParseFloat Method",
+            "subtitle": "Can take number only, safe integers are all integers from -(253 - 1) to +(253 - 1).",
+            "paragraph":"A safe integer is an integer that can be exactly represented as a double precision number.</br> The Number.isSafeInteger() method returns true if the argument is a safe integer.",
+            "inputValueId": "numberNumberParseFloatValueId",
+            "onclickFonctionToCall": "numberNumberParseFloat",
+            "outputResultId": "numberNumberParseFloatIdResult",
+            "idToMarkCodeArea": "numberNumberParseFloatFunctionId"
         }
     ]
 }
