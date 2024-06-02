@@ -1,18 +1,50 @@
 {
     "numbers": [
         { 
-            "algorithmeBubeSortId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
+            "stringLastIndexOfFunctionId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
         },
         { 
-            "algorithmeShowCodeId": "// LJavaScript code here\n\nfunction showData(e){\n    let l = document.getElementById(\"champChiffre\").value.split(\",\");\n    let o = [];\n    console.log(l);\n    for(let e = 0; e < l.length; e++){\n        o.push(parseFloat(l[e]));\n    }\n    console.log(o, \"before\");\n    bubbleSort(o);\n    result.innerHTML = o;\n}"
+            "stringLastIndexOfFunctionId": "// LJavaScript code here\n\nfunction showData(e){\n    let l = document.getElementById(\"champChiffre\").value.split(\",\");\n    let o = [];\n    console.log(l);\n    for(let e = 0; e < l.length; e++){\n        o.push(parseFloat(l[e]));\n    }\n    console.log(o, \"before\");\n    bubbleSort(o);\n    result.innerHTML = o;\n}"
         }
     ],
     "numberMethods": [
         { 
-            "algorithmeBubeSortId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
+            "numberToStringFunctionId": "// JavaScript code here\n\nfunction numberToString() {\n    const data = document.getElementById(\"numberToStringValueId\").value;\n    const showResult = document.getElementById(\"numberToStringIdResult\");\n    let dataToNumber = Number(data);\n    let result = dataToNumber.toString();\n    showResult.innerHTML = `Le nombre converti en chaîne de caractères : ${result} . </br>\n    Avant la conversion : ${typeof dataToNumber}. </br>\n    Le type est : ${typeof result}`;\n}"
         },
         { 
-            "algorithmeShowCodeId": "// LJavaScript code here\n\nfunction showData(e){\n    let l = document.getElementById(\"champChiffre\").value.split(\",\");\n    let o = [];\n    console.log(l);\n    for(let e = 0; e < l.length; e++){\n        o.push(parseFloat(l[e]));\n    }\n    console.log(o, \"before\");\n    bubbleSort(o);\n    result.innerHTML = o;\n}"
+            "numberToExponentialFunctionId": "// JavaScript code here\n\nfunction numberToExponential() {\n    const data = document.getElementById(\"numberToExponentialValueId\").value;\n    const showResult = document.getElementById(\"numberToExponentialIdResult\");\n    let dataToNumber = Number(data);\n    let result = dataToNumber.toExponential(4);\n    showResult.innerHTML = `Le nombre en notation exponentielle, avec 4 chiffres après la virgule : ${result} . `;\n}"
+        },
+        { 
+            "numberToFixedFunctionId": "// JavaScript code here\n\nfunction numberToFixed() {\n    const data = document.getElementById(\"numberToFixedValueId\").value;\n    const showResult = document.getElementById(\"numberToFixedIdResult\");\n    let number = 555555.5555555555;\n    let dataToNumber = Number(data);\n    let result = number.toFixed(4);\n    showResult.innerHTML = `Retourne le nombre avec comme paramètre le nombre de chiffres à afficher après la virgule : ${result} . `;\n}"
+        },
+        { 
+            "numberToPrecisionFunctionId": "// JavaScript code here\n\nfunction numberToPrecision() {\n    const data = document.getElementById(\"numberToPrecisionValueId\").value;\n    const showResult = document.getElementById(\"numberToPrecisionIdResult\");\n    let number = 555555.5555555555;\n    let dataToNumber = Number(data);\n    let result = number.toPrecision(dataToNumber);\n    showResult.innerHTML = `Permet de contrôler le nombre total à afficher : ${result} . `;\n}"
+        },
+        { 
+            "numberTheValueOfFunctionId": "// JavaScript code here\n\nfunction numberTheValueOf() {\n    const data = document.getElementById(\"numberTheValueOfValueId\").value;\n    const showResult = document.getElementById(\"numberTheValueOfIdResult\");\n    let numObj = new Number(data);\n    let objectToNumber = numObj.valueOf();\n    showResult.innerHTML = `\n        Le chiffre entré est transformé en objet : ${typeof numObj} . </br>\n        L'objet est transformé en nombre grâce à valueOf : ${typeof objectToNumber} . \n    `;\n}"
+        },
+        { 
+            "numberNumberFunctionId": "// JavaScript code here\n\nfunction numberNumber() {\n    const data = document.getElementById(\"numberNumberValueId\").value;\n    const showResult = document.getElementById(\"numberNumberIdResult\");\n    let notAString = JSON.parse(data);\n    let result = Number(notAString);\n    showResult.innerHTML = `\n        Voici l'élément : ${result} . </br>\n        Et voici son type : ${typeof result} . \n    `;\n}"
+        },
+        { 
+            "numberParseIntFunctionId": "// JavaScript code here\n\nfunction numberParseInt() {\n    const data = document.getElementById(\"numberParseIntValueId\").value;\n    const showResult = document.getElementById(\"numberParseIntIdResult\");\n    let result = parseInt(data);\n    showResult.innerHTML = `\n        Voici l'élément : ${result} . </br>\n        Et voici son type : ${typeof result} . \n    `;\n}"
+        },
+        { 
+            "numberParseFloatFunctionId": "// JavaScript code here\n\nfunction numberParseFloat() {\n    const data = document.getElementById(\"numberParseFloatValueId\").value;\n    const showResult = document.getElementById(\"numberParseFloatIdResult\");\n    let result = parseFloat(data);\n    showResult.innerHTML = `\n        Voici l'élément : ${result} . </br>\n        Et voici son type : ${typeof result} . \n    `;\n}"
+        },
+        { 
+            "numberIsIntegerFunctionId": "// JavaScript code here\n\nfunction numberIsInteger() {\n    const data = document.getElementById(\"numberIsIntegerValueId\").value;\n    const showResult = document.getElementById(\"numberIsIntegerIdResult\");\n    let notAString = JSON.parse(data);\n    let result = Number.isInteger(notAString);\n    showResult.innerHTML = `\n        L'élément est-il un nombre entier ? : ${result} . </br>. \n    `;\n}"
+        },
+        { 
+            "numberIsSafeIntegerFunctionId": "// JavaScript code here\n\nfunction numberIsSafeInteger() {\n    const data = document.getElementById(\"numberIsSafeIntegerValueId\").value;\n    const showResult = document.getElementById(\"numberIsSafeIntegerIdResult\");\n    let notAString = JSON.parse(data);\n    let result = Number.isSafeInteger(notAString);\n    showResult.innerHTML = `\n        L'élément est-il un nombre sûr ? : ${result} . </br> . \n    `;\n}"
+        },
+        { 
+            "numberNumberParseFloatFunctionId": "// JavaScript code here\n\nfunction numberNumberParseFloat() {\n    const data = document.getElementById(\"numberNumberParseFloatValueId\").value;\n    const showResult = document.getElementById(\"numberNumberParseFloatIdResult\");\n    let result = Number.parseFloat(data);\n    showResult.innerHTML = `\n        Transforme la chaîne qui contient le nombre en nombre : ${result} . </br> . \n    `;\n}"
+        }
+    ],
+    "numberProperties": [
+        { 
+            "stringLastIndexOfFunctionId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
         }
     ]
 }

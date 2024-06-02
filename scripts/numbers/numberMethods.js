@@ -90,10 +90,9 @@ function numberIsSafeInteger() {
 function numberNumberParseFloat() {
     const data = document.getElementById("numberNumberParseFloatValueId").value;
     const showResult = document.getElementById("numberNumberParseFloatIdResult");
-    let notAString = JSON.parse(data);
-    let result = Number.isSafeInteger(notAString);
+    let result = Number.parseFloat(data);
     showResult.innerHTML = `
-        L'élément est il un nombre safe? : ${result} . </br> . 
+        Transforme la string qui contient le nombre en nombre : ${result} . </br> . 
     `
 } 
 

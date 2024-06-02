@@ -110,5 +110,16 @@
             "outputResultId": "numberNumberParseFloatIdResult",
             "idToMarkCodeArea": "numberNumberParseFloatFunctionId"
         }
+    ],
+    "numberProperties":[
+        {
+            "title": "The numberNumberParseFloat Method",
+            "subtitle": "Can take number only, safe integers are all integers from -(253 - 1) to +(253 - 1).",
+            "paragraph":"A safe integer is an integer that can be exactly represented as a double precision number.</br> The Number.isSafeInteger() method returns true if the argument is a safe integer.",
+            "inputValueId": "numberNumberParseFloatValueId",
+            "onclickFonctionToCall": "numberNumberParseFloat",
+            "outputResultId": "numberNumberParseFloatIdResult",
+            "idToMarkCodeArea": "numberNumberParseFloatFunctionId"
+        }
     ]
 }
