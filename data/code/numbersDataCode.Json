@@ -30,9 +30,6 @@
             "numberParseIntFunctionId": "// JavaScript code here\n\nfunction numberParseInt() {\n    const data = document.getElementById(\"numberParseIntValueId\").value;\n    const showResult = document.getElementById(\"numberParseIntIdResult\");\n    let result = parseInt(data);\n    showResult.innerHTML = `\n        Voici l'élément : ${result} . </br>\n        Et voici son type : ${typeof result} . \n    `;\n}"
         },
         { 
-            "numberParseFloatFunctionId": "// JavaScript code here\n\nfunction numberParseFloat() {\n    const data = document.getElementById(\"numberParseFloatValueId\").value;\n    const showResult = document.getElementById(\"numberParseFloatIdResult\");\n    let result = parseFloat(data);\n    showResult.innerHTML = `\n        Voici l'élément : ${result} . </br>\n        Et voici son type : ${typeof result} . \n    `;\n}"
-        },
-        { 
             "numberIsIntegerFunctionId": "// JavaScript code here\n\nfunction numberIsInteger() {\n    const data = document.getElementById(\"numberIsIntegerValueId\").value;\n    const showResult = document.getElementById(\"numberIsIntegerIdResult\");\n    let notAString = JSON.parse(data);\n    let result = Number.isInteger(notAString);\n    showResult.innerHTML = `\n        L'élément est-il un nombre entier ? : ${result} . </br>. \n    `;\n}"
         },
         { 

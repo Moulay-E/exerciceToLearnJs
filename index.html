@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
     <script type="module" src="/scripts/dynamicContent/generateCodeDynamically.js"></script>
     <script type="module" src="/scripts/dynamicContent/generateHtmlDynamically.js"></script>
+    <script type="module" src="/scripts/dynamicContent/generateNavList.js"></script>
 </head>
 
 <body class="baseCss"  >
@@ -17,7 +18,7 @@
         <nav class="navigation flexRow flexCenter">
             <div class="navigation__button">
                 <div class="flexCenter">
-                    <a href="/index.html" > 
+                    <a href="/index.html" >  
                         <img class="navigation__home__img" src="/assets/home-pink-svg.svg" alt="home"/>
                     </a> 
                 </div>
@@ -43,7 +44,7 @@
                 
                 <div id="menuId" class=" hide menu__container">
                     <div id="generateNavList" class=" menu__container__bar flexColumn flexCenter">
-
+                       
                     </div>
                 </div>
             </div>
@@ -51,7 +52,7 @@
         </nav>
         <main class="mainDisplay flexColumn flexCenter">
             <div class="main__title borderRadius">
-                <h1>JavaScript Numbers</h1>
+                <h1>HOME</h1>
             </div>
 
             <div id="generateContentJs" class="generateContent flexColumn">
@@ -77,19 +78,22 @@
     <script type="module" >
         import {generateCodeDynamically} from "/scripts/dynamicContent/generateCodeDynamically.js";
         import {generateHtmlDynamically} from "/scripts/dynamicContent/generateHtmlDynamically.js";
+        import {generateNavList} from "/scripts/dynamicContent/generateNavList.js";
+
         const dataHtmlUrl = "/data/html/numbersDataCode.json";
         const dataCodeUrl = "/data/code/numbersDataCode.Json";
 
-        generateHtmlDynamically(dataHtmlUrl, 'numbers').then(()=>{
-            generateCodeDynamically(dataCodeUrl, 'numbers');
-            showHideMenu();
-        })
+        // generateHtmlDynamically(dataHtmlUrl, 'numberMethods').then(()=>{
+        //     generateCodeDynamically(dataCodeUrl, 'numberMethods');
+        //     showHideMenu();
+        // })
+        showHideMenu();
+        generateNavList();
       </script>
       
 </body>
 <script src="/script.js"></script>
 <script  src="/basicScript.js"></script>
-<script src="/scripts/numbers/numbers.js"></script>
-
+<script src="/scripts/numbers/numberProperties.js"></script>
 
 </html>
