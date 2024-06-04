@@ -1,0 +1,20 @@
+{
+    "navLink": [
+        {
+            "title": "String",
+            "link": "/pages/strings/pageString.html"
+        },
+        {
+            "title": "String Search",
+            "link": "/pages/strings/stringSearch.html"
+        },
+        {
+            "title": "Numbers Methods",
+            "link": "/pages/numbers/numberMethods.html"
+        },
+        {
+            "title": "Number Properties",
+            "link": "/pages/numbers/numberProperties.html"
+        }
+    ]
+}

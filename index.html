@@ -6,104 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+    <script type="module" src="/scripts/dynamicContent/generateCodeDynamically.js"></script>
+    <script type="module" src="/scripts/dynamicContent/generateHtmlDynamically.js"></script>
 </head>
 
-<body class="baseCss">
+<body class="baseCss"  >
+
     <div class="baseCss flexColumn" id="darkModeSwitchId">
         <nav class="navigation flexRow flexCenter">
-            <div class="flexCenter"> <a href="./index.html" >Acceuil</a> </div>
-            <ul class="flexRow ulParent liStyleNone flexCenter">
-                <li class="navigation__ul__menu">
-                    <a class="displayBlock" href="./pages/strings/pageString.html">String</a>
-                    <ul class="liStyleNone hide__submenu navigation__submenu borderLR">
-                        <li><a href="#">string 1</a></li>
-                        <li><a href="#">string 2</a></li>
-                    </ul>
-                </li>
+            <div class="navigation__button">
+                <div class="flexCenter">
+                    <a href="/index.html" > 
+                        <img class="navigation__home__img" src="/assets/home-pink-svg.svg" alt="home"/>
+                    </a> 
+                </div>
+                <div class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
+                    <img class="navigation__darkmode__img" src="/assets/night-pink-mode-svg.svg" alt="dark-mode" />
+                </div>
 
-                <li class="navigation__ul__menu">
-                    <a href="#">number</a>
-                    <ul class="liStyleNone hide__submenu navigation__submenu">
-                        <li><a href="#">number 1</a></li>
-                        <li><a href="#">number 2</a></li>
-                    </ul>
-                </li>
-                <li class="navigation__ul__menu">
-                    <a href="#">Algorithmes</a>
-                    <ul class="liStyleNone hide__submenu navigation__submenu">
-                        <li><a href="#">Algorithme 1</a></li>
-                        <li><a href="#">Algorithme 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button id="darkModeBtn" class="borderRadius" onclick="darkModeSwitch()">
-                dark mode
-            </button>
+            </div>
+
+            <div class="menu">
+                <div class="menu__btnContainer flexCenter">
+                    <div class="menu__btnContainer__hamburgerContainer borderRadius">
+                        <div id="showHideMenu" class="menu__btnContainer__hamburgerContainer__hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="menuId" class=" hide menu__container">
+                    <div id="generateNavList" class=" menu__container__bar flexColumn flexCenter">
+
+                    </div>
+                </div>
+            </div>
+            
         </nav>
         <main class="mainDisplay flexColumn flexCenter">
             <div class="main__title borderRadius">
-                <h1>hello word</h1>
+                <h1>JavaScript Numbers</h1>
             </div>
 
-            <div id="test">
-                <p>test</p>
-            </div>
-
-            <div class="example__container flexCenter flexColumn">
-                <div class="example__container__title borderRadius">
-                    <h2>Bulble sort</h2>
-                </div>
-                <div id="bubleSort">
-                    <form>
-                        <input type="text" id="champChiffre" />
-                        <button type="button" onclick="showData()">
-                            afficher data
-                        </button>
-                        <p>result: <span id="result"></span></p>
-                    </form>
-                    <button onclick="bubbleSort(bubbleArr)">trie</button>
-                </div>
-                <div  class="example__container__code hide borderRadius codeContainerJs">
-                    <div class="example__container__code__header">
-                        <h3 class="example__container__code__h3">Code</h3>
-                        <button class="example__container__code__btn borderRadius" >hide</button>
-                    </div>
-                    <pre>
-                     <code id="algorithmeBubeSortId"></code>
-                    </pre>
-                </div>
-                <div  class="showMore flexDisplay borderRadius" >
-                    <h3>afficher code</h3>
-                </div>
-            </div>
-
-            <div class="example__container flexCenter flexColumn">
-                <div class="example__container__title borderRadius">
-                    <h2>Bulble sort</h2>
-                </div>
-                <div id="bubleSort">
-                    <form>
-                        <input type="text" id="champChiffre" />
-                        <button type="button" onclick="showData()">
-                            afficher data
-                        </button>
-                        <p>result: <span id="result"></span></p>
-                    </form>
-                    <button onclick="bubbleSort(bubbleArr)">trie</button>
-                </div>
-                <div  class="example__container__code hide borderRadius codeContainerJs">
-                    <div class="example__container__code__header">
-                        <h3 class="example__container__code__h3">Code</h3>
-                        <button class="example__container__code__btn borderRadius" >hide</button>
-                    </div>
-                    <pre>
-                     <code id="algorithmeShowCodeId"></code>
-                    </pre>
-                </div>
-                <div  class="showMore flexDisplay borderRadius"  >
-                    <h3>afficher code</h3>
-                </div>
+            <div id="generateContentJs" class="generateContent flexColumn">
             </div>
 
         </main>
@@ -123,16 +74,22 @@
         </ul>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          loadAndDisplayCodeFromJson('algorithme');
-        });
+    <script type="module" >
+        import {generateCodeDynamically} from "/scripts/dynamicContent/generateCodeDynamically.js";
+        import {generateHtmlDynamically} from "/scripts/dynamicContent/generateHtmlDynamically.js";
+        const dataHtmlUrl = "/data/html/numbersDataCode.json";
+        const dataCodeUrl = "/data/code/numbersDataCode.Json";
+
+        generateHtmlDynamically(dataHtmlUrl, 'numbers').then(()=>{
+            generateCodeDynamically(dataCodeUrl, 'numbers');
+            showHideMenu();
+        })
       </script>
+      
 </body>
-<script src="script.js"></script>
-<script src="basicScript.js"></script>
-<script src="/scripts/fetch/fetchDataToShowCode.js"></script>
-<script src="./scripts/string.js"></script>
+<script src="/script.js"></script>
+<script  src="/basicScript.js"></script>
+<script src="/scripts/numbers/numbers.js"></script>
 
 
 </html>
