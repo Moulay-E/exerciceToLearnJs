@@ -47,3 +47,43 @@ function numberMaxSafeInteger() {
      Le max number en js : ${maxSafeInterger}. </br>
     La multiplication de safeMaxInteger par le nombre: ${result} `
 }
+function numberMinSafeInteger() {
+    const data = document.getElementById("numberMinSafeIntegerValueId").value;
+    const showResult = document.getElementById("numberMinSafeIntegerIdResult");
+    let minSafeInterger = Number.MIN_SAFE_INTEGER;
+    let result = (minSafeInterger * data);
+
+    showResult.innerHTML = `Le nombre donnés : ${data} . </br>
+     Le max number en js : ${minSafeInterger}. </br>
+    La multiplication de safeMaxInteger par le nombre: ${result} `
+}
+function numberPositiveInfinity() {
+    const data = document.getElementById("numberPositiveInfinityValueId").value;
+    const showResult = document.getElementById("numberPositiveInfinityIdResult");
+    let positiveInfinity = Number.POSITIVE_INFINITY;
+    let result = (positiveInfinity * data);
+
+    showResult.innerHTML = `Le nombre donnés : ${data} . </br>
+     Le max number en js : ${positiveInfinity}. </br>
+    La multiplication de positiveInfinity par le nombre: ${result} `
+}
+function numberNegativeInfinity() {
+    const data = document.getElementById("numberNegativeInfinityValueId").value;
+    const showResult = document.getElementById("numberNegativeInfinityIdResult");
+    let negativeInfinity = Number.NEGATIVE_INFINITY;
+    let result = (negativeInfinity * data);
+
+    showResult.innerHTML = `Le nombre donnés : ${data} . </br>
+     Le max number en js : ${negativeInfinity}. </br>
+    La multiplication de negativeInfinity par le nombre: ${result} `
+}
+function numberNaN() {
+    const data = document.getElementById("numberNaNValueId").value;
+    const showResult = document.getElementById("numberNaNIdResult");
+    let numberNan = Number.NaN;
+    let result = (numberNan * data);
+
+    showResult.innerHTML = `Le nombre donnés : ${data} . </br>
+     Le max number en js : ${numberNan}. </br>
+    La multiplication de NaN par le nombre: ${result} `
+}

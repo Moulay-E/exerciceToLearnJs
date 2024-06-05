@@ -132,8 +132,8 @@
         },
         {
             "title": "The numberMinValue Method",
-            "subtitle": "numberMinValue is a constant representing the largest possible number in JavaScript.Can only be used with: Number.",
-            "paragraph":"In this example with just add number to the numberMax_value, if the value is big enough it will be infinity.",
+            "subtitle": "Number.MIN_VALUE is a constant representing the lowest possible number in JavaScript.",
+            "paragraph":"In this example we substract it with your number.",
             "inputValueId": "numberMinValueValueId",
             "onclickFonctionToCall": "numberMinValue",
             "outputResultId": "numberMinValueIdResult",
@@ -141,12 +141,48 @@
         },
         {
             "title": "The numberMaxSafeInteger Method",
-            "subtitle": "numberMinValue is a constant representing the largest possible number in JavaScript.Can only be used with: Number.",
-            "paragraph":"In this example with just add number to the numberMax_value, if the value is big enough it will be infinity.",
+            "subtitle": "Number.MAX_SAFE_INTEGER represents the maximum safe integer in JavaScript. In this example we multiply it with your number.",
+            "paragraph":"Number.MAX_SAFE_INTEGER is (253 - 1).",
             "inputValueId": "numberMaxSafeIntegerValueId",
             "onclickFonctionToCall": "numberMaxSafeInteger",
             "outputResultId": "numberMaxSafeIntegerIdResult",
             "idToMarkCodeArea": "numberMaxSafeIntegerFunctionId"
+        },
+        {
+            "title": "The numberMinSafeInteger Method",
+            "subtitle": "Number.MIN_SAFE_INTEGER represents the minimum safe integer in JavaScript., (REMINDER : Number properties belong to the JavaScript Number Object)",
+            "paragraph":"Number.MIN_SAFE_INTEGER is -(253 - 1). In this example we multiply it with your number.",
+            "inputValueId": "numberMinSafeIntegerValueId",
+            "onclickFonctionToCall": "numberMinSafeInteger",
+            "outputResultId": "numberMinSafeIntegerIdResult",
+            "idToMarkCodeArea": "numberMinSafeIntegerFunctionId"
+        },
+        {
+            "title": "The numberPositiveInfinity Method",
+            "subtitle": "",
+            "paragraph":"In this example we multiply it with your number.(Obviously it's stay infinite)",
+            "inputValueId": "numberPositiveInfinityValueId",
+            "onclickFonctionToCall": "numberPositiveInfinity",
+            "outputResultId": "numberPositiveInfinityIdResult",
+            "idToMarkCodeArea": "numberPositiveInfinityFunctionId"
+        },
+        {
+            "title": "The numberNegativeInfinity Method",
+            "subtitle": "",
+            "paragraph":"In this example we multiply it with your number.(Obviously it's stay infinite)",
+            "inputValueId": "numberNegativeInfinityValueId",
+            "onclickFonctionToCall": "numberNegativeInfinity",
+            "outputResultId": "numberNegativeInfinityIdResult",
+            "idToMarkCodeArea": "numberNegativeInfinityFunctionId"
+        },
+        {
+            "title": "The numberNaN Method",
+            "subtitle": "NaN is a JavaScript reserved word for a number that is not a legal number.",
+            "paragraph":"Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number). In this example we multiply it with your number.(Obviously it's stay infinite)",
+            "inputValueId": "numberNaNValueId",
+            "onclickFonctionToCall": "numberNaN",
+            "outputResultId": "numberNaNIdResult",
+            "idToMarkCodeArea": "numberNaNFunctionId"
         }
     ]
 }
