@@ -41,7 +41,28 @@
     ],
     "numberProperties": [
         { 
-            "stringLastIndexOfFunctionId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
+            "numberEpsilonFunctionId": "// JavaScript code here\n\nfunction numberEpsilon() {\n    const data = document.getElementById(\"numberEpsilonValueId\").value;\n    const showResult = document.getElementById(\"numberEpsilonIdResult\");\n    let stringArr = data.split(\" \");\n    let result = 0;\n    let dataInitial = \"\";\n\n    stringArr.forEach((e) => {\n        // to prevent from adding other than a number as a stringArr\n        result = (isNaN(Number(e))) ? result : result + Math.abs(Number(e));\n        dataInitial += e + '|';\n    });\n    console.log(result);\n\n    let underEpsilon = (result - result) < Number.EPSILON;\n    showResult.innerHTML = `Les nombres de base : ${dataInitial} . </br>\n     Le total : ${result}. </br>\n    Les erreurs de calcul, le cas échéant, sont-elles plus petites que epsilon ? : ${underEpsilon}`;\n}"
+        },
+        { 
+            "numberMaxValueFunctionId": "// JavaScript code here\n\nfunction numberMaxValue() {\n    const data = document.getElementById(\"numberMaxValueValueId\").value;\n    const showResult = document.getElementById(\"numberMaxValueIdResult\");\n    let maxNumber = Number.MAX_VALUE;\n    let result = (data * maxNumber);\n\n    showResult.innerHTML = `Le nombre donné : ${data} . </br>\n     Le nombre maximal en JavaScript : ${maxNumber}. </br>\n    La multiplication des deux : ${result}`;\n}"
+        },
+        { 
+            "numberMinValueFunctionId": "// JavaScript code here\n\nfunction numberMinValue() {\n    const data = document.getElementById(\"numberMinValueValueId\").value;\n    const showResult = document.getElementById(\"numberMinValueIdResult\");\n    let minNumber = Number.MIN_VALUE;\n    let result = (minNumber - data);\n\n    showResult.innerHTML = `Le nombre donné : ${data} . </br>\n     Le nombre minimal en JavaScript : ${minNumber}. </br>\n    La soustraction de minValue par le nombre : ${result}`;\n}"
+        },
+        { 
+            "numberMaxSafeIntegerFunctionId": "// JavaScript code here\n\nfunction numberMaxSafeInteger() {\n    const data = document.getElementById(\"numberMaxSafeIntegerValueId\").value;\n    const showResult = document.getElementById(\"numberMaxSafeIntegerIdResult\");\n    let maxSafeInteger = Number.MAX_SAFE_INTEGER;\n    let result = (maxSafeInteger * data);\n\n    showResult.innerHTML = `Le nombre donné : ${data} . </br>\n     Le nombre maximal sûr en JavaScript : ${maxSafeInteger}. </br>\n    La multiplication de safeMaxInteger par le nombre : ${result}`;\n}"
+        },
+        { 
+            "numberMinSafeIntegerFunctionId": "// JavaScript code here\n\nfunction numberMinSafeInteger() {\n    const data = document.getElementById(\"numberMinSafeIntegerValueId\").value;\n    const showResult = document.getElementById(\"numberMinSafeIntegerIdResult\");\n    let minSafeInteger = Number.MIN_SAFE_INTEGER;\n    let result = (minSafeInteger * data);\n\n    showResult.innerHTML = `Le nombre donné : ${data} . </br>\n     Le nombre minimal sûr en JavaScript : ${minSafeInteger}. </br>\n    La multiplication de minSafeInteger par le nombre : ${result}`;\n}"
+        },
+        { 
+            "numberPositiveInfinityFunctionId": "// JavaScript code here\n\nfunction numberPositiveInfinity() {\n    const data = document.getElementById(\"numberPositiveInfinityValueId\").value;\n    const showResult = document.getElementById(\"numberPositiveInfinityIdResult\");\n    let positiveInfinity = Number.POSITIVE_INFINITY;\n    let result = (positiveInfinity * data);\n\n    showResult.innerHTML = `Le nombre donné : ${data} . </br>\n     Le nombre maximum en JavaScript : ${positiveInfinity}. </br>\n    La multiplication de positiveInfinity par le nombre : ${result}`;\n}"
+        },
+        { 
+            "numberNegativeInfinityFunctionId": "// JavaScript code here\n\nfunction numberNegativeInfinity() {\n    const data = document.getElementById(\"numberNegativeInfinityValueId\").value;\n    const showResult = document.getElementById(\"numberNegativeInfinityIdResult\");\n    let negativeInfinity = Number.NEGATIVE_INFINITY;\n    let result = (negativeInfinity * data);\n\n    showResult.innerHTML = `Le nombre donné : ${data} . </br>\n     Le nombre minimum en JavaScript : ${negativeInfinity}. </br>\n    La multiplication de negativeInfinity par le nombre : ${result}`;\n}"
+        },
+        { 
+            "numberNaNFunctionId": "// JavaScript code here\n\nfunction numberNaN() {\n    const data = document.getElementById(\"numberNaNValueId\").value;\n    const showResult = document.getElementById(\"numberNaNIdResult\");\n    let numberNaN = Number.NaN;\n    let result = (numberNaN * data);\n\n    showResult.innerHTML = `Le nombre donné : ${data} . </br>\n     La valeur \"Not-a-Number\" (NaN) en JavaScript : ${numberNaN}. </br>\n    La multiplication de NaN par le nombre : ${result}`;\n}"
         }
     ]
 }
