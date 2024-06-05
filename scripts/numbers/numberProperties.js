@@ -1,13 +1,19 @@
 function numberEpsilon() {
     const data = document.getElementById("numberEpsilonValueId").value;
     const showResult = document.getElementById("numberEpsilonIdResult");
-    let  dataToNumber = Number(data)
-    let result = (dataToNumber).toString();
-    let arr = Array.from(data);
-    console.log(arr, "arr")
+    let stringArr = data.split(" ");
+    let result = 0;
+    let dataInitial = "";
 
-    let comparaison = Math.abs((0.1 + 0.2) - 0.3) < Number.EPSILON;
-    showResult.innerHTML = `Le nombre convertie en string : ${comparaison} . </br>
-    Avant convertion : ${typeof Number(comparaison)}. </br>
-    Le type est : ${typeof comparaison} `
+    stringArr.forEach((e)=>{
+        // to prevent from adding other than a number as a stringArr
+        result = (isNaN(Number(e))) ? result: result + Math.abs(Number(e));
+        dataInitial += e + '|';
+    });
+    console.log(result);
+
+    let UnderEpsilon = (result - result)  < Number.EPSILON;
+    showResult.innerHTML = `Les nombres de base : ${dataInitial} . </br>
+     Le total : ${result}. </br>
+    Les erreur de calcul si il y en as sont elle plus petite que epsilon ? : ${UnderEpsilon} `
 }

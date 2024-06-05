@@ -114,8 +114,8 @@
     "numberProperties":[
         {
             "title": "The numberEpsilon Method",
-            "subtitle": " ",
-            "paragraph":"Number.EPSILON is the difference between the smallest floating point number greater than 1 and 1.",
+            "subtitle": "Number.EPSILON is the difference between the smallest floating point number greater than 1 and 1.",
+            "paragraph":"In this example try add 0.3 to 0.2,and substract the same number, this will be a infinidecimal rest. With EPSILON, we can calculate if it'smaller than him(usefful in complex calculation)",
             "inputValueId": "numberEpsilonValueId",
             "onclickFonctionToCall": "numberEpsilon",
             "outputResultId": "numberEpsilonIdResult",
