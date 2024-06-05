@@ -19,5 +19,101 @@
             "idToMarkCodeArea": "arrayNewFunctionId"
         }
 
+    ],
+    "arrayMethods":[
+        {
+            "title": "Array length",
+            "subtitle": "",
+            "paragraph":"The length property returns the length (size) of an array:",
+            "inputValueId": "arrMethodsLengthValueId",
+            "onclickFonctionToCall": "arrMethodsLength",
+            "outputResultId": "arrMethodsLengthIdResult",
+            "idToMarkCodeArea": "arrMethodsLengthFunctionId"
+        },
+        {
+            "title": "Array toString",
+            "subtitle": "",
+            "paragraph":"The JavaScript method toString() converts an array to a string of (comma separated) array values.",
+            "inputValueId": "arrMethodsToStringValueId",
+            "onclickFonctionToCall": "arrMethodsToString",
+            "outputResultId": "arrMethodsToStringIdResult",
+            "idToMarkCodeArea": "arrMethodsToStringFunctionId"
+        },
+        {
+            "title": "Array join",
+            "subtitle": "The join() method also joins all array elements into a string.",
+            "paragraph":"It behaves just like toString(), but in addition you can specify the separator. the arr: [cacao, banane, lait, vanille]",
+            "inputValueId": "arrMethodsJoinValueId",
+            "onclickFonctionToCall": "arrMethodsJoin",
+            "outputResultId": "arrMethodsJoinIdResult",
+            "idToMarkCodeArea": "arrMethodsJoinFunctionId"
+        },
+        {
+            "title": "Array pop",
+            "subtitle": "The join() method also joins all array elements into a string.",
+            "paragraph":"It behaves just like toString(), but in addition you can specify the separator. The arr: [cacao, banane, lait, vanille]",
+            "hiddenInput": "true",
+            "inputValueId": "arrMethodsPopValueId",
+            "onclickFonctionToCall": "arrMethodsPop",
+            "outputResultId": "arrMethodsPopIdResult",
+            "idToMarkCodeArea": "arrMethodsPopFunctionId"
+        },
+        {
+            "title": "Array push",
+            "subtitle": "",
+            "paragraph":"The push() method adds a new element to an array (at the end): The arr: [cacao, banane, lait, vanille]",
+            "inputValueId": "arrMethodsPushValueId",
+            "onclickFonctionToCall": "arrMethodsPush",
+            "outputResultId": "arrMethodsPushIdResult",
+            "idToMarkCodeArea": "arrMethodsPushFunctionId"
+        },
+        {
+            "title": "Array shift",
+            "subtitle": "",
+            "paragraph":"The shift() method removes the first array element and 'shifts' all other elements to a lower index. The arr: [cacao, banane, lait, vanille]",
+            "hiddenInput": "true",
+            "inputValueId": "arrMethodsShiftValueId",
+            "onclickFonctionToCall": "arrMethodsShift",
+            "outputResultId": "arrMethodsShiftIdResult",
+            "idToMarkCodeArea": "arrMethodsShiftFunctionId"
+        },
+        {
+            "title": "Array unshift",
+            "subtitle": "The unshift() method adds a new element to an array (at the beginning), and 'unshifts' older elements:",
+            "paragraph":"Type the element to add:",
+            "inputValueId": "arrMethodsUnShiftValueId",
+            "onclickFonctionToCall": "arrMethodsUnShift",
+            "outputResultId": "arrMethodsUnShiftIdResult",
+            "idToMarkCodeArea": "arrMethodsUnShiftFunctionId"
+        },
+        {
+            "title": "Array concat",
+            "subtitle": "The concat() method does not change the existing arrays. It always returns a new array and can take any number of arr arguments.",
+            "paragraph":"Type the element to add:",
+            "inputValueId": "arrMethodsConcatValueId",
+            "onclickFonctionToCall": "arrMethodsConcat",
+            "outputResultId": "arrMethodsConcatIdResult",
+            "idToMarkCodeArea": "arrMethodsConcatFunctionId"
+        },
+        {
+            "title": "Array copyWithin",
+            "subtitle": "The copyWithin() method copies array elements to another position in an array, can take as second argument the length of the copy.",
+            "paragraph":"Type the number(only one number) to chose to copy(contained in the arr length), the index of the copy is : 0. The arr: [cacao, banane, lait, vanille]:",
+            "inputValueId": "arrMethodscopyWithinValueId",
+            "onclickFonctionToCall": "arrMethodscopyWithin",
+            "outputResultId": "arrMethodscopyWithinIdResult",
+            "idToMarkCodeArea": "arrMethodscopyWithinFunctionId"
+        },
+        {
+            "title": "Array Array flat",
+            "subtitle": "The copyWithin() method copies array elements to another position in an array, can take as second argument the length of the copy.",
+            "paragraph":"Type the number(only one number) to chose to copy(contained in the arr length), the index of the copy is : 0. The arr: [cacao, banane, lait, vanille]:",
+            "hiddenInput": "true",
+            "inputValueId": "arrMethodscopyWithinValueId",
+            "onclickFonctionToCall": "arrMethodscopyWithin",
+            "outputResultId": "arrMethodscopyWithinIdResult",
+            "idToMarkCodeArea": "arrMethodscopyWithinFunctionId"
+        }
+
     ]
 }
