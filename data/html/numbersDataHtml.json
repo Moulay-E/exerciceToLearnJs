@@ -1,13 +1,13 @@
 {
     "numbers":[
         {
-            "title": "String Length",
-            "subtitle": "",
-            "paragraph":"The length property returns the length of a string:",
-            "inputValueId": "stringSize",
-            "onclickFonctionToCall": "stringLength",
-            "outputResultId": "stringSizeResult",
-            "idToMarkCodeArea": "lengthFunctionId"
+            "title": "The numberNaN Method",
+            "subtitle": "NaN is a JavaScript reserved word for a number that is not a legal number.",
+            "paragraph":"Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number). In this example we multiply it with your number.(Obviously it's stay infinite)",
+            "inputValueId": "numberNaNValueId",
+            "onclickFonctionToCall": "numberNaN",
+            "outputResultId": "numberNaNIdResult",
+            "idToMarkCodeArea": "numberNaNFunctionId"
         }
     ],
     "numberMethods":[

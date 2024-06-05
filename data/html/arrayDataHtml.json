@@ -1,13 +1,23 @@
 {
     "array":[
         {
-            "title": "String Length",
+            "title": "Create a array",
             "subtitle": "",
-            "paragraph":"The length property returns the length of a string:",
-            "inputValueId": "stringSize",
-            "onclickFonctionToCall": "stringLength",
-            "outputResultId": "stringSizeResult",
-            "idToMarkCodeArea": "lengthFunctionId"
+            "paragraph":"An array is a special variable, which can hold more than one value:",
+            "inputValueId": "arrayCreateValueId",
+            "onclickFonctionToCall": "arrayCreate",
+            "outputResultId": "arrayCreateIdResult",
+            "idToMarkCodeArea": "arrayCreateFunctionId"
+        },
+        {
+            "title": "Using the JavaScript Keyword new",
+            "subtitle": "",
+            "paragraph":"The following example also creates an Array with the keyword new, and assigns values to it:",
+            "inputValueId": "arrayNewValueId",
+            "onclickFonctionToCall": "arrarrayNewayCreate",
+            "outputResultId": "arrayNewIdResult",
+            "idToMarkCodeArea": "arrayNewFunctionId"
         }
+
     ]
 }

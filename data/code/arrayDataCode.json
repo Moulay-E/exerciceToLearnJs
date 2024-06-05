@@ -1,10 +1,7 @@
 {
     "array": [
         { 
-            "stringLastIndexOfFunctionId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
-        },
-        { 
-            "stringLastIndexOfFunctionId": "// LJavaScript code here\n\nfunction showData(e){\n    let l = document.getElementById(\"champChiffre\").value.split(\",\");\n    let o = [];\n    console.log(l);\n    for(let e = 0; e < l.length; e++){\n        o.push(parseFloat(l[e]));\n    }\n    console.log(o, \"before\");\n    bubbleSort(o);\n    result.innerHTML = o;\n}"
+            "createArrFunctionId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
         }
     ]
 }
