@@ -15,6 +15,10 @@
         {
             "title": "Number Properties",
             "link": "/pages/numbers/numberProperties.html"
+        },
+        {
+            "title": "Array",
+            "link": "/pages/arrays/array.html"
         }
     ]
 }

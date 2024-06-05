@@ -1,0 +1,13 @@
+{
+    "array":[
+        {
+            "title": "String Length",
+            "subtitle": "",
+            "paragraph":"The length property returns the length of a string:",
+            "inputValueId": "stringSize",
+            "onclickFonctionToCall": "stringLength",
+            "outputResultId": "stringSizeResult",
+            "idToMarkCodeArea": "lengthFunctionId"
+        }
+    ]
+}
