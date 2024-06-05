@@ -120,6 +120,33 @@
             "onclickFonctionToCall": "numberEpsilon",
             "outputResultId": "numberEpsilonIdResult",
             "idToMarkCodeArea": "numberEpsilonFunctionId"
+        },
+        {
+            "title": "The numberMaxValue Method",
+            "subtitle": "Number.MAX_VALUE is a constant representing the largest possible number in JavaScript.Can only be used with: Number.",
+            "paragraph":"In this example with just add number to the numberMax_value, if the value is big enough it will be infinity.",
+            "inputValueId": "numberMaxValueValueId",
+            "onclickFonctionToCall": "numberMaxValue",
+            "outputResultId": "numberMaxValueIdResult",
+            "idToMarkCodeArea": "numberMaxValueFunctionId"
+        },
+        {
+            "title": "The numberMinValue Method",
+            "subtitle": "numberMinValue is a constant representing the largest possible number in JavaScript.Can only be used with: Number.",
+            "paragraph":"In this example with just add number to the numberMax_value, if the value is big enough it will be infinity.",
+            "inputValueId": "numberMinValueValueId",
+            "onclickFonctionToCall": "numberMinValue",
+            "outputResultId": "numberMinValueIdResult",
+            "idToMarkCodeArea": "numberMinValueFunctionId"
+        },
+        {
+            "title": "The numberMaxSafeInteger Method",
+            "subtitle": "numberMinValue is a constant representing the largest possible number in JavaScript.Can only be used with: Number.",
+            "paragraph":"In this example with just add number to the numberMax_value, if the value is big enough it will be infinity.",
+            "inputValueId": "numberMaxSafeIntegerValueId",
+            "onclickFonctionToCall": "numberMaxSafeInteger",
+            "outputResultId": "numberMaxSafeIntegerIdResult",
+            "idToMarkCodeArea": "numberMaxSafeIntegerFunctionId"
         }
     ]
 }
