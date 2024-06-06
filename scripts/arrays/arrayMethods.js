@@ -104,12 +104,45 @@ function arrMethodscopyWithin() {
 function arrMethodArrayflat() {
     const data = document.getElementById("arrMethodArrayflatValueId").value;
     const showResult = document.getElementById("arrMethodArrayflatIdResult");
+    let arr = ["cacao", ["banane", "lait"], "vanille"];
+    let arrFlat =  arr.flat();
+
+    showResult.innerHTML = `Le tableau de base : ["cacao", ["banane", "lait"], "vanille"] . </br>
+     Le tableau une fois unifier a un niveau: [${arrFlat}]. `
+}
+function arrMethodsSplice() {
+    const data = document.getElementById("arrMethodsSpliceValueId").value;
+    const showResult = document.getElementById("arrMethodsSpliceIdResult");
     let arr = ["cacao", "banane", "lait", "vanille"];
-    let errorMsg = "error, we need a number, inferior of the array length.";
-    let dataIsNumber = (isNaN(Number(data)))? errorMsg : (Number(data));
-    let arrCopyWithin = (dataIsNumber < arr.length)? (arr.copyWithin(0,dataIsNumber)) : errorMsg;
+    let arrCopy = Array.from(arr);
+    let arrSplice =  arr.splice(2, 2, data);
+
+    showResult.innerHTML = `Le tableau de base : [${arrCopy}] . </br>
+    Le tableau modifier : [${arr}] . </br>
+     Les élément supprimer: ${arrSplice}. `
+}
+function arrMethodsToSpliced() {
+    const data = document.getElementById("arrMethodsToSplicedValueId").value;
+    const showResult = document.getElementById("arrMethodsToSplicedIdResult");
+    let arr = ["cacao", "banane", "lait", "vanille"];
+    let arrSplice =  arr.toSpliced(2, 2, data);
 
     showResult.innerHTML = `Le tableau de base : [${arr}] . </br>
-     Vôtre tableau: ${arrCopyWithin}. </br>
-     Les tableau concatener : [${arrCopyWithin}] `
+    Le tableau modifier : [${arrSplice}] . `
+}
+function arrMethodsSlice() {
+    const data = document.getElementById("arrMethodsSliceValueId").value;
+    const showResult = document.getElementById("arrMethodsSliceIdResult");
+    let arr = ["cacao", "banane", "lait", "vanille"];
+    let errorMsg = "Please type a number, under the max length of the array.";
+    let dataNumber = Number(data);
+    let arrSplice;
+    if(dataNumber && dataNumber <= arr.length-1){
+         arrSplice =  arr.slice(dataNumber);
+    }
+    else{
+       arrSplice = errorMsg;
+    }
+    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>
+    Le tableau modifier : [${arrSplice}] . `
 }

@@ -106,13 +106,40 @@
         },
         {
             "title": "Array Array flat",
-            "subtitle": "The copyWithin() method copies array elements to another position in an array, can take as second argument the length of the copy.",
+            "subtitle": "The flat() method creates a new array with sub-array elements concatenated to a specified depth.(change multiple arr into one, at one level)",
             "paragraph":"Type the number(only one number) to chose to copy(contained in the arr length), the index of the copy is : 0. The arr: [cacao, banane, lait, vanille]:",
             "hiddenInput": "true",
-            "inputValueId": "arrMethodscopyWithinValueId",
-            "onclickFonctionToCall": "arrMethodscopyWithin",
-            "outputResultId": "arrMethodscopyWithinIdResult",
-            "idToMarkCodeArea": "arrMethodscopyWithinFunctionId"
+            "inputValueId": "arrMethodArrayflatValueId",
+            "onclickFonctionToCall": "arrMethodArrayflat",
+            "outputResultId": "arrMethodArrayflatIdResult",
+            "idToMarkCodeArea": "arrMethodArrayflatFunctionId"
+        },
+        {
+            "title": "Array Array splice",
+            "subtitle": "The splice() method can be used to add new items to an array or remove them (modify the original array):",
+            "paragraph":"The first parameter (2) defines the position where new elements should be added and the second how many element to remove. The rest of parameter define the element to add, if empty it's just remove element. </br> Type the element to add:",
+            "inputValueId": "arrMethodsSpliceValueId",
+            "onclickFonctionToCall": "arrMethodsSplice",
+            "outputResultId": "arrMethodsSpliceIdResult",
+            "idToMarkCodeArea": "arrMethodsSpliceFunctionId"
+        },
+        {
+            "title": "Array Array toSpliced",
+            "subtitle": "ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.",
+            "paragraph":"Same ad splice() but create a new array, and don't save the data removed like splice(). Keeping the original array unchanged",
+            "inputValueId": "arrMethodsToSplicedValueId",
+            "onclickFonctionToCall": "arrMethodsToSpliced",
+            "outputResultId": "arrMethodsToSplicedIdResult",
+            "idToMarkCodeArea": "arrMethodsToSplicedFunctionId"
+        },
+        {
+            "title": "Array Array Array slice",
+            "subtitle": "The slice() method slices out a piece of an array into a new array:",
+            "paragraph":"The slice() method can take two arguments, the start argument, and up to (but not including) the end argument.</br> The arr: [cacao, banane, lait, vanille]:",
+            "inputValueId": "arrMethodsSliceValueId",
+            "onclickFonctionToCall": "arrMethodsSlice",
+            "outputResultId": "arrMethodsSliceIdResult",
+            "idToMarkCodeArea": "arrMethodsSliceFunctionId"
         }
 
     ]
