@@ -7,8 +7,8 @@
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
-    <script type="module" src="/scripts/dynamicContent/generateCodeDynamically.js"></script>
-    <script type="module" src="/scripts/dynamicContent/generateHtmlDynamically.js"></script>
+    <script type="module" src="/scripts/components/codeToHtml.js"></script>
+    <script type="module" src="/scripts/components/articles.js"></script>
 </head>
 
 <body class="baseCss"  >
@@ -42,7 +42,7 @@
                 </div>
                 
                 <div id="menuId" class=" hide menu__container">
-                    <div id="generateNavList" class=" menu__container__bar flexColumn flexCenter">
+                    <div id="navList" class=" menu__container__bar flexColumn flexCenter">
 
                     </div>
                 </div>
@@ -75,13 +75,13 @@
     </footer>
 
     <script type="module" >
-        import {generateCodeDynamically} from "/scripts/dynamicContent/generateCodeDynamically.js";
-        import {generateHtmlDynamically} from "/scripts/dynamicContent/generateHtmlDynamically.js";
+        import {codeToHtml} from "/scripts/components/codeToHtml.js";
+        import {articles} from "/scripts/components/articles.js";
         const dataHtmlUrl = "/data/html/numbersDataHtml.json";
         const dataCodeUrl = "/data/code/numbersDataCode.Json";
 
-        generateHtmlDynamically(dataHtmlUrl, 'numbers').then(()=>{
-            generateCodeDynamically(dataCodeUrl, 'numbers');
+        articles(dataHtmlUrl, 'numbers').then(()=>{
+            codeToHtml(dataCodeUrl, 'numbers');
             showHideMenu();
         })
       </script>

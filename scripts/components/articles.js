@@ -1,7 +1,7 @@
 // import { ShowCodeAndHideHimself } from "../../basicScript.js";
 import { fetchData } from "../fetch/fetchData.js";
-import { ShowCodeAndHideHimself, HideAndShowBtn } from "./generateBtnDynamically.js";
-export async function  generateHtmlDynamically(arrLocation, arrayName){
+import { ShowCodeAndHideHimself, HideAndShowBtn } from "./btnCallFonction.js";
+export async function  articles(arrLocation, arrayName){
     // const dataHtmlUrl = "/data/dataToGenerateHtml.json";
     const dataHtmlUrl = arrLocation;
     try {
@@ -12,7 +12,7 @@ export async function  generateHtmlDynamically(arrLocation, arrayName){
                 data[arrayName].forEach(item =>{
                     // console.log(item);
                     result += 
-                        `<div class="example__container flexCenter flexColumn">
+                        `<article class="example__container flexCenter flexColumn">
                             <div class="example__container__title borderRadius">
                                 <h2>${item.title}</h2>
                             </div>
@@ -46,7 +46,7 @@ export async function  generateHtmlDynamically(arrLocation, arrayName){
                             <div  class="showMore flexDisplay borderRadius"  >
                                 <h3>Show code</h3>
                             </div>
-                        </div> `
+                        </article> `
                 ;
                 
             })
