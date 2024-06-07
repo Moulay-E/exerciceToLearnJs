@@ -63,24 +63,16 @@
         </main>
     </div>
 
-    <footer>
-        <ul class="footer__ul">
-            <li>
-                <a href="#">github</a>
-            </li>
-            <li>
-                <a href="#">github</a>
-            </li>
-            <li>
-                <a href="#">github</a>
-            </li>
-        </ul>
+    <footer id="footer">
+  
     </footer>
 
     <script type="module" >
         import {codeToHtml} from "/scripts/components/codeToHtml.js";
         import {articles} from "/scripts/components/articles.js";
         import {navList} from "/scripts/components/navList.js";
+        import {footer} from "/scripts/components/footer.js";
+
 
         const dataHtmlUrl = "/data/html/arrayDataHtml.json";
         const dataCodeUrl = "/data/code/arrayDataCode.json";
@@ -89,6 +81,7 @@
             codeToHtml(dataCodeUrl, 'array');
             showHideMenu();
             navList();
+            footer();
         })
       </script>
       
@@ -96,6 +89,8 @@
 <script src="/script.js"></script>
 <script  src="/basicScript.js"></script>
 <script src="/scripts/arrays/array.js"></script>
+<script type="module" src="/scripts/components/footer.js"></script>
+
 
 
 </html>
