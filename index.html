@@ -7,9 +7,6 @@
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
-    <script type="module" src="/scripts/components/codeToHtml.js"></script>
-    <script type="module" src="/scripts/components/articles.js"></script>
-    <script type="module" src="/scripts/components/navList.js"></script>
 </head>
 
 <body class="baseCss"  >
@@ -61,24 +58,14 @@
         </main>
     </div>
 
-    <footer>
-        <ul class="footer__ul">
-            <li>
-                <a href="#">github</a>
-            </li>
-            <li>
-                <a href="#">github</a>
-            </li>
-            <li>
-                <a href="#">github</a>
-            </li>
-        </ul>
+    <footer id="footer">
     </footer>
 
     <script type="module" >
         import {codeToHtml} from "/scripts/components/codeToHtml.js";
         import {articles} from "/scripts/components/articles.js";
         import {navList} from "/scripts/components/navList.js";
+        import {footer} from "/scripts/components/footer.js";
 
         const dataHtmlUrl = "/data/html/numbersDataCode.json";
         const dataCodeUrl = "/data/code/numbersDataCode.Json";
@@ -89,6 +76,7 @@
         // })
         showHideMenu();
         navList();
+        footer();
       </script>
       
 </body>
