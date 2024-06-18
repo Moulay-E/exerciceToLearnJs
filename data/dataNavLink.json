@@ -23,6 +23,10 @@
         {
             "title": "Array Methods",
             "link": "/pages/arrays/arrayMethods.html"
+        },
+        {
+            "title": "Array Search",
+            "link": "/pages/arrays/arraySearch.html"
         }
     ]
 }

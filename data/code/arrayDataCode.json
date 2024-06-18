@@ -6,6 +6,50 @@
     ],
     "arrayMethods": [
         { 
+            "arrMethodsLengthFunctionId": "// JavaScript code here\n\nfunction arrMethodsLength() {\n    const data = document.getElementById(\"arrMethodsLengthValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsLengthIdResult\");\n    let stringToArr = data.split(\" \");\n    let arrLength = stringToArr.length;\n\n    showResult.innerHTML = `Le tableau créé à partir de vos données : [${stringToArr}] . </br>\n     Sa longueur : ${arrLength}. `;\n}"
+        },
+        { 
+            "arrMethodsToStringFunctionId": "// JavaScript code here\n\nfunction arrMethodsToString() {\n    const data = document.getElementById(\"arrMethodsToStringValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsToStringIdResult\");\n    let stringToArr = data.split(\" \");\n    let arrString =  stringToArr.toString();\n\n    showResult.innerHTML = `Le tableau créé à partir de vos données : [${stringToArr}] . </br>\n     Converti en string : ${arrString}. `;\n}"
+        },
+        { 
+            "arrMethodsArrayAtFunctionId": "// JavaScript code here\n\nfunction arrMethodsArrayAt() {\n    const data = document.getElementById(\"arrMethodsArrayAtValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsArrayAtIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let errorMsg = \"error you need a number\";\n    let validNumber = (isNaN((Number(data))) ? errorMsg : arr.at((Number(data))));\n    let arrAt = validNumber;\n\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n     Votre sélection : ${arrAt}. `;\n}"
+        },
+        { 
+            "arrMethodsJoinFunctionId": "// JavaScript code here\n\nfunction arrMethodsJoin() {\n    const data = document.getElementById(\"arrMethodsJoinValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsJoinIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let arrJoin =  arr.join(data);\n\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n     Le tableau coller avec ce que vous avez selecitonner : ${arrJoin}. `;\n}"
+        },
+        { 
+            "arrMethodsPopFunctionId": "// JavaScript code here\n\nfunction arrMethodsPop() {\n    const data = document.getElementById(\"arrMethodsPopValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsPopIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let arrPop =  arr.pop();\n\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n     Le dernier élément supprimé : ${arrPop}. </br>\n     Le tableau après suppression du dernier élément : [${arr}] `;\n}"
+        },
+        { 
+            "arrMethodsPushFunctionId": "function arrMethodsPush() {\n    const data = document.getElementById(\"arrMethodsPushValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsPushIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let arrPush =  arr.push(data);\n\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n     La place dans le tableau du dernier élément ajouté : ${arrPush}. </br>\n     Le tableau avec l'élément ajouté : [${arr}] `;\n}"
+        },
+        { 
+            "arrMethodsShiftFunctionId": "// JavaScript code here\n\nfunction arrMethodsPop() {\n    const data = document.getElementById(\"arrMethodsShiftValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsShiftIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let arrCopy = [...arr];\n    let arrShift =  arr.shift();\n\n    showResult.innerHTML = `Le tableau de base : [${arrCopy}] . </br>\n     L'élément supprimé : ${arrShift}. </br>\n     Le tableau avec l'élément supprimé : [${arr}] `\n}"
+        },
+        { 
+            "arrMethodsUnShiftFunctionId": "// JavaScript code here\n\nfunction arrMethodsUnShift() {\n    const data = document.getElementById(\"arrMethodsUnShiftValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsUnShiftIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let arrCopy = [...arr];\n    let arrUnshift =  arr.unshift(data);\n\n    showResult.innerHTML = `Le tableau de base : [${arrCopy}] . </br>\n     Unshift retourne la taille du nouveau tableau: ${arrUnshift}. </br>\n     Le tableau avec l'élément ajouté : [${arr}] `\n}"
+        },
+        {
+            "arrMethodsConcatFunctionId": "// JavaScript code here\n\nfunction arrMethodsConcat() {\n    const data = document.getElementById(\"arrMethodsConcatValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsConcatIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let dataArr = data.split(\" \");\n    let arrConcat =  arr.concat(dataArr);\n\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n     Vôtre tableau: ${dataArr}. </br>\n     Les tableaux concaténés : [${arrConcat}] `\n}"
+        },
+        {
+            "arrMethodscopyWithinFunctionId": "// JavaScript code here\n\nfunction arrMethodscopyWithin() {\n    const data = document.getElementById(\"arrMethodscopyWithinValueId\").value;\n    const showResult = document.getElementById(\"arrMethodscopyWithinIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let errorMsg = \"error, we need a number, inferior of the array length.\";\n    let dataIsNumber = (isNaN(Number(data)))? errorMsg : (Number(data));\n    let arrCopyWithin = (dataIsNumber < arr.length)? (arr.copyWithin(0,dataIsNumber)) : errorMsg;\n\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n     Vôtre tableau: ${arrCopyWithin}. </br>\n     Les tableaux concaténés : [${arrCopyWithin}] `\n}"
+        },
+        {
+            "arrMethodArrayflatFunctionId": "// JavaScript code here\n\nfunction arrMethodArrayflat() {\n    const data = document.getElementById(\"arrMethodArrayflatValueId\").value;\n    const showResult = document.getElementById(\"arrMethodArrayflatIdResult\");\n    let arr = [\"cacao\", [\"banane\", \"lait\"], \"vanille\"];\n    let arrFlat =  arr.flat();\n\n    showResult.innerHTML = `Le tableau de base : [\"cacao\", [\"banane\", \"lait\"], \"vanille\"] . </br>\n     Le tableau une fois unifié à un niveau: [${arrFlat}]. `\n}"
+        },
+        {
+            "arrMethodsSpliceFunctionId": "// JavaScript code here\n\nfunction arrMethodsSplice() {\n    const data = document.getElementById(\"arrMethodsSpliceValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsSpliceIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let arrCopy = Array.from(arr);\n    let arrSplice =  arr.splice(2, 2, data);\n\n    showResult.innerHTML = `Le tableau de base : [${arrCopy}] . </br>\n    Le tableau modifié : [${arr}] . </br>\n     Les éléments supprimés: ${arrSplice}. `\n}"
+        },
+        {
+            "arrMethodsToSplicedFunctionId": "// JavaScript code here\n\nfunction arrMethodsToSpliced() {\n    const data = document.getElementById(\"arrMethodsToSplicedValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsToSplicedIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let arrSplice =  arr.toSpliced(2, 2, data);\n\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n    Le tableau modifié : [${arrSplice}] . `\n}"
+        },
+        {
+            "arrMethodsSliceFunctionId": "// JavaScript code here\n\nfunction arrMethodsSlice() {\n    const data = document.getElementById(\"arrMethodsSliceValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsSliceIdResult\");\n    let arr = [\"cacao\", \"banane\", \"lait\", \"vanille\"];\n    let errorMsg = \"Please type a number, under the max length of the array.\";\n    let dataNumber = Number(data);\n    let arrSlice;\n    if (dataNumber && dataNumber <= arr.length - 1) {\n        arrSlice = arr.slice(dataNumber);\n    }\n    else {\n        arrSlice = errorMsg;\n    }\n    showResult.innerHTML = `Le tableau de base : [${arr}] . </br>\n    Le tableau modifié : [${arrSlice}] . `;\n}"
+        }
+    ],
+    "arraySearchMethods": [
+        { 
             "createArrFunctionId": "// JavaScript code here\nfunction bubbleSort(arr){\n    const n = arr.length;\n    let swapped;\n    do {\n        swapped = false; \n        let count = 0;\n        for(let i = 0; i < n-1 ; i++){\n            if(arr[i] > arr[i +1] ){\n                [arr[i], arr[i + 1] ] = [ arr[i+1], arr[i] ];\n                swapped = true;\n                console.log(swapped);\n                console.log(arr[i]);\n            }\n            count++;\n        }\n        console.log(count, \"count\");\n    } while(swapped);\n    console.log(arr, \"arr\");\n    return arr;\n}"
         }
     ]

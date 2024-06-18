@@ -142,5 +142,16 @@
             "idToMarkCodeArea": "arrMethodsSliceFunctionId"
         }
 
+    ],
+    "arraySearchMethods": [
+        {
+            "title": "Array Array Array slice",
+            "subtitle": "The slice() method slices out a piece of an array into a new array:",
+            "paragraph":"The slice() method can take two arguments, the start argument, and up to (but not including) the end argument.</br> The arr: [cacao, banane, lait, vanille]:",
+            "inputValueId": "arrMethodsSliceValueId",
+            "onclickFonctionToCall": "arrMethodsSlice",
+            "outputResultId": "arrMethodsSliceIdResult",
+            "idToMarkCodeArea": "arrMethodsSliceFunctionId"
+        }
     ]
 }
