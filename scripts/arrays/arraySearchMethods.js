@@ -44,13 +44,13 @@ function arrMethodsFind() {
     function moreThanData(value, index, array) {
         return value > data;
       }
-    // search = arr.find(data);
     if(Number(data)){
         search = arr.find(moreThanData);
-        result = "The element is present in the table";
+        result = `The number you have type : ${data}. </br>
+                  The number greater than that : ${search} `;
     }
     else {
         result = "The element is not present in the table";
     }
-    showResult.innerHTML = ` ${result} . `
+    showResult.innerHTML = ` ${result}. `
 }
