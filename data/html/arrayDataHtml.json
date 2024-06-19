@@ -145,13 +145,22 @@
     ],
     "arraySearchMethods": [
         {
-            "title": "Array Array Array slice",
-            "subtitle": "The slice() method slices out a piece of an array into a new array:",
-            "paragraph":"The slice() method can take two arguments, the start argument, and up to (but not including) the end argument.</br> The arr: [cacao, banane, lait, vanille]:",
-            "inputValueId": "arrMethodsSliceValueId",
-            "onclickFonctionToCall": "arrMethodsSlice",
-            "outputResultId": "arrMethodsSliceIdResult",
-            "idToMarkCodeArea": "arrMethodsSliceFunctionId"
+            "title": "Array indexOf",
+            "subtitle": "The indexOf() method searches an array for an element value and returns its position.",
+            "paragraph":"Type the element you want to find the index in this array: [Apple, Orange, Apple, Mango]. </br> (Good to know: array.indexOf(item, start)).",
+            "inputValueId": "arrMethodsindexOfValueId",
+            "onclickFonctionToCall": "arrMethodsindexOf",
+            "outputResultId": "arrMethodsindexOfIdResult",
+            "idToMarkCodeArea": "arrMethodsindexOfFunctionId"
+        },
+        {
+            "title": "Array lastIndexOf",
+            "subtitle": "Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.",
+            "paragraph":"Type the element you want to find the index in this array: [Apple, Orange, Apple, Mango, Orange]. </br> (Good to know: array.lastIndexOf(item, start)).",
+            "inputValueId": "arrMethodslastIndexOfValueId",
+            "onclickFonctionToCall": "arrMethodslastIndexOf",
+            "outputResultId": "arrMethodslastIndexOfIdResult",
+            "idToMarkCodeArea": "arrMethodslastIndexOfFunctionId"
         }
     ]
 }
