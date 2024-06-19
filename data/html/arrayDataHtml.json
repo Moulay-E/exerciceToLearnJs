@@ -165,11 +165,38 @@
         {
             "title": "Array find",
             "subtitle": "The find() method returns the value of the first array element that passes a test function.",
-            "paragraph":"in this example we search for all numbers greater than the specified number. This is the array: [4, 9, 16, 25, 29]. </br> (Good to know: this function can take 3 argument(value, index, array)). ",
+            "paragraph":"In this example we search for a numbers greater than the specified number. This is the array: [4, 9, 16, 25, 29]. </br> (Good to know: this function can take 3 argument(value, index, array)). ",
             "inputValueId": "arrMethodsFindValueId",
             "onclickFonctionToCall": "arrMethodsFind",
             "outputResultId": "arrMethodsFindIdResult",
             "idToMarkCodeArea": "arrMethodsFindFunctionId"
+        },
+        {
+            "title": "Array findIndex",
+            "subtitle": "The findIndex() method returns the index of the first array element that passes a test function.",
+            "paragraph":"In this example we search for index of a numbers greater than the specified number. This is the array: [4, 9, 16, 25, 29]. </br> (Good to know: this function can take 3 argument(value, index, array)). ",
+            "inputValueId": "arrMethodsfindIndexValueId",
+            "onclickFonctionToCall": "arrMethodsfindIndex",
+            "outputResultId": "arrMethodsfindIndexIdResult",
+            "idToMarkCodeArea": "arrMethodsfindIndexFunctionId"
+        },
+        {
+            "title": "Array indLast",
+            "subtitle": "ES2023 added the findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.",
+            "paragraph":"In this example we search a numbers greater than the specified number. This is the array: [27, 28, 30, 40, 42, 35, 30]. </br> (Good to know: this function can take 3 argument(value, index, array)). ",
+            "inputValueId": "arrMethodsindLastValueId",
+            "onclickFonctionToCall": "arrMethodsindLast",
+            "outputResultId": "arrMethodsindLastIdResult",
+            "idToMarkCodeArea": "arrMethodsindLastFunctionId"
+        },
+        {
+            "title": "Array indLastIndex",
+            "subtitle": "ES2023 added the findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.",
+            "paragraph":"In this example we search for index of a numbers greater than the specified number. This is the array: [27, 28, 30, 40, 42, 35, 30]. </br> (Good to know: this function can take 3 argument(value, index, array)). ",
+            "inputValueId": "arrMethodsindLastIndexValueId",
+            "onclickFonctionToCall": "arrMethodsindLastIndex",
+            "outputResultId": "arrMethodsindLastIndexIdResult",
+            "idToMarkCodeArea": "arrMethodsindLastIndexFunctionId"
         }
     ]
 }
