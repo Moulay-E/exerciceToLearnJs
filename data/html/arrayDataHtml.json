@@ -207,5 +207,16 @@
             "outputResultId": "arrMethodsindLastIndexIdResult",
             "idToMarkCodeArea": "arrMethodsindLastIndexFunctionId"
         }
+    ],
+    "arraySortMethods": [
+        {
+            "title": "Array indexOf",
+            "subtitle": "The indexOf() method searches an array for an element value and returns its position.",
+            "paragraph":"Type the element you want to find the index in this array: [Apple, Orange, Apple, Mango]. </br> (Good to know: array.indexOf(item, start)).",
+            "inputValueId": "arrMethodsIndexOfValueId",
+            "onclickFonctionToCall": "arrMethodsIndexOf",
+            "outputResultId": "arrMethodsIndexOfIdResult",
+            "idToMarkCodeArea": "arrMethodsIndexOfFunctionId"
+        }
     ]
 }

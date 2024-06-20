@@ -69,5 +69,10 @@
         {
             "arrMethodsindLastIndexFunctionId": "// JavaScript code here\n\nfunction arrMethodsindLastIndex() {\n    const data = document.getElementById(\"arrMethodsindLastIndexValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsindLastIndexIdResult\");\n    let arr =  [27, 28, 30, 40, 42, 35, 30];\n    let result = \"\";\n    let search;\n   \n    if(Number(data)){\n        search = arr.findLastIndex(x => x > data);\n        result = `The number you have typed: ${data}. </br>\n                  The index of number greater than that from the end: ${search} `;\n    }\n    else {\n        result = \"The element is not present in the table\";\n    }\n    showResult.innerHTML = ` ${result}. `\n}"
         }
+    ],
+    "arraySortMethods": [
+        { 
+            "arrMethodsIndexOfFunctionId": "// JavaScript code here\n\nfunction arrMethodsindexOf() {\n    const data = document.getElementById(\"arrMethodsindexOfValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsindexOfIdResult\");\n    let arr = [\"Apple\", \"Orange\", \"Apple\", \"Mango\"];\n    \n    let result = arr.indexOf(data);\n    if(result === -1){\n        result = \"the element is not present in the table\"\n    }\n    showResult.innerHTML = `The index of the element is : ${result} . `\n}"        
+        }
     ]
 }

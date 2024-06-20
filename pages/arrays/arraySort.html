@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Interactive JavaScript Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+</head>
+
+<body class="baseCss"  >
+
+    <div class="baseCss flexColumn" id="darkModeSwitchId">
+        <nav class="navigation flexRow flexCenter">
+            <div class="navigation__button">
+                <div class="flexCenter">
+                    <a href="/index.html" >  
+                        <img class="navigation__home__img" src="/assets/home-pink-svg.svg" alt="home"/>
+                    </a> 
+                </div>
+                <div class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
+                    <img class="navigation__darkmode__img" src="/assets/night-pink-mode-svg.svg" alt="dark-mode" />
+                </div>
+
+            </div>
+
+            <div class="menu">
+                <div class="menu__btnContainer flexCenter">
+                    <div class="menu__btnContainer__hamburgerContainer borderRadius">
+                        <div id="showHideMenu" class="menu__btnContainer__hamburgerContainer__hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="menuId" class=" hide menu__container">
+                    <div id="navList" class=" menu__container__bar flexColumn flexCenter">
+
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        <main class="mainDisplay flexColumn flexCenter">
+            <div class="main__title borderRadius">
+                <h1>JavaScript Array Methods</h1>
+            </div>
+
+
+            <div id="generateContentJs" class="generateContent flexColumn">
+            </div>
+
+        </main>
+    </div>
+
+    <footer id="footer">
+    </footer>
+
+    <script type="module" >
+        import {codeToHtml} from "/scripts/components/codeToHtml.js";
+        import {articles} from "/scripts/components/articles.js";
+        import {navList} from "/scripts/components/navList.js";
+        import {footer} from "/scripts/components/footer.js";
+
+        const dataHtmlUrl = "/data/html/arrayDataHtml.json";
+        const dataCodeUrl = "/data/code/arrayDataCode.json";
+
+        articles(dataHtmlUrl, 'arraySortMethods').then(()=>{
+            codeToHtml(dataCodeUrl, 'arraySortMethods');
+            showHideMenu();
+            navList();
+            footer();
+        })
+      </script>
+      
+</body>
+<script src="/script.js"></script>
+<script  src="/basicScript.js"></script>
+<script src="/scripts/arrays/arraySortMethods.js"></script>
+
+
+</html>
