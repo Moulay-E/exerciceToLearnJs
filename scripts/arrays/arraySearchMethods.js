@@ -1,6 +1,6 @@
-function arrMethodsindexOf() {
-    const data = document.getElementById("arrMethodsindexOfValueId").value;
-    const showResult = document.getElementById("arrMethodsindexOfIdResult");
+function arrMethodsIndexOf() {
+    const data = document.getElementById("arrMethodsIndexOfValueId").value;
+    const showResult = document.getElementById("arrMethodsIndexOfIdResult");
     let arr =  ["Apple", "Orange", "Apple", "Mango"];
     
     let result = arr.indexOf(data);

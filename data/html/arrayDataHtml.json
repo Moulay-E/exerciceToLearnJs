@@ -148,10 +148,10 @@
             "title": "Array indexOf",
             "subtitle": "The indexOf() method searches an array for an element value and returns its position.",
             "paragraph":"Type the element you want to find the index in this array: [Apple, Orange, Apple, Mango]. </br> (Good to know: array.indexOf(item, start)).",
-            "inputValueId": "arrMethodsindexOfValueId",
-            "onclickFonctionToCall": "arrMethodsindexOf",
-            "outputResultId": "arrMethodsindexOfIdResult",
-            "idToMarkCodeArea": "arrMethodsindexOfFunctionId"
+            "inputValueId": "arrMethodsIndexOfValueId",
+            "onclickFonctionToCall": "arrMethodsIndexOf",
+            "outputResultId": "arrMethodsIndexOfIdResult",
+            "idToMarkCodeArea": "arrMethodsIndexOfFunctionId"
         },
         {
             "title": "Array lastIndexOf",
@@ -161,6 +161,15 @@
             "onclickFonctionToCall": "arrMethodslastIndexOf",
             "outputResultId": "arrMethodslastIndexOfIdResult",
             "idToMarkCodeArea": "arrMethodslastIndexOfFunctionId"
+        },
+        {
+            "title": "Array includes",
+            "subtitle": "ECMAScript 2016 introduced Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).",
+            "paragraph":"Type the element you want to find and you will know if it present: [Apple, Orange, Apple, Mango, Orange]. </br> (Good to know: array.lastIndexOf(item, start)).",
+            "inputValueId": "arrMethodsIncludesValueId",
+            "onclickFonctionToCall": "arrMethodsIncludes",
+            "outputResultId": "arrMethodsIncludesIdResult",
+            "idToMarkCodeArea": "arrMethodsIncludesFunctionId"
         },
         {
             "title": "Array find",
