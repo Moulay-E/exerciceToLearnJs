@@ -140,7 +140,7 @@
             "idToMarkCodeArea": "stringIncludesFunctionId"
         },
         {
-            "title": "String  stringIncludes methods",
+            "title": "String  startsWith methods",
             "subtitle": "can take a second argument for start, is sensitive case, is not supported on IE",
             "paragraph":"The startsWith() method returns true if a string begins with a specified value. Otherwise it returns false. in this exeample : Hello world, welcome to the universe.",
             "inputValueId": "stringStartsWithValueId",
