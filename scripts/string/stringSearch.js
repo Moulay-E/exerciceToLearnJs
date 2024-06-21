@@ -45,7 +45,7 @@ function stringMatchAll() {
     let matchesIterator = string.matchAll(regex);
     let indexFind = Array.from(matchesIterator);
 
-    showResult.innerHTML = `La string à selectionner est: ${Array.from(indexFind)} . </br>
+    showResult.innerHTML = `La string à selectionner est: ${indexFind} . </br>
         Apparait:${indexFind.length} `
 }
 
