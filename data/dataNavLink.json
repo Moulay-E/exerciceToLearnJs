@@ -27,6 +27,10 @@
         {
             "title": "Array Search",
             "link": "/pages/arrays/arraySearch.html"
+        },
+        {
+            "title": "Array Sort",
+            "link": "/pages/arrays/arraySort.html"
         }
     ]
 }

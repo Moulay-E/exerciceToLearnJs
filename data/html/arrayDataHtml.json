@@ -210,13 +210,22 @@
     ],
     "arraySortMethods": [
         {
-            "title": "Array indexOf",
-            "subtitle": "The indexOf() method searches an array for an element value and returns its position.",
-            "paragraph":"Type the element you want to find the index in this array: [Apple, Orange, Apple, Mango]. </br> (Good to know: array.indexOf(item, start)).",
-            "inputValueId": "arrMethodsIndexOfValueId",
-            "onclickFonctionToCall": "arrMethodsIndexOf",
-            "outputResultId": "arrMethodsIndexOfIdResult",
-            "idToMarkCodeArea": "arrMethodsIndexOfFunctionId"
+            "title": "Array Sort",
+            "subtitle": "The sort() method sorts an array alphabetically:",
+            "paragraph":"Type the element you want to add to the array and be sorted. The array is: [Apple, Orange, Apple, Mango].",
+            "inputValueId": "arrMethodsSortValueId",
+            "onclickFonctionToCall": "arrMethodsSort",
+            "outputResultId": "arrMethodsSortIdResult",
+            "idToMarkCodeArea": "arrMethodsSortFunctionId"
+        },
+        {
+            "title": "Array Reverse",
+            "subtitle": "The sort() method sorts an array alphabetically:",
+            "paragraph":"Type the element you want to add to the array and be sorted. The array is: [Apple, Orange, Apple, Mango].",
+            "inputValueId": "arrMethodsReverseValueId",
+            "onclickFonctionToCall": "arrMethodsReverse",
+            "outputResultId": "arrMethodsReverseIdResult",
+            "idToMarkCodeArea": "arrMethodsReverseId"
         }
     ]
 }
