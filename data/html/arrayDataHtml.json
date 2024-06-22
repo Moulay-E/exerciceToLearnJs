@@ -212,7 +212,7 @@
         {
             "title": "Array Sort",
             "subtitle": "The sort() method sorts an array alphabetically:",
-            "paragraph":"Type the element you want to add to the array and be sorted. The array is: [Apple, Orange, Apple, Mango].",
+            "paragraph":"Type the element you want to add to the array and be sorted. The array is: [Apple, Orange, Apple, Mango, Orange].",
             "inputValueId": "arrMethodsSortValueId",
             "onclickFonctionToCall": "arrMethodsSort",
             "outputResultId": "arrMethodsSortIdResult",
@@ -221,7 +221,16 @@
         {
             "title": "Array Reverse",
             "subtitle": "The sort() method sorts an array alphabetically:",
-            "paragraph":"Type the element you want to add to the array and be sorted. The array is: [Apple, Orange, Apple, Mango].",
+            "paragraph":"Type the element you want to add to the array and the array will be reverse. The array is: [Apple, Orange, Apple, Mango, Orange].",
+            "inputValueId": "arrMethodsReverseValueId",
+            "onclickFonctionToCall": "arrMethodsReverse",
+            "outputResultId": "arrMethodsReverseIdResult",
+            "idToMarkCodeArea": "arrMethodsReverseId"
+        },
+        {
+            "title": "Array Reverse",
+            "subtitle": "The sort() method sorts an array alphabetically:",
+            "paragraph":"Type the element you want to add to the array and the array will be reverse. The array is: [Apple, Orange, Apple, Mango, Orange].",
             "inputValueId": "arrMethodsReverseValueId",
             "onclickFonctionToCall": "arrMethodsReverse",
             "outputResultId": "arrMethodsReverseIdResult",
