@@ -225,16 +225,16 @@
             "inputValueId": "arrMethodsReverseValueId",
             "onclickFonctionToCall": "arrMethodsReverse",
             "outputResultId": "arrMethodsReverseIdResult",
-            "idToMarkCodeArea": "arrMethodsReverseId"
+            "idToMarkCodeArea": "arrMethodsReverseFunctionId"
         },
         {
-            "title": "Array Reverse",
-            "subtitle": "The sort() method sorts an array alphabetically:",
+            "title": "Array toReversed",
+            "subtitle": "The difference between toReversed() and reverse() is that the first method creates a new array, keeping the original array unchanged, while the last method alters the original array.",
             "paragraph":"Type the element you want to add to the array and the array will be reverse. The array is: [Apple, Orange, Apple, Mango, Orange].",
-            "inputValueId": "arrMethodsReverseValueId",
-            "onclickFonctionToCall": "arrMethodsReverse",
-            "outputResultId": "arrMethodsReverseIdResult",
-            "idToMarkCodeArea": "arrMethodsReverseId"
+            "inputValueId": "arrMethodsToReversedValueId",
+            "onclickFonctionToCall": "arrMethodsToReversed",
+            "outputResultId": "arrMethodsToReversedIdResult",
+            "idToMarkCodeArea": "arrMethodsToReversedFunctionId"
         }
     ]
 }

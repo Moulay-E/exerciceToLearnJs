@@ -12,11 +12,22 @@ function arrMethodsReverse() {
     const data = document.getElementById("arrMethodsReverseValueId").value;
     const showResult = document.getElementById("arrMethodsReverseIdResult");
     let arr =  ["Apple", "Orange", "Apple", "Mango", "Orange"];
-    // let result = "";
     arr.push(data);
     let result = Array.from(arr).reverse();
     let arrAlphabitOrder = Array.from(arr).sort();
     let arrInReverseAlphabitOrder = Array.from(arrAlphabitOrder).reverse();
+
+    showResult.innerHTML = `The reverse array with your element : ${result} . </br>
+        The alphatic sorted array with your element : ${arrAlphabitOrder} </br>
+        The alphatic rveersed array with your element : ${arrInReverseAlphabitOrder} `
+}
+function arrMethodsToReversed() {
+    const data = document.getElementById("arrMethodsToReversedValueId").value;
+    const showResult = document.getElementById("arrMethodsToReversedIdResult");
+    let arr =  ["Apple", "Orange", "Apple", "Mango", "Orange"];
+    // let result = "";
+    arr.push(data);
+    let result = arr.toReversed();
 
     // if(search){
     //     result = "The element is present in the table";
@@ -24,7 +35,5 @@ function arrMethodsReverse() {
     // else {
     //     result = "The element is not present in the table";
     // }
-    showResult.innerHTML = `The reverse array with your element : ${result} . </br>
-        The alphatic sorted array with your element : ${arrAlphabitOrder} </br>
-        The alphatic reveersed array with your element : ${arrInReverseAlphabitOrder} `
+    showResult.innerHTML = `The reverse array with your element : ${result} . `
 }
