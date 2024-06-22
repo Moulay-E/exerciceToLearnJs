@@ -37,3 +37,22 @@ function arrMethodsToReversed() {
     // }
     showResult.innerHTML = `The reverse array with your element : ${result} . `
 }
+function arrMethodsNumericSort() {
+    const data = document.getElementById("arrMethodsNumericSortValueId").value;
+    const showResult = document.getElementById("arrMethodsNumericSortIdResult");
+    let arr =  [40, 100, 1, 5, 25, 10];
+    // let result = "";
+    let asscendingOrder = Array.from(arr).sort(function(a,b){ return a - b});
+    let descendingOrder = Array.from(arr).sort(function(a,b){ return b - a})
+
+    // if(search){
+    //     result = "The element is present in the table";
+    // }
+    // else {
+    //     result = "The element is not present in the table";
+    // }
+    showResult.innerHTML = `The array  : ${arr} . </br>
+        The array in asscending order : ${asscendingOrder} . </br>
+        The array in descending order : ${descendingOrder} . `
+}
+
