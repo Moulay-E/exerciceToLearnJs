@@ -32,7 +32,7 @@
         {
             "title": "The numberToFixed Method",
             "subtitle": "",
-            "paragraph":"toFixed() returns a string, with the number written with a specified number of decimals. In this example the number is : 555555.5555555555, you can choice how many number to show:",
+            "paragraph":"toFixed() returns a string, with the number written with a specified number of decimals, the last decimal is rounded. In this example the number is : 555555.5555555555, you can choice how many number to show:",
             "inputValueId": "numberToFixedValueId",
             "onclickFonctionToCall": "numberToFixed",
             "outputResultId": "numberToFixedIdResult",
@@ -81,7 +81,7 @@
             "inputValueId": "numberParseFloatValueId",
             "onclickFonctionToCall": "numberParseFloat",
             "outputResultId": "numberParseFloatIdResult",
-            "idToMarkCodeArea": "numberParseFloatIntFunctionId"
+            "idToMarkCodeArea": "numberParseFloatFunctionId"
         },
         {
             "title": "The numberIsInteger Method",
