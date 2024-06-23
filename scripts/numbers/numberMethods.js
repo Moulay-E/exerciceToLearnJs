@@ -18,9 +18,12 @@ function numberToExponential() {
 function numberToFixed() {
     const data = document.getElementById("numberToFixedValueId").value;
     const showResult = document.getElementById("numberToFixedIdResult");
-    let number = 555555.5555555555
-    let  dataToNumber = Number(data)
-    let result = number.toFixed(4);
+    let number = 555555.5555555555;
+    let  dataToNumber = Number(data);
+    let result  ;
+        if (dataToNumber){
+            result = number.toFixed(dataToNumber);
+        }
     showResult.innerHTML = `retoune le nombre avec comme parametre ce qui doit s'affciher après la virgule : ${result} . `
 }
 function numberToPrecision() {
