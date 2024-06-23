@@ -21,8 +21,11 @@ function numberToFixed() {
     let number = 555555.5555555555;
     let  dataToNumber = Number(data);
     let result  ;
-        if (dataToNumber){
+        if (dataToNumber && dataToNumber <= 100){
             result = number.toFixed(dataToNumber);
+        }
+        else{
+            result = "please enter a number between 0 and 100"
         }
     showResult.innerHTML = `retoune le nombre avec comme parametre ce qui doit s'affciher après la virgule : ${result} . `
 }
