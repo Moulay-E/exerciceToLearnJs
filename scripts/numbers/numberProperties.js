@@ -34,7 +34,7 @@ function numberMinValue() {
     let result = (minNumber - data);
 
     showResult.innerHTML = `Le nombre donnés : ${data} . </br>
-     Le max number en js : ${minNumber}. </br>
+     Le min number en js : ${minNumber}. </br>
     La soustraction de minValue par le nombre: ${result} `
 }
 function numberMaxSafeInteger() {
@@ -54,7 +54,7 @@ function numberMinSafeInteger() {
     let result = (minSafeInterger * data);
 
     showResult.innerHTML = `Le nombre donnés : ${data} . </br>
-     Le max number en js : ${minSafeInterger}. </br>
+     Le min number en js : ${minSafeInterger}. </br>
     La multiplication de safeMaxInteger par le nombre: ${result} `
 }
 function numberPositiveInfinity() {
