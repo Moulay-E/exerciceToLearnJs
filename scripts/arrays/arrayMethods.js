@@ -43,7 +43,7 @@ function arrMethodsPop() {
     let arrPop =  arr.pop();
 
     showResult.innerHTML = `Le tableau de base : [${arr}] . </br>
-     Le tableau avec le dernier élément supprimer : ${arrPop}. </br>
+     Le dernier élément supprimer : ${arrPop}. </br>
      Le tableau avec le dernier élément supprimer : [${arr}] `
 }
 function arrMethodsPush() {

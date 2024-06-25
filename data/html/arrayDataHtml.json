@@ -42,7 +42,7 @@
         {
             "title": "Array join",
             "subtitle": "The join() method also joins all array elements into a string.",
-            "paragraph":"It behaves just like toString(), but in addition you can specify the separator. the arr: [cacao, banane, lait, vanille]",
+            "paragraph":"The join(\"test\") method combines the array elements into a single string, inserting the \"test\" parameter between each element.Type the element you want to remplace \"test\" in the arr: [cacao, banane, lait, vanille]",
             "inputValueId": "arrMethodsJoinValueId",
             "onclickFonctionToCall": "arrMethodsJoin",
             "outputResultId": "arrMethodsJoinIdResult",
@@ -50,8 +50,8 @@
         },
         {
             "title": "Array pop",
-            "subtitle": "The join() method also joins all array elements into a string.",
-            "paragraph":"It behaves just like toString(), but in addition you can specify the separator. The arr: [cacao, banane, lait, vanille]",
+            "subtitle": "The pop() method removes the last element from an array:",
+            "paragraph":" The arr: [cacao, banane, lait, vanille]",
             "hiddenInput": "true",
             "inputValueId": "arrMethodsPopValueId",
             "onclickFonctionToCall": "arrMethodsPop",
@@ -61,6 +61,7 @@
         {
             "title": "Array push",
             "subtitle": "",
+            "hiddenInput": "true",
             "paragraph":"The push() method adds a new element to an array (at the end): The arr: [cacao, banane, lait, vanille]",
             "inputValueId": "arrMethodsPushValueId",
             "onclickFonctionToCall": "arrMethodsPush",
@@ -70,7 +71,7 @@
         {
             "title": "Array shift",
             "subtitle": "",
-            "paragraph":"The shift() method removes the first array element and 'shifts' all other elements to a lower index. The arr: [cacao, banane, lait, vanille]",
+            "paragraph":"The shift() method removes the first array element and 'shifts' all other elements to a lower index. The arr: [cacao, banane, lait, vanille] .",
             "hiddenInput": "true",
             "inputValueId": "arrMethodsShiftValueId",
             "onclickFonctionToCall": "arrMethodsShift",
@@ -79,7 +80,7 @@
         },
         {
             "title": "Array unshift",
-            "subtitle": "The unshift() method adds a new element to an array (at the beginning), and 'unshifts' older elements:",
+            "subtitle": "The unshift() method adds a new or multiples elements to an array (at the beginning), and 'unshifts' older elements:",
             "paragraph":"Type the element to add:",
             "inputValueId": "arrMethodsUnShiftValueId",
             "onclickFonctionToCall": "arrMethodsUnShift",
@@ -88,8 +89,8 @@
         },
         {
             "title": "Array concat",
-            "subtitle": "The concat() method does not change the existing arrays. It always returns a new array and can take any number of arr arguments.",
-            "paragraph":"Type the element to add:",
+            "subtitle": "The concat() method does not change the existing arrays, it's concant 2 array in one. It always returns a new array and can take any number of arr arguments.",
+            "paragraph":"Type  element to create a new array and concat to the arr: [cacao, banane, lait, vanille] .",
             "inputValueId": "arrMethodsConcatValueId",
             "onclickFonctionToCall": "arrMethodsConcat",
             "outputResultId": "arrMethodsConcatIdResult",
@@ -98,16 +99,16 @@
         {
             "title": "Array copyWithin",
             "subtitle": "The copyWithin() method copies array elements to another position in an array, can take as second argument the length of the copy.",
-            "paragraph":"Type the number(only one number) to chose to copy(contained in the arr length), the index of the copy is : 0. The arr: [cacao, banane, lait, vanille]:",
+            "paragraph":"Type the number(only one number) to chose to copy(contained in the arr length not the index), the index of the copy is : 0. The arr: [cacao, banane, lait, vanille]:",
             "inputValueId": "arrMethodscopyWithinValueId",
             "onclickFonctionToCall": "arrMethodscopyWithin",
             "outputResultId": "arrMethodscopyWithinIdResult",
             "idToMarkCodeArea": "arrMethodscopyWithinFunctionId"
         },
         {
-            "title": "Array Array flat",
+            "title": "Array flat",
             "subtitle": "The flat() method creates a new array with sub-array elements concatenated to a specified depth.(change multiple arr into one, at one level)",
-            "paragraph":"Type the number(only one number) to chose to copy(contained in the arr length), the index of the copy is : 0. The arr: [cacao, banane, lait, vanille]:",
+            "paragraph":"The arr: [cacao, [banane, lait], vanille]:",
             "hiddenInput": "true",
             "inputValueId": "arrMethodArrayflatValueId",
             "onclickFonctionToCall": "arrMethodArrayflat",
@@ -115,8 +116,8 @@
             "idToMarkCodeArea": "arrMethodArrayflatFunctionId"
         },
         {
-            "title": "Array Array splice",
-            "subtitle": "The splice() method can be used to add new items to an array or remove them (modify the original array):",
+            "title": "Array splice",
+            "subtitle": "The splice() method can be used to add new items to an array or remove them (modify the original array), can be used to remove element without holes.",
             "paragraph":"The first parameter (2) defines the position where new elements should be added and the second how many element to remove. The rest of parameter define the element to add, if empty it's just remove element. </br> Type the element to add:",
             "inputValueId": "arrMethodsSpliceValueId",
             "onclickFonctionToCall": "arrMethodsSplice",
@@ -133,7 +134,7 @@
             "idToMarkCodeArea": "arrMethodsToSplicedFunctionId"
         },
         {
-            "title": "Array Array Array slice",
+            "title": "Array slice",
             "subtitle": "The slice() method slices out a piece of an array into a new array:",
             "paragraph":"The slice() method can take two arguments, the start argument, and up to (but not including) the end argument.</br> The arr: [cacao, banane, lait, vanille]:",
             "inputValueId": "arrMethodsSliceValueId",
