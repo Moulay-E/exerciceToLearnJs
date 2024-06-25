@@ -62,8 +62,35 @@ function arrMethodsMathMinMax() {
     const data = document.getElementById("arrMethodsMathMinMaxValueId").value;
     const showResult = document.getElementById("arrMethodsMathMinMaxIdResult");
     let arr =  [40, 100, 1, 5, 25, 10];
+    function mathMinOrMax(methods, arr){
+        return methods.apply(null,arr);
+    }
+    let mathMin = mathMinOrMax(Math.min, arr);
+    let mathMax = mathMinOrMax(Math.max, arr);
+
+    showResult.innerHTML = `The array  : ${arr} . </br>
+        The min value in the array : ${mathMin} . </br>
+        The max value in the array : ${mathMax} . `
+}
+function arrMethodsHandMadeMinMax() {
+    const data = document.getElementById("arrMethodsHandMadeMinMaxValueId").value;
+    const showResult = document.getElementById("arrMethodsHandMadeMinMaxIdResult");
+    let arr =  [40, 100, 1, 5, 25, 10];
     // let result = "";
-    let randomOrder = Array.from(arr).sort(function(a,b){ return 0.5 -Math.random()});
+    function handMade(infinity,condition, arr){
+        let len = arr.length;
+        let minOrMax = infinity;
+        while(len--){
+            if(condition(arr[len], minOrMax)){
+               minOrMax = arr[len] ;
+            }
+        }
+        return minOrMax
+    }
+    const isSmaller = (a,b) => a < b;
+    const isBigger = (a,b) => a > b;
+    let mathMin = handMade(Infinity,isSmaller, arr);
+    let mathMax = handMade(-Infinity,isBigger, arr);
 
     // if(search){
     //     result = "The element is present in the table";
@@ -72,6 +99,7 @@ function arrMethodsMathMinMax() {
     //     result = "The element is not present in the table";
     // }
     showResult.innerHTML = `The array  : ${arr} . </br>
-        The array in random order : ${randomOrder} . `
+        The min value in the array : ${mathMin} . </br>
+        The max value in the array : ${mathMax} . `
 }
 

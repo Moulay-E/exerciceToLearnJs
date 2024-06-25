@@ -259,13 +259,23 @@
         },
         {
             "title": "Array MathMin MathMax",
-            "subtitle": " to find higest and lowest value",
-            "paragraph":"The array is : [40, 100, 1, 5, 25, 10].",
+            "subtitle": " Using Math.max() & Math.min() on an Array",
+            "paragraph":"You can use it the find the min and max value. The array is : [40, 100, 1, 5, 25, 10].",
             "hiddenInput": "true",
             "inputValueId": "arrMethodsMathMinMaxValueId",
             "onclickFonctionToCall": "arrMethodsMathMinMax",
             "outputResultId": "arrMethodsMathMinMaxIdResult",
             "idToMarkCodeArea": "arrMethodsMathMinMaxFunctionId"
+        },
+        {
+            "title": "Array hand made min & max ",
+            "subtitle": "A way to find the lowest number is to use a home made method. ",
+            "paragraph":"This function loops through an array comparing each value with the lowest value found. The array is : [40, 100, 1, 5, 25, 10].",
+            "hiddenInput": "true",
+            "inputValueId": "arrMethodsHandMadeMinMaxValueId",
+            "onclickFonctionToCall": "arrMethodsHandMadeMinMax",
+            "outputResultId": "arrMethodsHandMadeMinMaxIdResult",
+            "idToMarkCodeArea": "arrMethodsHandMadeMinMaxFunctionId"
         }
     ]
 }
