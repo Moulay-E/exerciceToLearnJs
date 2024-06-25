@@ -245,6 +245,26 @@
             "onclickFonctionToCall": "arrMethodsNumericSort",
             "outputResultId": "arrMethodsNumericSortIdResult",
             "idToMarkCodeArea": "arrMethodsNumericSortFunctionId"
+        },
+        {
+            "title": "Array random order",
+            "subtitle": "Using a sort function, like explained above, you can sort an numeric array in random order",
+            "paragraph":"The array is : [40, 100, 1, 5, 25, 10].",
+            "hiddenInput": "true",
+            "inputValueId": "arrMethodsRandomOrderValueId",
+            "onclickFonctionToCall": "arrMethodsRandomOrder",
+            "outputResultId": "arrMethodsRandomOrderIdResult",
+            "idToMarkCodeArea": "arrMethodsRandomOrderFunctionId"
+        },
+        {
+            "title": "Array MathMin MathMax",
+            "subtitle": " to find higest and lowest value",
+            "paragraph":"The array is : [40, 100, 1, 5, 25, 10].",
+            "hiddenInput": "true",
+            "inputValueId": "arrMethodsMathMinMaxValueId",
+            "onclickFonctionToCall": "arrMethodsMathMinMax",
+            "outputResultId": "arrMethodsMathMinMaxIdResult",
+            "idToMarkCodeArea": "arrMethodsMathMinMaxFunctionId"
         }
     ]
 }
