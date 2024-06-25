@@ -270,12 +270,22 @@
         {
             "title": "Array hand made min & max ",
             "subtitle": "A way to find the lowest number is to use a home made method. ",
-            "paragraph":"This function loops through an array comparing each value with the lowest value found. The array is : [40, 100, 1, 5, 25, 10].",
+            "paragraph":"This function loops through an array comparing each value with the lowest value found. </br> The array is : [40, 100, 1, 5, 25, 10].",
             "hiddenInput": "true",
             "inputValueId": "arrMethodsHandMadeMinMaxValueId",
             "onclickFonctionToCall": "arrMethodsHandMadeMinMax",
             "outputResultId": "arrMethodsHandMadeMinMaxIdResult",
             "idToMarkCodeArea": "arrMethodsHandMadeMinMaxFunctionId"
+        },
+        {
+            "title": "Array Sorting Object Arrays ",
+            "subtitle": "Even if objects have properties of different data types, the sort() method can be used to sort the array.",
+            "paragraph":"The solution is to write a compare function to compare the property values:",
+            "hiddenInput": "true",
+            "inputValueId": "arrMethodsSortObjectValueId",
+            "onclickFonctionToCall": "arrMethodsSortObject",
+            "outputResultId": "arrMethodsSortObjectIdResult",
+            "idToMarkCodeArea": "arrMethodsSortObjectFunctionId"
         }
     ]
 }

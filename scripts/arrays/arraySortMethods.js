@@ -76,7 +76,6 @@ function arrMethodsHandMadeMinMax() {
     const data = document.getElementById("arrMethodsHandMadeMinMaxValueId").value;
     const showResult = document.getElementById("arrMethodsHandMadeMinMaxIdResult");
     let arr =  [40, 100, 1, 5, 25, 10];
-    // let result = "";
     function handMade(infinity,condition, arr){
         let len = arr.length;
         let minOrMax = infinity;
@@ -92,14 +91,41 @@ function arrMethodsHandMadeMinMax() {
     let mathMin = handMade(Infinity,isSmaller, arr);
     let mathMax = handMade(-Infinity,isBigger, arr);
 
-    // if(search){
-    //     result = "The element is present in the table";
-    // }
-    // else {
-    //     result = "The element is not present in the table";
-    // }
     showResult.innerHTML = `The array  : ${arr} . </br>
         The min value in the array : ${mathMin} . </br>
         The max value in the array : ${mathMax} . `
+}
+function arrMethodsSortObject() {
+    const data = document.getElementById("arrMethodsSortObjectValueId").value;
+    const showResult = document.getElementById("arrMethodsSortObjectIdResult");
+    let resultOriginal = "";
+    let resultSorted = "";
+    const cars = [
+        {type:"Volvo", year:2016},
+        {type:"Saab", year:2001},
+        {type:"BMW", year:2010}
+      ];
+    let carsCopy = cars.map(car => ({...car}));
+    carsCopy.sort(function(a,b){
+        let x = a.type.toLowerCase();
+        let y = b.type.toLowerCase();
+        if(x < y){return -1;}
+        if(x > y){return 1;}
+        return 0;
+    });
+    function cleanHtml(value){
+        return value.type + " " + value.year + " | ";
+    }
+    cars.forEach(car =>{
+        resultOriginal += cleanHtml(car)
+    });
+    carsCopy.forEach(car =>{
+        resultSorted += cleanHtml(car)
+    });
+
+    showResult.innerHTML = "<br>"+
+    "The object : " + resultOriginal
+    + "</br>" + "In alphabetical order: " +
+    resultSorted;
 }
 
