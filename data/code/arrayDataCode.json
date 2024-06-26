@@ -94,8 +94,11 @@
         },
         {
             "arrMethodsSortObjectFunctionId": "// JavaScript code here\n\nfunction arrMethodsSortObject() {\n    const data = document.getElementById(\"arrMethodsSortObjectValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsSortObjectIdResult\");\n    let resultOriginal = \"\";\n    let resultSorted = \"\";\n    const cars = [\n        {type:\"Volvo\", year:2016},\n        {type:\"Saab\", year:2001},\n        {type:\"BMW\", year:2010}\n      ];\n    let carsCopy = cars.map(car => ({...car}));\n    carsCopy.sort(function(a,b){\n        let x = a.type.toLowerCase();\n        let y = b.type.toLowerCase();\n        if(x < y){return -1;}\n        if(x > y){return 1;}\n        return 0;\n    });\n    function cleanHtml(value){\n        return value.type + \" \" + value.year + \" | \";\n    }\n    cars.forEach(car =>{\n        resultOriginal += cleanHtml(car)\n    });\n    carsCopy.forEach(car =>{\n        resultSorted += cleanHtml(car)\n    });\n\n    showResult.innerHTML = \"<br>\"+\n    \"The object : \" + resultOriginal\n    + \"</br>\" + \"In alphabetical order: \" +\n    resultSorted;\n}"
+        }  
+    ],
+    "arrayIterationMethods": [
+        {
+            "arrMethodsSortFunctionId": "// JavaScript code here\n\nfunction arrMethodsSort() {\n    const data = document.getElementById(\"arrMethodsSortValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsSortIdResult\");\n    let arr =  [\"Apple\", \"Orange\", \"Apple\", \"Mango\", \"Orange\"];\n    arr.push(data);\n\n    let result = arr.sort();\n    showResult.innerHTML = `The alphabetical sorting array : ${result} . `\n}"
         }
-          
-        
     ]
 }

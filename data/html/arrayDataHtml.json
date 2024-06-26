@@ -287,5 +287,16 @@
             "outputResultId": "arrMethodsSortObjectIdResult",
             "idToMarkCodeArea": "arrMethodsSortObjectFunctionId"
         }
+    ],
+    "arrayIterationMethods": [
+        {
+            "title": "Array Sort",
+            "subtitle": "The sort() method sorts an array alphabetically:",
+            "paragraph":"Type the element you want to add to the array and be sorted. The array is: [Apple, Orange, Apple, Mango, Orange].",
+            "inputValueId": "arrMethodsSortValueId",
+            "onclickFonctionToCall": "arrMethodsSort",
+            "outputResultId": "arrMethodsSortIdResult",
+            "idToMarkCodeArea": "arrMethodsSortFunctionId"
+        }
     ]
 }
