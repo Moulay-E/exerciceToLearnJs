@@ -308,6 +308,15 @@
             "onclickFonctionToCall": "arrMap",
             "outputResultId": "arrMapIdResult",
             "idToMarkCodeArea": "arrMapFunctionId"
+        },
+        {
+            "title": "Array flatMap",
+            "subtitle": " Same as Map but disimbricates a one-level array. ",
+            "paragraph":"Example is this array : [45, 4, [9, 16], 25] .",
+            "inputValueId": "arrflatMapValueId",
+            "onclickFonctionToCall": "arrflatMap",
+            "outputResultId": "arrflatMapIdResult",
+            "idToMarkCodeArea": "arrflatMapFunctionId"
         }
     ]
 }

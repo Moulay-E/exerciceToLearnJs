@@ -17,6 +17,22 @@ function arrMap() {
     const multiply = (e) => e * 2;
     let result = arr.map(multiply);
    
+    showResult.innerHTML = ` The array element multiply by 2 </br> ${result}. `
+}
+function arrflatMap() {
+    const data = document.getElementById("arrflatMapValueId").value;
+    const showResult = document.getElementById("arrflatMapIdResult");
+    let arr =  [45, 4, [9, 16], 25];
+    let result ;
+    let multiply = Number(data);
+    if(Number(data)){
+        const multiplyFunction = (e) => Array.isArray(e) ? e.map(x => x*multiply) : [e * multiply] ;
+         result = arr.flatMap(multiplyFunction);
+    }
+    else {
+        result = "Type a number please"
+    }
+    
     // if(Number(data)){
     //     search = arr.findLastIndex(x => x > data);
     //     result = `The number you have type : ${data}. </br>
@@ -25,5 +41,6 @@ function arrMap() {
     // else {
     //     result = "The element is not present in the table";
     // }
-    showResult.innerHTML = ` The array element multiply by 2 </br> ${result}. `
+    showResult.innerHTML = ` The multiply number: ${multiply} .
+    </br> The  array flated: ${result}. `
 }
