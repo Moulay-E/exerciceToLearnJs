@@ -69,32 +69,21 @@ function arrReduceRight() {
     let result ;
     const addAllElement = (total,element, index, arr) => total + element;
     result = arr.reduceRight(addAllElement, 0);
-    // if(Number(data)){
-    //     search = arr.findLastIndex(x => x > data);
-    //     result = `The number you have type : ${data}. </br>
-    //               The index of number greater than that from the end : ${search} `;
-    // }
-    // else {
-    //     result = "The element is not present in the table";
-    // }
     showResult.innerHTML = ` The array: ${arr} .
     </br> The  array with all added value: ${result}. `
 }
 function arrEvery() {
-    const data = document.getElementById("arrReduceRightValueId").value;
-    const showResult = document.getElementById("arrReduceRightIdResult");
+    const data = document.getElementById("arrEveryValueId").value;
+    const showResult = document.getElementById("arrEveryIdResult");
     let arr =  [45, 4, 9, 16, 25];
     let result ;
-    const addAllElement = (total,element, index, arr) => total + element;
-    result = arr.reduceRight(addAllElement, 0);
-    // if(Number(data)){
-    //     search = arr.findLastIndex(x => x > data);
-    //     result = `The number you have type : ${data}. </br>
-    //               The index of number greater than that from the end : ${search} `;
-    // }
-    // else {
-    //     result = "The element is not present in the table";
-    // }
+    if(Number(data)){
+        const addAllElement = (element, index, arr) => element < Number(data);
+        result = arr.every(addAllElement);
+    }
+    else {
+        result = "The element is not present in the table, or type a number";
+    }
     showResult.innerHTML = ` The array: ${arr} .
-    </br> The  array with all added value: ${result}. `
+    </br> If they are element smaller than ${data} : ${result}. `
 }

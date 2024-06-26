@@ -349,13 +349,13 @@
         },
         {
             "title": "Array Every",
-            "subtitle": "They run a function on each element of the array to poduce a single value. </br> And can accept a inital value at argument ont the callback function.",
-            "paragraph":" It work to right to left, do not affect the original array. </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 4 argument(total (the initial value) value, index, array itself)).",
+            "subtitle": "The every() method checks if all array values pass a test, the is ont the callback function.",
+            "paragraph":"It will test the number you type and check whether all the elements are smaller. </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 3 argument( value, index, array itself).",
             "hiddenInput": "true",
-            "inputValueId": "arrReduceRightValueId",
-            "onclickFonctionToCall": "arrReduceRight",
-            "outputResultId": "arrReduceRightIdResult",
-            "idToMarkCodeArea": "arrReduceRightFunctionId"
+            "inputValueId": "arrEveryValueId",
+            "onclickFonctionToCall": "arrEvery",
+            "outputResultId": "arrEveryIdResult",
+            "idToMarkCodeArea": "arrEveryFunctionId"
         }
     ]
 }
