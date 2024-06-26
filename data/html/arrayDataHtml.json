@@ -290,13 +290,24 @@
     ],
     "arrayIterationMethods": [
         {
-            "title": "Array Sort",
-            "subtitle": "The sort() method sorts an array alphabetically:",
-            "paragraph":"Type the element you want to add to the array and be sorted. The array is: [Apple, Orange, Apple, Mango, Orange].",
-            "inputValueId": "arrMethodsSortValueId",
-            "onclickFonctionToCall": "arrMethodsSort",
-            "outputResultId": "arrMethodsSortIdResult",
-            "idToMarkCodeArea": "arrMethodsSortFunctionId"
+            "title": "Array forEach",
+            "subtitle": "The forEach() method calls a function (a callback function) once for each array element.",
+            "paragraph":"The array : [27, 28, 30, 40, 42, 35, 30] . </br> Good to know: this function can take 3 argument(value, index, array)).",
+            "hiddenInput": "true",
+            "inputValueId": "arrForEachValueId",
+            "onclickFonctionToCall": "arrForEach",
+            "outputResultId": "arrForEachIdResult",
+            "idToMarkCodeArea": "arrForEachFunctionId"
+        },
+        {
+            "title": "Array Map",
+            "subtitle": "The map methods create a new array and do not change the original one. ",
+            "paragraph":"Map don't execute the function or array element without value. </br> The array : [45, 4, 9, 16, 25] .",
+            "hiddenInput": "true",
+            "inputValueId": "arrMapValueId",
+            "onclickFonctionToCall": "arrMap",
+            "outputResultId": "arrMapIdResult",
+            "idToMarkCodeArea": "arrMapFunctionId"
         }
     ]
 }

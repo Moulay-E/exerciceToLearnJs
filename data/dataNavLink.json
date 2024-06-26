@@ -31,6 +31,10 @@
         {
             "title": "Array Sort",
             "link": "/pages/arrays/arraySort.html"
+        },
+        {
+            "title": "Array Iteration",
+            "link": "/pages/arrays/arrayIteration.html"
         }
     ]
 }
