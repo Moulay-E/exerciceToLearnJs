@@ -52,7 +52,7 @@ function arrMethodsRandomOrder() {
         let temp = arrRealRandom[i];
         arrRealRandom[i] = arrRealRandom[j];
         arrRealRandom[j] = temp;
-    }
+    };
 
     showResult.innerHTML = `The array  : ${arr} . </br>
         The array in random order : ${randomOrder} .</br>
