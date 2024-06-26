@@ -24,7 +24,7 @@ function arrflatMap() {
     const showResult = document.getElementById("arrflatMapIdResult");
     let arr =  [45, 4, [9, 16], 25];
     let result ;
-    let multiply = Number(data);
+    let multiply = data;
     if(Number(data)){
         const multiplyFunction = (e) => Array.isArray(e) ? e.map(x => x*multiply) : [e * multiply] ;
          result = arr.flatMap(multiplyFunction);
@@ -33,6 +33,42 @@ function arrflatMap() {
         result = "Type a number please"
     }
     
+    showResult.innerHTML = ` The multiply number: ${multiply} .
+    </br> The  array flated: ${result}. `
+}
+function arrFilter() {
+    const data = document.getElementById("arrFilterValueId").value;
+    const showResult = document.getElementById("arrFilterIdResult");
+    let arr =  [45, 4, 9, 16, 25];
+    let result ;
+    if(Number(data)){
+        // const isSmaller = (e) => Array.isArray(e) ? e.map(x => x*data) : [e * data] ;
+         result = arr.filter((e)=> e > data);
+    }
+    else {
+        result = "Type a number please"
+    }
+    showResult.innerHTML = ` Your number: ${data} .
+    </br> The  array filtered with your value: ${result}. `
+}
+function arrReduce() {
+    const data = document.getElementById("arrReduceValueId").value;
+    const showResult = document.getElementById("arrReduceIdResult");
+    let arr =  [45, 4, 9, 16, 25];
+    let result ;
+    const addAllElement = (total,element, index, arr) => total + element;
+    result = arr.reduce(addAllElement, 0);
+
+    showResult.innerHTML = ` The array: ${arr} .
+    </br> The  array with all added value: ${result}. `
+}
+function arrReduceRight() {
+    const data = document.getElementById("arrReduceRightValueId").value;
+    const showResult = document.getElementById("arrReduceRightIdResult");
+    let arr =  [45, 4, 9, 16, 25];
+    let result ;
+    const addAllElement = (total,element, index, arr) => total + element;
+    result = arr.reduceRight(addAllElement, 0);
     // if(Number(data)){
     //     search = arr.findLastIndex(x => x > data);
     //     result = `The number you have type : ${data}. </br>
@@ -41,6 +77,24 @@ function arrflatMap() {
     // else {
     //     result = "The element is not present in the table";
     // }
-    showResult.innerHTML = ` The multiply number: ${multiply} .
-    </br> The  array flated: ${result}. `
+    showResult.innerHTML = ` The array: ${arr} .
+    </br> The  array with all added value: ${result}. `
+}
+function arrEvery() {
+    const data = document.getElementById("arrReduceRightValueId").value;
+    const showResult = document.getElementById("arrReduceRightIdResult");
+    let arr =  [45, 4, 9, 16, 25];
+    let result ;
+    const addAllElement = (total,element, index, arr) => total + element;
+    result = arr.reduceRight(addAllElement, 0);
+    // if(Number(data)){
+    //     search = arr.findLastIndex(x => x > data);
+    //     result = `The number you have type : ${data}. </br>
+    //               The index of number greater than that from the end : ${search} `;
+    // }
+    // else {
+    //     result = "The element is not present in the table";
+    // }
+    showResult.innerHTML = ` The array: ${arr} .
+    </br> The  array with all added value: ${result}. `
 }
