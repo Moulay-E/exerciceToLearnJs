@@ -349,13 +349,41 @@
         },
         {
             "title": "Array Every",
-            "subtitle": "The every() method checks if all array values pass a test, the is ont the callback function.",
+            "subtitle": "The every() method checks if all array values pass a test, is on the callback function.",
             "paragraph":"It will test the number you type and check whether all the elements are smaller. </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 3 argument( value, index, array itself).",
-            "hiddenInput": "true",
             "inputValueId": "arrEveryValueId",
             "onclickFonctionToCall": "arrEvery",
             "outputResultId": "arrEveryIdResult",
             "idToMarkCodeArea": "arrEveryFunctionId"
+        },
+        {
+            "title": "Array Some",
+            "subtitle": "The some() method checks if some array values pass a test, is on the callback function.",
+            "paragraph":"It will test the number you type and check whether all the elements are bigger. </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 3 argument( value, index, array itself).",
+            "inputValueId": "arrSomeValueId",
+            "onclickFonctionToCall": "arrSome",
+            "outputResultId": "arrSomeIdResult",
+            "idToMarkCodeArea": "arrSomeFunctionId"
+        },
+        {
+            "title": "Array Array.from",
+            "subtitle": "The Array.from() method returns an Array object from any object with a length property or any iterable object.",
+            "paragraph":" The array  : [I, AM, THE, REAL, ONE] .",
+            "hiddenInput": "true",
+            "inputValueId": "arrArrayFromValueId",
+            "onclickFonctionToCall": "arrArrayFrom",
+            "outputResultId": "arrArrayFromIdResult",
+            "idToMarkCodeArea": "arrArrayFromFunctionId"
+        },
+        {
+            "title": "Array Key",
+            "subtitle": "The Array.keys() method returns an Array Iterator object with the keys of an array.",
+            "paragraph":" The array  : [45, 4, 9, 16, 25] . </br> We change the arr into a objet , and iterate on it.",
+            "hiddenInput": "true",
+            "inputValueId": "arrKeyValueId",
+            "onclickFonctionToCall": "arrKey",
+            "outputResultId": "arrKeyIdResult",
+            "idToMarkCodeArea": "arrKeyFunctionId"
         }
     ]
 }

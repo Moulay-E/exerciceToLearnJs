@@ -42,7 +42,6 @@ function arrFilter() {
     let arr =  [45, 4, 9, 16, 25];
     let result ;
     if(Number(data)){
-        // const isSmaller = (e) => Array.isArray(e) ? e.map(x => x*data) : [e * data] ;
          result = arr.filter((e)=> e > data);
     }
     else {
@@ -72,18 +71,31 @@ function arrReduceRight() {
     showResult.innerHTML = ` The array: ${arr} .
     </br> The  array with all added value: ${result}. `
 }
-function arrEvery() {
-    const data = document.getElementById("arrEveryValueId").value;
-    const showResult = document.getElementById("arrEveryIdResult");
+function arrArrayFrom() {
+    const data = document.getElementById("arrArrayFromValueId").value;
+    const showResult = document.getElementById("arrArrayFromIdResult");
+    let arr =  ["3", "AM", "THE", "REAL", "ONE"];
+    let result = Array.from(arr);
+
+    showResult.innerHTML = ` The array: [${arr}] .
+    </br> The copy : [${result}]. `
+}
+function arrKey() {
+    const data = document.getElementById("arrKeyValueId").value;
+    const showResult = document.getElementById("arrKeyIdResult");
     let arr =  [45, 4, 9, 16, 25];
-    let result ;
-    if(Number(data)){
-        const addAllElement = (element, index, arr) => element < Number(data);
-        result = arr.every(addAllElement);
+    let result  = "";
+    let keys = arr.keys();
+    for(let x of keys){
+        result += ` The index :${x}. The Value: ${arr[x]} | `;
     }
-    else {
-        result = "The element is not present in the table, or type a number";
-    }
-    showResult.innerHTML = ` The array: ${arr} .
-    </br> If they are element smaller than ${data} : ${result}. `
+    
+    // if(Number(data)){
+    //      result = arr.filter((e)=> e > data);
+    // }
+    // else {
+    //     result = "Type a number please"
+    // }
+    showResult.innerHTML = ` Your number: ${arr} .
+    </br> The  array filtered with your value: </br> ${result}. `
 }
