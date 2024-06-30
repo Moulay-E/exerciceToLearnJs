@@ -349,8 +349,8 @@
         },
         {
             "title": "Array Every",
-            "subtitle": "The every() method checks if all array values pass a test, is on the callback function.",
-            "paragraph":"It will test the number you type and check whether all the elements are smaller. </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 3 argument( value, index, array itself).",
+            "subtitle": "The every() method checks if ALL array values pass a test, is on the callback function.",
+            "paragraph":"It will test the number you type and check whether ALL the elements are smaller? </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 3 argument( value, index, array itself).",
             "inputValueId": "arrEveryValueId",
             "onclickFonctionToCall": "arrEvery",
             "outputResultId": "arrEveryIdResult",
@@ -358,8 +358,8 @@
         },
         {
             "title": "Array Some",
-            "subtitle": "The some() method checks if some array values pass a test, is on the callback function.",
-            "paragraph":"It will test the number you type and check whether all the elements are bigger. </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 3 argument( value, index, array itself).",
+            "subtitle": "The some() method checks if A values in the array pass a test, is on the callback function.",
+            "paragraph":"It will test the number you type and check whether A element is smaller? </br> The array  : [45, 4, 9, 16, 25] .</br> Good to know: the callback function can take 3 argument( value, index, array itself).",
             "inputValueId": "arrSomeValueId",
             "onclickFonctionToCall": "arrSome",
             "outputResultId": "arrSomeIdResult",

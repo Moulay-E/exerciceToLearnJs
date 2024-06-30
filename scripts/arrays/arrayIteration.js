@@ -71,6 +71,40 @@ function arrReduceRight() {
     showResult.innerHTML = ` The array: ${arr} .
     </br> The  array with all added value: ${result}. `
 }
+function arrEvery() {
+    const data = document.getElementById("arrEveryValueId").value;
+    const showResult = document.getElementById("arrEveryIdResult");
+    let arr =  [45, 4, 9, 16, 25];
+    let result ;
+    const addAllElement = (element, index, arr) => element < data ;
+    result = arr.reduceRight(addAllElement);
+    if(Number(data)) {
+        result = arr.every(addAllElement);
+    }
+    else {
+        result = 'Type a number please.';
+    }
+    showResult.innerHTML = ` Your value: ${data} . </br>
+    The array: ${arr} .</br>
+    </br> Is the entered value greater than ALL values in the array?  ${result}. `
+}
+function arrSome() {
+    const data = document.getElementById("arrSomeValueId").value;
+    const showResult = document.getElementById("arrSomeIdResult");
+    let arr =  [45, 4, 9, 16, 25];
+    let result ;
+    const addAllElement = (element, index, arr) => element < data ;
+    result = arr.reduceRight(addAllElement);
+    if(Number(data)) {
+        result = arr.some(addAllElement);
+    }
+    else {
+        result = 'Type a number please.';
+    }
+    showResult.innerHTML = ` Your value: ${data} . </br>
+    The array: ${arr} .</br>
+    </br> Is the entered value greater than A values in the array?  ${result}. `
+}
 function arrArrayFrom() {
     const data = document.getElementById("arrArrayFromValueId").value;
     const showResult = document.getElementById("arrArrayFromIdResult");

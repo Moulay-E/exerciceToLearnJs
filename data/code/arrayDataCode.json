@@ -116,6 +116,12 @@
             "arrReduceRightFunctionId": "// JavaScript code here\n\nfunction arrReduceRight() {\n    const data = document.getElementById(\"arrReduceRightValueId\").value;\n    const showResult = document.getElementById(\"arrReduceRightIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    let result;\n    const addAllElement = (total, element, index, arr) => total + element;\n    result = arr.reduceRight(addAllElement, 0);\n\n    showResult.innerHTML = ` The array: ${arr} .\n    </br> The array with all added value: ${result}. `\n}"
         },
         {
+            "arrEveryFunctionId": "// JavaScript code here\n\nfunction arrEvery() {\n    const data = document.getElementById(\"arrEveryValueId\").value;\n    const showResult = document.getElementById(\"arrEveryIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    let result ;\n    const addAllElement = (element, index, arr) => element < data;\n    result = arr.reduceRight(addAllElement);\n    if(Number(data)) {\n        result = arr.every(addAllElement);\n    }\n    else {\n        result = 'Type a number please.';\n    }\n    showResult.innerHTML = ` Your value: ${data} . </br>\n    The array: ${arr} .</br>\n    </br> Is the entered value greater than ALL values in the array?  ${result}. `\n}"
+        },
+        {
+            "arrSomeFunctionId": "// JavaScript code here\n\nfunction arrSome() {\n    const data = document.getElementById(\"arrSomeValueId\").value;\n    const showResult = document.getElementById(\"arrSomeIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    let result ;\n    const addAllElement = (element, index, arr) => element < data;\n    result = arr.reduceRight(addAllElement);\n    if(Number(data)) {\n        result = arr.some(addAllElement);\n    }\n    else {\n        result = 'Type a number please.';\n    }\n    showResult.innerHTML = ` Your value: ${data} . </br>\n    The array: ${arr} .</br>\n    </br> Is the entered value greater than A values in the array?  ${result}. `\n}"
+        },
+        {
             "arrArrayFromFunctionId": "// JavaScript code here\n\nfunction arrArrayFrom() {\n    const data = document.getElementById(\"arrArrayFromValueId\").value;\n    const showResult = document.getElementById(\"arrArrayFromIdResult\");\n    let arr =  [\"3\", \"AM\", \"THE\", \"REAL\", \"ONE\"];\n    let result = Array.from(arr);\n\n    showResult.innerHTML = ` The array: [${arr}] .\n    </br> The copy : [${result}]. `\n}"
         },
         {
