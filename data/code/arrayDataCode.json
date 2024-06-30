@@ -98,7 +98,37 @@
     ],
     "arrayIterationMethods": [
         {
-            "arrMethodsSortFunctionId": "// JavaScript code here\n\nfunction arrMethodsSort() {\n    const data = document.getElementById(\"arrMethodsSortValueId\").value;\n    const showResult = document.getElementById(\"arrMethodsSortIdResult\");\n    let arr =  [\"Apple\", \"Orange\", \"Apple\", \"Mango\", \"Orange\"];\n    arr.push(data);\n\n    let result = arr.sort();\n    showResult.innerHTML = `The alphabetical sorting array : ${result} . `\n}"
+            "arrForEachFunctionId": "// JavaScript code here\n\nfunction arrForEach() {\n    const data = document.getElementById(\"arrForEachValueId\").value;\n    const showResult = document.getElementById(\"arrForEachIdResult\");\n    let arr =  [27, 28, 30, 40, 42, 35, 30];\n    let result = \"\";\n\n    arr.forEach((element, index) => {\n        result += ` The index ${index} is : ${element} </br> `;\n    })\n    showResult.innerHTML = `</br> ${result}. `\n}"
+        },
+        {
+            "arrMapFunctionId": "// JavaScript code here\n\nfunction arrMap() {\n    const data = document.getElementById(\"arrMapValueId\").value;\n    const showResult = document.getElementById(\"arrMapIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    \n    const multiply = (e) => e * 2;\n    let result = arr.map(multiply);\n   \n    showResult.innerHTML = ` The array element multiply by 2 </br> ${result}. `\n}"
+        },
+        {
+            "arrflatMapFunctionId": "// JavaScript code here\n\nfunction arrflatMap() {\n    const data = document.getElementById(\"arrflatMapValueId\").value;\n    const showResult = document.getElementById(\"arrflatMapIdResult\");\n    let arr =  [45, 4, [9, 16], 25];\n    let result ;\n    let multiply = data;\n    if(Number(data)){\n        const multiplyFunction = (e) => Array.isArray(e) ? e.map(x => x * multiply) : [e * multiply];\n        result = arr.flatMap(multiplyFunction);\n    }\n    else {\n        result = \"Type a number please\";\n    }\n    \n    showResult.innerHTML = ` The multiply number: ${multiply} .\n    </br> The array flated: ${result}. `\n}"
+        },
+        {
+            "arrFilterFunctionId": "// JavaScript code here\n\nfunction arrFilter() {\n    const data = document.getElementById(\"arrFilterValueId\").value;\n    const showResult = document.getElementById(\"arrFilterIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    let result ;\n    if(Number(data)){\n         result = arr.filter((e) => e > data);\n    }\n    else {\n        result = \"Type a number please\"\n    }\n    showResult.innerHTML = ` Your number: ${data} .\n    </br> The array filtered with your value: ${result}. `\n}"
+        },
+        {
+            "arrReduceFunctionId": "// JavaScript code here\n\nfunction arrReduce() {\n    const data = document.getElementById(\"arrReduceValueId\").value;\n    const showResult = document.getElementById(\"arrReduceIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    let result ;\n    const addAllElement = (total, element, index, arr) => total + element;\n    result = arr.reduce(addAllElement, 0);\n\n    showResult.innerHTML = ` The array: ${arr} .\n    </br> The array with all added value: ${result}. `\n}"
+        },
+        {
+            "arrReduceRightFunctionId": "// JavaScript code here\n\nfunction arrReduceRight() {\n    const data = document.getElementById(\"arrReduceRightValueId\").value;\n    const showResult = document.getElementById(\"arrReduceRightIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    let result;\n    const addAllElement = (total, element, index, arr) => total + element;\n    result = arr.reduceRight(addAllElement, 0);\n\n    showResult.innerHTML = ` The array: ${arr} .\n    </br> The array with all added value: ${result}. `\n}"
+        },
+        {
+            "arrArrayFromFunctionId": "// JavaScript code here\n\nfunction arrArrayFrom() {\n    const data = document.getElementById(\"arrArrayFromValueId\").value;\n    const showResult = document.getElementById(\"arrArrayFromIdResult\");\n    let arr =  [\"3\", \"AM\", \"THE\", \"REAL\", \"ONE\"];\n    let result = Array.from(arr);\n\n    showResult.innerHTML = ` The array: [${arr}] .\n    </br> The copy : [${result}]. `\n}"
+        },
+        {
+            "arrKeyFunctionId": "// JavaScript code here\n\nfunction arrKey() {\n    const data = document.getElementById(\"arrKeyValueId\").value;\n    const showResult = document.getElementById(\"arrKeyIdResult\");\n    let arr =  [45, 4, 9, 16, 25];\n    let result  = \"\";\n    let keys = arr.keys();\n    for(let x of keys){\n        result += ` The key :${x}. The Value: ${arr[x]} </br> `;\n    };\n    \n    showResult.innerHTML = ` The array: ${arr} .\n    </br> The  array converted to object: </br> ${result}. `\n}"
+        },
+        {
+            "arrEntriesFunctionId": "// JavaScript code here\n\nfunction arrEntries() {\n    const data = document.getElementById(\"arrEntriesValueId\").value;\n    const showResult = document.getElementById(\"arrEntriesIdResult\");\n    let arr =  [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n    let result  = \"\";\n    let fruits = arr.entries();\n    for(let [index, value] of fruits){\n        result += ` The key and value [${index}, ${value}].</br> `;\n    };\n\n    showResult.innerHTML = ` The array: [${arr}] .\n    </br> How array.entries displays and stores results : </br> ${result}. `\n}"
+        },
+        {
+            "arrWithFunctionId": "// JavaScript code here\n\nfunction arrWith() {\n    const data = document.getElementById(\"arrWithValueId\").value;\n    const showResult = document.getElementById(\"arrWithIdResult\");\n    let arr =  [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n    let result = arr.with(1, data);\n\n    showResult.innerHTML = ` The array: [${arr}] .\n    </br> How array.entries displays and stores results [${result}] . `\n}"
+        },
+        {
+            "arrSpreadFunctionId": "// JavaScript code here\n\nfunction arrSpread() {\n    const data = document.getElementById(\"arrSpreadValueId\").value;\n    const showResult = document.getElementById(\"arrSpreadIdResult\");\n    let arr =  [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n    let result = [...arr, data];\n    \n    showResult.innerHTML = ` The array: [${arr}] .\n    </br> Copy of the array with your value in the end: [${result}] . `\n}"
         }
     ]
 }

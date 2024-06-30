@@ -403,6 +403,15 @@
             "onclickFonctionToCall": "arrWith",
             "outputResultId": "arrWithIdResult",
             "idToMarkCodeArea": "arrWithFunctionId"
+        },
+        {
+            "title": "Array spread",
+            "subtitle": "the Array with() method is a safe way to update elements in an array without altering the original array.",
+            "paragraph":"The array  : [ Banana,Orange,Apple,Mango] . </br> Make a superficial copy of the array, the nestings array or object are just refferences and mofifies the original value. ",
+            "inputValueId": "arrSpreadValueId",
+            "onclickFonctionToCall": "arrSpr ead",
+            "outputResultId": "arrSpreadIdResult",
+            "idToMarkCodeArea": "arrSpreadFunctionId"
         }
     ]
 }

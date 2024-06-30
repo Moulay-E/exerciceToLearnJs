@@ -112,13 +112,16 @@ function arrWith() {
     let arr =  ["Banana", "Orange", "Apple", "Mango"];
     let result  = arr.with(1, data);
 
-    
-    // if(Number(data)){
-    //      result = arr.filter((e)=> e > data);
-    // }
-    // else {
-    //     result = "Type a number please"
-    // }
     showResult.innerHTML = ` The array: [${arr}] .
     </br> How array.entries displays and stores results [${result}] . `
+};
+function arrSpread() {
+    const data = document.getElementById("arrSpreadValueId").value;
+    const showResult = document.getElementById("arrSpreadIdResult");
+    let arr =  ["Banana", "Orange", "Apple", "Mango"];
+    let result  = [...arr, data];
+
+    
+    showResult.innerHTML = ` The array: [${arr}] .
+    </br> Copy of the array with your value in the end: [${result}] . `
 }
