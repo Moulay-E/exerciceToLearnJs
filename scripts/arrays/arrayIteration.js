@@ -87,8 +87,8 @@ function arrKey() {
     let result  = "";
     let keys = arr.keys();
     for(let x of keys){
-        result += ` The index :${x}. The Value: ${arr[x]} | `;
-    }
+        result += ` The key :${x}. The Value: ${arr[x]} </br> `;
+    };
     
     // if(Number(data)){
     //      result = arr.filter((e)=> e > data);
@@ -96,6 +96,6 @@ function arrKey() {
     // else {
     //     result = "Type a number please"
     // }
-    showResult.innerHTML = ` Your number: ${arr} .
-    </br> The  array filtered with your value: </br> ${result}. `
+    showResult.innerHTML = ` The array: ${arr} .
+    </br> The  array converted to object: </br> ${result}. `
 }
