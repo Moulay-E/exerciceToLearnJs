@@ -384,6 +384,25 @@
             "onclickFonctionToCall": "arrKey",
             "outputResultId": "arrKeyIdResult",
             "idToMarkCodeArea": "arrKeyFunctionId"
+        },
+        {
+            "title": "Array Entries",
+            "subtitle": "The entries() method returns an Array Iterator object with key/value pairs:",
+            "paragraph":"The entries() method does not change the original array. </br> The array  : [ Banana,Orange,Apple,Mango] . </br> We change the arr into a objet , and iterate on it.",
+            "hiddenInput": "true",
+            "inputValueId": "arrEntriesValueId",
+            "onclickFonctionToCall": "arrEntries",
+            "outputResultId": "arrEntriesIdResult",
+            "idToMarkCodeArea": "arrEntriesFunctionId"
+        },
+        {
+            "title": "Array With",
+            "subtitle": "the Array with() method is a safe way to update elements in an array without altering the original array.",
+            "paragraph":"The array  : [ Banana,Orange,Apple,Mango] . </br> Take two paramete( index, value). We change element of index 1.",
+            "inputValueId": "arrWithValueId",
+            "onclickFonctionToCall": "arrWith",
+            "outputResultId": "arrWithIdResult",
+            "idToMarkCodeArea": "arrWithFunctionId"
         }
     ]
 }

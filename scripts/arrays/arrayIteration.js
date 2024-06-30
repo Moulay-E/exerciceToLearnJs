@@ -90,12 +90,35 @@ function arrKey() {
         result += ` The key :${x}. The Value: ${arr[x]} </br> `;
     };
     
+    showResult.innerHTML = ` The array: ${arr} .
+    </br> The  array converted to object: </br> ${result}. `
+};
+function arrEntries() {
+    const data = document.getElementById("arrEntriesValueId").value;
+    const showResult = document.getElementById("arrEntriesIdResult");
+    let arr =  ["Banana", "Orange", "Apple", "Mango"];
+    let result  = "";
+    let fruits = arr.entries();
+    for(let [index, value] of fruits){
+        result += ` The key and value [${index}, ${value}].</br> `;
+    };
+
+    showResult.innerHTML = ` The array: [${arr}] .
+    </br> How array.entries displays and stores results : </br> ${result}. `
+};
+function arrWith() {
+    const data = document.getElementById("arrWithValueId").value;
+    const showResult = document.getElementById("arrWithIdResult");
+    let arr =  ["Banana", "Orange", "Apple", "Mango"];
+    let result  = arr.with(1, data);
+
+    
     // if(Number(data)){
     //      result = arr.filter((e)=> e > data);
     // }
     // else {
     //     result = "Type a number please"
     // }
-    showResult.innerHTML = ` The array: ${arr} .
-    </br> The  array converted to object: </br> ${result}. `
+    showResult.innerHTML = ` The array: [${arr}] .
+    </br> How array.entries displays and stores results [${result}] . `
 }
