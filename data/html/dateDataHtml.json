@@ -1,0 +1,13 @@
+{
+    "date":[
+        {
+            "title": "Array length",
+            "subtitle": "",
+            "paragraph":"The length property returns the length (size) of an array:",
+            "inputValueId": "arrMethodsLengthValueId",
+            "onclickFonctionToCall": "arrMethodsLength",
+            "outputResultId": "arrMethodsLengthIdResult",
+            "idToMarkCodeArea": "arrMethodsLengthFunctionId"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "date": [
+    {
+        "arrForEachFunctionId": "// JavaScript code here\n\nfunction arrForEach() {\n    const data = document.getElementById(\"arrForEachValueId\").value;\n    const showResult = document.getElementById(\"arrForEachIdResult\");\n    let arr =  [27, 28, 30, 40, 42, 35, 30];\n    let result = \"\";\n\n    arr.forEach((element, index) => {\n        result += ` The index ${index} is : ${element} </br> `;\n    })\n    showResult.innerHTML = `</br> ${result}. `\n}"
+    }
+]}

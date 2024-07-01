@@ -35,6 +35,10 @@
         {
             "title": "Array Iteration",
             "link": "/pages/arrays/arrayIteration.html"
+        },
+        {
+            "title": "Date",
+            "link": "/pages/date/date.html"
         }
     ]
 }
