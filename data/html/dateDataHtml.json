@@ -1,13 +1,22 @@
 {
     "date":[
         {
-            "title": "Array length",
+            "title": "Date New Date",
             "subtitle": "",
             "paragraph":"The length property returns the length (size) of an array:",
-            "inputValueId": "arrMethodsLengthValueId",
-            "onclickFonctionToCall": "arrMethodsLength",
-            "outputResultId": "arrMethodsLengthIdResult",
-            "idToMarkCodeArea": "arrMethodsLengthFunctionId"
+            "inputValueId": "dateNewDateValueId",
+            "onclickFonctionToCall": "dateNewDate",
+            "outputResultId": "dateNewDateIdResult",
+            "idToMarkCodeArea": "dateNewDateFunctionId"
+        },
+        {
+            "title": "Date New Date(string)",
+            "subtitle": "",
+            "paragraph":"The length property returns the length (size) of an array:",
+            "inputValueId": "dateNewDateStringValueId",
+            "onclickFonctionToCall": "dateNewDateString",
+            "outputResultId": "dateNewDateStringIdResult",
+            "idToMarkCodeArea": "dateNewDateStringFunctionId"
         }
     ]
 }
