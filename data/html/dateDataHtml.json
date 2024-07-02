@@ -2,8 +2,8 @@
     "date":[
         {
             "title": "Date New Date",
-            "subtitle": "",
-            "paragraph":"The length property returns the length (size) of an array:",
+            "subtitle": "Date objects are created with the new Date() constructor. </br> There are 9 ways to create a new date object:",
+            "paragraph":"new Date() </br>new Date(date string) </br> ew Date(year,month) </br> And after that you can add value you want or let it blank it will complete automatically. </br> new Date(year,month,day,hours,minutes,seconds,ms). In this example you can see the date now:",
             "inputValueId": "dateNewDateValueId",
             "onclickFonctionToCall": "dateNewDate",
             "outputResultId": "dateNewDateIdResult",
@@ -11,12 +11,21 @@
         },
         {
             "title": "Date New Date(string)",
-            "subtitle": "",
-            "paragraph":"The length property returns the length (size) of an array:",
+            "subtitle": "new Date(date string) creates a date object from a date string: September 5, 2016",
+            "paragraph":"",
             "inputValueId": "dateNewDateStringValueId",
             "onclickFonctionToCall": "dateNewDateString",
             "outputResultId": "dateNewDateStringIdResult",
             "idToMarkCodeArea": "dateNewDateStringFunctionId"
+        },
+        {
+            "title": "Date New Date(number)",
+            "subtitle": "new Date(year, month, ...) creates a date object with a specified date and time.",
+            "paragraph":"",
+            "inputValueId": "dateNewDateNumberValueId",
+            "onclickFonctionToCall": "dateNewDateNumber",
+            "outputResultId": "dateNewDateNumberIdResult",
+            "idToMarkCodeArea": "dateNewDateNumberFunctionId"
         }
     ]
 }
