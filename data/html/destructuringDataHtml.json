@@ -1,0 +1,12 @@
+{
+    "destructuring": 
+    {
+        "title": "Date New Date",
+        "subtitle": "Date objects are created with the new Date() constructor. </br> There are 9 ways to create a new date object:",
+        "paragraph":"new Date() </br>new Date(date string) </br> ew Date(year,month) </br> And after that you can add value you want or let it blank it will complete automatically. </br> new Date(year,month,day,hours,minutes,seconds,ms). In this example you can see the date now:",
+        "inputValueId": "dateNewDateValueId",
+        "onclickFonctionToCall": "destructuring",
+        "outputResultId": "dateNewDateIdResult",
+        "idToMarkCodeArea": "dateNewDateFunctionId"
+    }
+}

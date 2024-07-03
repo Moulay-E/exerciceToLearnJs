@@ -39,6 +39,10 @@
         {
             "title": "Date",
             "link": "/pages/date/date.html"
+        },
+        {
+            "title": "Destructuring",
+            "link": "/pages/destructuring/destructuring.html"
         }
     ]
 }
