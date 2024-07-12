@@ -61,11 +61,11 @@ a {
 }
 .navigation__home__img {
     cursor: pointer;
-    height: 60px;
+    height: 40px;
 }
 .navigation__darkmode__img{
     cursor: pointer;
-    height: 65px;
+    height: 45px;
 }
 
 .navigation__button{
