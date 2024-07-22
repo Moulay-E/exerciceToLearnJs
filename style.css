@@ -69,7 +69,7 @@ a {
 }
 
 .navigation__button{
-    width: 45%;
+    width: 200px;
     display: flex;
     justify-content: space-around;
 }
@@ -382,4 +382,15 @@ footer{
 .generateContent{
     width: 100%;
     gap: 50px;
+}
+
+
+/* media query */
+
+@media (max-width: 600px){
+    
+    .navigation__button{
+        width: 45%;
+    }
+    
 }
