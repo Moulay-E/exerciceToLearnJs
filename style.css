@@ -264,6 +264,19 @@ a {
 height: 100%;
 width: 100%;
 }
+.menu__container__bar__list__element{
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+    padding: 10px;
+    border-bottom: 5px solid var(--primary-bg-color);
+    text-align: center;
+}
+.menu__container__bar__list__element:nth-of-type(1) {
+    border-top: 5px solid var(--primary-bg-color);
+}
+.menu__container__bar__list__element:hover {
+    background-color: var(--terciary-bg-color)
+}
 
 
 #darkModeBtn{
