@@ -390,6 +390,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    margin: 0;
 }
 
 .generateContent{
@@ -405,5 +406,5 @@ footer{
     .navigation__button{
         width: 45%;
     }
-    
+/*hamburger */
 }
