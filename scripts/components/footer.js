@@ -13,7 +13,18 @@ export async function footer() {
         const a = document.createElement("a");
         a.href = e.link;
         a.target = "_blank";
-        a.textContent = e.title;
+        a.classList.add("footer__ul__a");
+        if(e.title){
+            a.textContent = e.title;
+        }
+        if(e.img){
+            const image = document.createElement("img");
+            image.classList.add("footer__ul__a__image");
+            image.src = e.img;
+            image.alt = e.imgAlt;
+            a.appendChild(image);
+        }
+
         li.appendChild(a);
         ul.appendChild(li);
     })
