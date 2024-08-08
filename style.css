@@ -17,8 +17,6 @@ a {
 .baseCss{
     margin: 0;
     padding: 0;
-    /* padding to compensate the fixed navbar */
-    padding-top: 70px;
     align-items: center;
 }
 .darkMode {
@@ -47,6 +45,8 @@ a {
     justify-content: center;
     width: 80%;
     gap: 50px;
+        /* padding to compensate the fixed navbar */
+    padding-top: 150px;
 }
 /* navbar */
 .navigation {
@@ -385,6 +385,8 @@ footer{
     margin-top: 50px;
     background-color: var(--primary-bg-color);
     color: var(--primary-txt-color);
+    position: absolute;
+    bottom: 0;
 }
 .footer__ul{
     height: 100%;
