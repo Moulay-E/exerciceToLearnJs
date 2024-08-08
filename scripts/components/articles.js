@@ -13,7 +13,7 @@ export async function  articles(arrLocation, arrayName){
                     // console.log(item);
                     result += 
                         `<article class="example__container flexCenter flexColumn">
-                            <div class="example__container__title borderRadius">
+                            <div class="example__container__title ">
                                 <h2>${item.title}</h2>
                             </div>
                             <div>
@@ -22,7 +22,7 @@ export async function  articles(arrLocation, arrayName){
                             </h3>
                                 <p class="paragraph"> ${item.paragraph} </p>
                             </div>                           
-                            <div class="tryIt borderRadius flexColumn flexCenter">
+                            <div class="tryIt  flexColumn flexCenter">
                                 <form>
                                     <h4>Try it </h4>
                                     <input type="text" id="${item.inputValueId}" />
@@ -34,7 +34,7 @@ export async function  articles(arrLocation, arrayName){
                                     <p>Result: <span id="${item.outputResultId}"></span></p>
                                 </div>
                             </div>
-                            <div  class="example__container__code hide borderRadius codeContainerJs">
+                            <div  class="example__container__code hide  codeContainerJs">
                                 <div class="example__container__code__header">
                                     <h3 class="example__container__code__h3">Code</h3>
                                     <button class="example__container__code__btn borderRadius" >hide</button>
@@ -43,7 +43,7 @@ export async function  articles(arrLocation, arrayName){
                                 <code id="${item.idToMarkCodeArea}"></code>
                                 </pre>
                             </div>
-                            <div  class="showMore flexDisplay borderRadius"  >
+                            <div  class="showMore flexDisplay"  >
                                 <h3>Show code</h3>
                             </div>
                         </article> `

@@ -295,6 +295,8 @@ width: 100%;
 .example__container{
     width: 100%;
     gap: 20px;
+     border: black 4px solid;
+    border-radius: 6px;
 }
 .example__container__title{
     background-color: var(--primary-bg-color);
