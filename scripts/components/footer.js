@@ -15,7 +15,10 @@ export async function footer() {
         a.target = "_blank";
         a.classList.add("footer__ul__a");
         if(e.title){
-            a.textContent = e.title;
+            const h4 = document.createElement("h4");
+            h4.classList.add("footer__ul__a__h4")
+            h4.textContent = e.title;
+            a.appendChild(h4);
         }
         if(e.img){
             const image = document.createElement("img");

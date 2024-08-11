@@ -125,12 +125,15 @@ a {
 .menu{
     /* background-color: red; */
     width: 260px;
-    height: 100%;
+    /* height: 100%; */
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
     display: block;
+}
+.menu-active{
+    height: 100%;
 }
 /* hamburger */
 
@@ -404,7 +407,10 @@ footer{
 .footer__ul__a__image{
     height: 50px;
 }
-
+.footer__ul__a__h4{
+    margin: 0;
+    height: 30px;
+}
 .generateContent{
     width: 100%;
     gap: 50px;
