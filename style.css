@@ -161,7 +161,20 @@ a {
     transition: .5s ease-in-out;
     cursor: pointer;
   }
-
+  /*"menu__btnContainer__hamburgerContainer__hamburger*/
+  .gridTest{
+    width: 60px;
+    height: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+    row-gap: 6px; /* espace entre les grilles */
+    
+    
+  }
+.gridTest span{
+    background: var(--quaternary--bg--color);
+    opacity: 1;
+}
 
 .menu__btnContainer__hamburgerContainer__hamburger span {
     display: block;
