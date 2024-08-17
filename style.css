@@ -150,7 +150,10 @@ a {
     width: 60px;
     height: 45px;
     position: relative;
-    /* margin: 50px auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+    row-gap: 6px; /* espace entre les grilles */
+    margin: 50px auto; 
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -177,10 +180,10 @@ a {
 }
 
 .menu__btnContainer__hamburgerContainer__hamburger span {
-    display: block;
-    position: absolute;
+    /* display: block;
+    position: absolute; */
     height: 9px;
-    width: 50%;
+    /* width: 50%; */
     background: var(--quaternary--bg--color);
     opacity: 1;
     -webkit-transform: rotate(0deg);

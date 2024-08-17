@@ -16,7 +16,7 @@ function navBar(){
 <div class="menu" id ="menu-height">
     <div class="menu__btnContainer flexCenter">
         <div class="menu__btnContainer__hamburgerContainer borderRadius">
-            <div id="showHideMenu" class="gridTest">
+            <div id="showHideMenu" class="menu__btnContainer__hamburgerContainer__hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
