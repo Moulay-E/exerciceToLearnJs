@@ -150,9 +150,7 @@ a {
     width: 60px;
     height: 45px;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
-    row-gap: 6px; /* espace entre les grilles */
+
     margin: 50px auto; 
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -164,26 +162,12 @@ a {
     transition: .5s ease-in-out;
     cursor: pointer;
   }
-  /*"menu__btnContainer__hamburgerContainer__hamburger*/
-  .gridTest{
-    width: 60px;
-    height: 45px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
-    row-gap: 6px; /* espace entre les grilles */
-    
-    
-  }
-.gridTest span{
-    background: var(--quaternary--bg--color);
-    opacity: 1;
-}
 
 .menu__btnContainer__hamburgerContainer__hamburger span {
-    /* display: block;
-    position: absolute; */
+    display: block;
+    position: absolute;
     height: 9px;
-    /* width: 50%; */
+    width: 50%;
     background: var(--quaternary--bg--color);
     opacity: 1;
     -webkit-transform: rotate(0deg);
@@ -330,6 +314,7 @@ width: 100%;
 }
 .paragraph{
     color: var(--secondary-txt-color);
+    text-align: center;
 }
 .tryIt{
     background-color: var(--secondary-bg-color);
@@ -404,8 +389,8 @@ footer{
     margin-top: 50px;
     background-color: var(--primary-bg-color);
     color: var(--primary-txt-color);
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 .footer__ul{
     height: 100%;
