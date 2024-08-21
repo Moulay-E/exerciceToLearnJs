@@ -1,19 +1,19 @@
 {
     "footer": [
         {
-            "title": "githubDyna",
+            "title": "Me",
             "link": "https://github.com/Moulay-E",
             "img": "/assets/github.svg",
             "imgAlt": "github logo"
         },
         {
-            "title": "Source doc",
+            "title": "Source",
             "link": "https://www.w3schools.com/js/",
             "img": "/assets/W3Schools_logo.webp",
             "imgAlt": "github logo"
         },
         {
-            "title": "My github",
+            "title": "My code",
             "link": "https://github.com/Moulay-E",
             "img": "/assets/github-svg.svg",
             "imgAlt": "github logo"

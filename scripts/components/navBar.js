@@ -4,12 +4,12 @@ function navBar(){
     let nav = document.getElementById("nav");
     let htmlToShow = `
     <div class="navigation__button">
-        <a class="flexCenter" href="/index.html" > 
-            <img class="navigation__home__img" src="/assets/home-pink-svg.svg" alt="home"/>
+        <a class="navigation__button__home flexCenter" href="/index.html" > 
+            <img class="navigation__home__img" src="/assets/home-white-svg.svg" alt="home"/>
         </a> 
-    <div class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
-        <img class="navigation__darkmode__img" src="/assets/night-pink-mode-svg.svg" alt="dark-mode" />
-    </div>
+        <a class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
+            <img class="navigation__darkmode__img" src="/assets/night-white-mode-svg.svg" alt="dark-mode" />
+        </a>
 
     </div>
 
