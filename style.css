@@ -67,8 +67,8 @@ a {
     justify-content: space-around;
 }
 .navigation__button__home{
-    width: 60px;
-    height: 45px;
+    width: 65px;
+    height: 50px;
     justify-content: center;
     background-color: var(--secondary-bg-color);
     border: solid black 3px;
@@ -82,8 +82,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 45px;
+    width: 65px;
+    height: 50px;
     background-color: var(--secondary-bg-color);
     border: solid black 3px;
     border-radius: 9px;
@@ -158,8 +158,8 @@ a {
 /* hamburger */
 
 .menu__btnContainer__hamburgerContainer {
-    width: 80px;
-    height: 65px;
+    width: 65px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,11 +169,11 @@ a {
 }
 
 .menu__btnContainer__hamburgerContainer__hamburger {
-    width: 60px;
-    height: 45px;
+    width: 45px;
+    height: 30px;
     position: relative;
 
-    margin: 50px auto; 
+    /* margin: 50px auto;  */
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -188,7 +188,7 @@ a {
 .menu__btnContainer__hamburgerContainer__hamburger span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 5px;
     width: 50%;
     background: var(--quaternary--bg--color);
     opacity: 1;
@@ -218,11 +218,11 @@ a {
   }
   
   .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(3), .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(4) {
-    top: 18px;
+    top: 13px;
   }
   
   .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(5), .menu__btnContainer__hamburgerContainer__hamburger span:nth-child(6) {
-    top: 36px;
+    bottom: 0;
   }
   /* selects the child spans of menu__btnContainer__hamburgerContainer__hamburger if the open class is present */
   .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(1),.menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(6) {
@@ -261,12 +261,12 @@ a {
   
   .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(5) {
     left: 5px;
-    top: 29px;
+    bottom: 5px;
   }
   
   .menu__btnContainer__hamburgerContainer__hamburger.open span:nth-child(6) {
     left: calc(50% - 5px);
-    top: 29px;
+    bottom: 5px;
   }
   
 
@@ -403,7 +403,7 @@ pre {
 
 footer{
     width: 100%;
-    height: 140px;
+    height: 120px;
     border-top: 4px solid black;
     margin-top: 50px;
     background-color: var(--primary-bg-color);
@@ -425,8 +425,8 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border: solid black 3px;
     border-radius: 45px;
     background-color: #E1AFD1;
