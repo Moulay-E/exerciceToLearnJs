@@ -23,7 +23,7 @@ function stringSearch() {
     let string =  "Please locate where 'locate' occurs!";
     let indexFind = string.search(data);
 
-    showResult.innerHTML = `Le last index est : ${indexFind} .`
+    showResult.innerHTML = `L' index est : ${indexFind} .`
 }
 function stringMatch() {
     const data = document.getElementById("stringMatchValueId").value;

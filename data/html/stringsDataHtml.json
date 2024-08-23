@@ -87,7 +87,7 @@
     "stringSearch": [
         {
             "title": "String indexOf methods",
-            "subtitle": "lastIndexOf can take a second argument",
+            "subtitle": "IndexOf can take a second argument",
             "paragraph":"The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found, exemple in this text: Please locate where 'locate' occurs! ",
             "inputValueId": "indexOfStringValueId",
             "onclickFonctionToCall": "stringIndexOf",
