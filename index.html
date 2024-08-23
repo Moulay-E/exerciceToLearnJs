@@ -19,27 +19,35 @@
                 <h1>HOME</h1>
             </div>
 
-            <div id="generateContentJs" class="generateContent flexColumn">
-                <h2 class="projetName">A project to recreate the javascript documentation with a more enviable color and style and a more colorful theme.</h2>
-                <style>.projetName{text-align: center;} </style>
-            </div>
+            <article class="example__container flexCenter flexColumn home__description">
+                <div class="example__container__title ">
+                    <h2>Javascript Documentation</h2>
+                </div>
+                <div>
+               
+                    <p class="paragraph"> 
+                        A project to recreate the javascript documentation with a more enviable color and style and a more colorful theme.
+                    </p>
+                </div>                           
+                
+            </article>
 
         </main>
+        <footer class="footer__indexHtml--bottom" id="footer">
+            <style>.footer__indexHtml--bottom{position: absolute;bottom: 0;} </style>
+        </footer>
     </div>
 
-    <footer class="footer__indexHtml--bottom" id="footer">
-    <style>.footer__indexHtml--bottom{position: absolute;bottom: 0;} </style>
-    </footer>
     <script src="/scripts/components/navBar.js"></script>
 
     <script type="module" >
-        import {codeToHtml} from "/scripts/components/codeToHtml.js";
+        // import {codeToHtml} from "/scripts/components/codeToHtml.js";
         import {articles} from "/scripts/components/articles.js";
         import {navList} from "/scripts/components/navList.js";
         import {footer} from "/scripts/components/footer.js";
 
-        const dataHtmlUrl = "/data/html/numbersDataCode.json";
-        const dataCodeUrl = "/data/code/numbersDataCode.Json";
+        // const dataHtmlUrl = "/data/html/numbersDataCode.json";
+        // const dataCodeUrl = "/data/code/numbersDataCode.Json";
 
         // articles(dataHtmlUrl, 'numberMethods').then(()=>{
         //     codeToHtml(dataCodeUrl, 'numberMethods');

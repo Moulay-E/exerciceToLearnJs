@@ -2,7 +2,7 @@ this project is to rewrite the javascript documentation and to make it more plea
 And try to make all in vanilla.
 
 I have to try to generate all redondonces in js.
-Inspired by react and next, that why i use this architecture.
+Inspired by react, that why i use this architecture.
 
 I use json file to store data.
 I use only 1 file of css.
@@ -19,3 +19,6 @@ The structure :
                 -script (to execute the fonction for the specefic page)
                    -fetch json file (to retrieve the contents)
 
+
+Good to know: 
+    All btn are not onClick, i use a addEvent listenner for them.
