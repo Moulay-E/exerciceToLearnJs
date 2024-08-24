@@ -27,5 +27,43 @@
             "outputResultId": "dateNewDateNumberIdResult",
             "idToMarkCodeArea": "dateNewDateNumberFunctionId"
         }
+    ],
+    "dateFormat":[
+        {
+            "title": "JavaScript ISO Dates",
+            "subtitle": "ISO 8601 is the international standard for the representation of dates and times. The syntax is: (YYYY-MM-DD).",
+            "paragraph":"is also the preferred JavaScript date format, type a year like this example: 2015-03-25 ",
+            "inputValueId": "isoDateValueId",
+            "onclickFonctionToCall": "isoDate",
+            "outputResultId": "isoDateIdResult",
+            "idToMarkCodeArea": "isoDateFunctionId"
+        },
+        {
+            "title": "ISO Dates (Year and Month)",
+            "subtitle": "ISO dates can be written without specifying the day (YYYY-MM):",
+            "paragraph":"type a year like this example: 2015-03:",
+            "inputValueId": "isoDateYearMonthValueId",
+            "onclickFonctionToCall": "isoDateYearMonth",
+            "outputResultId": "isoDateYearMonthIdResult",
+            "idToMarkCodeArea": "isoDateYearMonthFunctionId"
+        },
+        {
+            "title": "ISO Dates (Only Year)",
+            "subtitle": "ISO dates can be written without month and day (YYYY):",
+            "paragraph":"type a year like this example: 2015:",
+            "inputValueId": "isoDateYearValueId",
+            "onclickFonctionToCall": "isoDateYear",
+            "outputResultId": "isoDateYearIdResult",
+            "idToMarkCodeArea": "isoDateYearFunctionId"
+        },
+        {
+            "title": "ISO Dates (Date-Time)",
+            "subtitle": "ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):",
+            "paragraph":"The example will be: 2015-03-25T12:00:00Z.",
+            "inputValueId": "isoDateHourMinuteSecondValueId",
+            "onclickFonctionToCall": "isoDateHourMinuteSecond",
+            "outputResultId": "isoDateHourMinuteSecondIdResult",
+            "idToMarkCodeArea": "isoDateHourMinuteSecondFunctionId"
+        }
     ]
 }

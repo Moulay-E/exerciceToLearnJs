@@ -41,6 +41,10 @@
             "link": "/pages/date/date.html"
         },
         {
+            "title": "Date Format",
+            "link": "/pages/date/dateFormat.html"
+        },
+        {
             "title": "Destructuring",
             "link": "/pages/destructuring/destructuring.html"
         }
