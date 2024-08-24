@@ -81,7 +81,7 @@ function numberIsInteger() {
     let notAString = JSON.parse(data);
     let result = Number.isInteger(notAString);
     showResult.innerHTML = `
-        L'élément est il un nombre? : ${result} . </br>. 
+        L'élément est il un nombre entier? : ${result} . </br>. 
     `
 } 
 function numberIsSafeInteger() {
@@ -91,7 +91,7 @@ function numberIsSafeInteger() {
     let result = Number.isSafeInteger(notAString);
     showResult.innerHTML = `
         L'élément est il un nombre safe? : ${result} . </br> . 
-    `
+    `;
 } 
 function numberNumberParseFloat() {
     const data = document.getElementById("numberNumberParseFloatValueId").value;
