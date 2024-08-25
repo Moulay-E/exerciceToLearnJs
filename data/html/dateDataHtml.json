@@ -59,11 +59,20 @@
         {
             "title": "ISO Dates (Date-Time)",
             "subtitle": "ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):",
-            "paragraph":"The example will be: 2015-03-25T12:00:00Z.",
+            "paragraph":"The example will be: 2015-03-25T12:00:00Z. </br> (Separate date and time with a capital T.Indicate UTC time with a capital Z.)",
             "inputValueId": "isoDateHourMinuteSecondValueId",
             "onclickFonctionToCall": "isoDateHourMinuteSecond",
             "outputResultId": "isoDateHourMinuteSecondIdResult",
             "idToMarkCodeArea": "isoDateHourMinuteSecondFunctionId"
+        },
+        {
+            "title": "JavaScript Short Dates.",
+            "subtitle": "Short dates are written with an \"MM/DD/YYYY\" syntax like this:",
+            "paragraph":"The example will be: 03/25/2015. </br> (WARNINGS ! In some browsers, months or days with no leading zeroes may produce an error, you have to write:2015-3-25)",
+            "inputValueId": "shortDateValueId",
+            "onclickFonctionToCall": "shortDate",
+            "outputResultId": "shortDateIdResult",
+            "idToMarkCodeArea": "shortDateFunctionId"
         }
     ]
 }

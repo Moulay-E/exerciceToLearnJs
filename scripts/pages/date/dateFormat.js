@@ -22,7 +22,14 @@ function isoDateYear() {
 function isoDateHourMinuteSecond() {
     const data = document.getElementById("isoDateHourMinuteSecondValueId").value;
     const showResult = document.getElementById("isoDateHourMinuteSecondIdResult");
-    let result = new Date(data) ;
+    let result = new Date("2015-03-25T12:00:00Z") ;
+
+    showResult.innerHTML = `The date now:  ${result}. `
+}
+function shortDate() {
+    const data = document.getElementById("shortDateValueId").value;
+    const showResult = document.getElementById("shortDateIdResult");
+    let result = new Date("03/25/2015") ;
 
     showResult.innerHTML = `The date now:  ${result}. `
 }
