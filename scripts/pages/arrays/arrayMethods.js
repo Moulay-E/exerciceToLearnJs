@@ -83,7 +83,7 @@ function arrMethodsConcat() {
     const showResult = document.getElementById("arrMethodsConcatIdResult");
     let arr = ["cacao", "banane", "lait", "vanille"];
     let dataArr = data.split(" ");
-    let arrConcat =  arr.concat(dataArr);
+    let arrConcat =  [...arr].concat(dataArr);
 
     showResult.innerHTML = `Le tableau de base : [${arr}] . </br>
      Vôtre tableau: ${dataArr}. </br>
