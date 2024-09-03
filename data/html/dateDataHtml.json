@@ -73,6 +73,15 @@
             "onclickFonctionToCall": "shortDate",
             "outputResultId": "shortDateIdResult",
             "idToMarkCodeArea": "shortDateFunctionId"
+        },
+        {
+            "title": "JavaScript Parsing Dates.",
+            "subtitle": "If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.",
+            "paragraph":" Date.parse() returns the number of milliseconds between the date and January 1, 1970. <br> Then use the number of milliseconds to convert it to a date object. <br> In this example we use : \"March 21, 2012\". ",
+            "inputValueId": "parsingDateValueId",
+            "onclickFonctionToCall": "parsingDate",
+            "outputResultId": "parsingDateIdResult",
+            "idToMarkCodeArea": "parsingDateFunctionId"
         }
     ]
 }

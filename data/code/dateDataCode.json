@@ -6,7 +6,25 @@
     ],
     "dateFormat": [
         {
-            "arrForEachFunctionId": "// JavaScript code here\n\nfunction arrForEach() {\n    const data = document.getElementById(\"arrForEachValueId\").value;\n    const showResult = document.getElementById(\"arrForEachIdResult\");\n    let arr =  [27, 28, 30, 40, 42, 35, 30];\n    let result = \"\";\n\n    arr.forEach((element, index) => {\n        result += ` The index ${index} is : ${element} </br> `;\n    })\n    showResult.innerHTML = `</br> ${result}. `\n}"
-        }
+            "isoDateFunctionId": "// JavaScript code here\n\nfunction isoDate() {\n    const data = document.getElementById(\"isoDateValueId\").value;\n    const showResult = document.getElementById(\"isoDateIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        },
+        {
+            "isoDateYearMonthFunctionId": "// JavaScript code here\n\nfunction isoDateYearMonth() {\n    const data = document.getElementById(\"isoDateYearMonthValueId\").value;\n    const showResult = document.getElementById(\"isoDateYearMonthIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        },
+        {
+            "isoDateYearFunctionId": "// JavaScript code here\n\nfunction isoDateYear() {\n    const data = document.getElementById(\"isoDateYearValueId\").value;\n    const showResult = document.getElementById(\"isoDateYearIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        },
+        {
+            "isoDateHourMinuteSecondFunctionId": "// JavaScript code here\n\nfunction isoDateHourMinuteSecond() {\n    const data = document.getElementById(\"isoDateHourMinuteSecondValueId\").value;\n    const showResult = document.getElementById(\"isoDateHourMinuteSecondIdResult\");\n    let result = new Date(\"2015-03-25T12:00:00Z\");\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        },
+        {
+            "shortDateFunctionId": "// JavaScript code here\n\nfunction shortDate() {\n    const data = document.getElementById(\"shortDateValueId\").value;\n    const showResult = document.getElementById(\"shortDateIdResult\");\n    let result = new Date(\"03/25/2015\");\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        },
+        {
+            "longDateFunctionId": "// JavaScript code here\n\nfunction longDate() {\n    const data = document.getElementById(\"longDateValueId\").value;\n    const showResult = document.getElementById(\"longDateIdResult\");\n    let result = new Date(\"Mar 25 2015\");\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        },
+        {
+            "parsingDateFunctionId": "// JavaScript code here\n\nfunction parsingDate() {\n    const data = document.getElementById(\"parsingDateValueId\").value;\n    const showResult = document.getElementById(\"parsingDateIdResult\");\n    let msec = Date.parse(\"March 21, 2012\");\n    const d = new Date(msec);\n    let result = d;\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        }                
     ]
 }

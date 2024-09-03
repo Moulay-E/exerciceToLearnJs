@@ -33,3 +33,17 @@ function shortDate() {
 
     showResult.innerHTML = `The date now:  ${result}. `
 }
+function longDate() {
+    const data = document.getElementById("longDateValueId").value;
+    const showResult = document.getElementById("longDateIdResult");
+    let result = new Date("Mar 25 2015") ;
+
+    showResult.innerHTML = `The date now:  ${result}. `
+}
+function parsingDate() {
+    const data = document.getElementById("parsingDateValueId").value;
+    const showResult = document.getElementById("parsingDateIdResult");
+    let msec = Date.parse("March 21, 2012");
+    const d = new Date(msec);
+    showResult.innerHTML = `The date now:  ${result}. `
+}
