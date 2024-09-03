@@ -75,6 +75,15 @@
             "idToMarkCodeArea": "shortDateFunctionId"
         },
         {
+            "title": "JavaScript Long Dates.",
+            "subtitle": "ong dates are most often written with a \"MMM DD YYYY\" syntax like this:",
+            "paragraph":"The example will be: 03/25/2015. </br> (WARNINGS ! In some browsers, months or days with no leading zeroes may produce an error, you have to write:2015-3-25)",
+            "inputValueId": "longDateValueId",
+            "onclickFonctionToCall": "longDate",
+            "outputResultId": "longDateIdResult",
+            "idToMarkCodeArea": "longDateFunctionId"
+        },
+        {
             "title": "JavaScript Parsing Dates.",
             "subtitle": "If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.",
             "paragraph":" Date.parse() returns the number of milliseconds between the date and January 1, 1970. <br> Then use the number of milliseconds to convert it to a date object. <br> In this example we use : \"March 21, 2012\". ",
