@@ -22,3 +22,15 @@ The structure :
 
 Good to know: 
     All btn are not onClick, i use a addEvent listenner for them.
+
+    To create a new page you have to :
+        -create the html structure to html : pages  
+        -create a new script in the js : pages 
+        -create 2 new json in data one in : code
+                            the other in  : html
+        -go to the data and add the new link and title in the json : dataNavLink.json
+        -copy the structure of a other html and add it to your new html 
+            -then change the script call to you new created script
+            -change the json fetch by the name of your two new array in the end of your new html in the fonction : article
+
+That it.

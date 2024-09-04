@@ -26,5 +26,10 @@
         {
             "parsingDateFunctionId": "// JavaScript code here\n\nfunction parsingDate() {\n    const data = document.getElementById(\"parsingDateValueId\").value;\n    const showResult = document.getElementById(\"parsingDateIdResult\");\n    let msec = Date.parse(\"March 21, 2012\");\n    const d = new Date(msec);\n    let result = d;\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
         }                
+    ],
+    "dateGetMethods": [
+        {
+            "isoDateFunctionId": "// JavaScript code here\n\nfunction isoDate() {\n    const data = document.getElementById(\"isoDateValueId\").value;\n    const showResult = document.getElementById(\"isoDateIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        }
     ]
 }

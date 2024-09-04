@@ -92,5 +92,16 @@
             "outputResultId": "parsingDateIdResult",
             "idToMarkCodeArea": "parsingDateFunctionId"
         }
+    ],
+    "dateGetMethods":[
+        {
+            "title": "JavaScript ISO Dates",
+            "subtitle": "ISO 8601 is the international standard for the representation of dates and times. The syntax is: (YYYY-MM-DD).",
+            "paragraph":"is also the preferred JavaScript date format, type a year like this example: 2015-03-25 ",
+            "inputValueId": "isoDateValueId",
+            "onclickFonctionToCall": "isoDate",
+            "outputResultId": "isoDateIdResult",
+            "idToMarkCodeArea": "isoDateFunctionId"
+        }
     ]
 }
