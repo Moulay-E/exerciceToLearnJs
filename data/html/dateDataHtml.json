@@ -95,13 +95,40 @@
     ],
     "dateGetMethods":[
         {
-            "title": "JavaScript ISO Dates",
-            "subtitle": "ISO 8601 is the international standard for the representation of dates and times. The syntax is: (YYYY-MM-DD).",
-            "paragraph":"is also the preferred JavaScript date format, type a year like this example: 2015-03-25 ",
-            "inputValueId": "isoDateValueId",
-            "onclickFonctionToCall": "isoDate",
-            "outputResultId": "isoDateIdResult",
-            "idToMarkCodeArea": "isoDateFunctionId"
+            "title": "The new Date() Constructor",
+            "subtitle": "In JavaScript, date objects are created with new Date().",
+            "paragraph":"new Date() returns a date object with the current date and time. <br> Type the date  you want, example: 2015-03-25 ",
+            "inputValueId": "newDateConstructorValueId",
+            "onclickFonctionToCall": "newDateConstructor",
+            "outputResultId": "newDateConstructorIdResult",
+            "idToMarkCodeArea": "newDateConstructorFunctionId"
+        },
+        {
+            "title": "The new Date() Constructor",
+            "subtitle": "The getFullYear() method returns the year of a date as a four digit number:",
+            "paragraph":"In this example it will be : 2021-03-25.",
+            "inputValueId": "getFullYearValueId",
+            "onclickFonctionToCall": "getFullYear",
+            "outputResultId": "getFullYearIdResult",
+            "idToMarkCodeArea": "getFullYearFunctionId"
+        },
+        {
+            "title": "The getMonth() Method",
+            "subtitle": "The getMonth() method returns the month of a date as a number (0-11). ",
+            "paragraph":"In this example it will be : 2021-03-25. <br> So you need to increase it by one.",
+            "inputValueId": "getMonthValueId",
+            "onclickFonctionToCall": "getMonth",
+            "outputResultId": "getMonthIdResult",
+            "idToMarkCodeArea": "getMonthFunctionId"
+        },
+        {
+            "title": "The getDate() Method",
+            "subtitle": "The getDate() method returns the day of a date as a number (1-31).",
+            "paragraph":"In this example it will be : 2021-03-25.",
+            "inputValueId": "getDateValueId",
+            "onclickFonctionToCall": "getDate",
+            "outputResultId": "getDateIdResult",
+            "idToMarkCodeArea": "getDateFunctionId"
         }
     ]
 }
