@@ -3,7 +3,7 @@
         {
             "title": "Date New Date",
             "subtitle": "Date objects are created with the new Date() constructor. </br> There are 9 ways to create a new date object:",
-            "paragraph":"new Date() </br>new Date(date string) </br> ew Date(year,month) </br> And after that you can add value you want or let it blank it will complete automatically. </br> new Date(year,month,day,hours,minutes,seconds,ms). In this example you can see the date now:",
+            "paragraph":"new Date() </br>new Date(date string) </br> ew Date(year,month) </br> And after that you can add value you want or let it blank it will complete automatically. </br> new Date(year,month,day,hours,minutes,seconds,ms). In this example you can see the date current date:",
             "inputValueId": "dateNewDateValueId",
             "onclickFonctionToCall": "dateNewDate",
             "outputResultId": "dateNewDateIdResult",
@@ -106,7 +106,7 @@
         {
             "title": "The new Date() Constructor",
             "subtitle": "The getFullYear() method returns the year of a date as a four digit number:",
-            "paragraph":"In this example it will be : 2021-03-25.",
+            "paragraph":"In this example it will be  current date.",
             "inputValueId": "getFullYearValueId",
             "onclickFonctionToCall": "getFullYear",
             "outputResultId": "getFullYearIdResult",
@@ -115,7 +115,7 @@
         {
             "title": "The getMonth() Method",
             "subtitle": "The getMonth() method returns the month of a date as a number (0-11). ",
-            "paragraph":"In this example it will be : 2021-03-25. <br> So you need to increase it by one.",
+            "paragraph":"In this example it will be  current date. <br> So you need to increase it by one.",
             "inputValueId": "getMonthValueId",
             "onclickFonctionToCall": "getMonth",
             "outputResultId": "getMonthIdResult",
@@ -124,11 +124,56 @@
         {
             "title": "The getDate() Method",
             "subtitle": "The getDate() method returns the day of a date as a number (1-31).",
-            "paragraph":"In this example it will be : 2021-03-25.",
-            "inputValueId": "getDateValueId",
-            "onclickFonctionToCall": "getDate",
-            "outputResultId": "getDateIdResult",
-            "idToMarkCodeArea": "getDateFunctionId"
+            "paragraph":"In this example it will be  current date.",
+            "inputValueId": "dateGetDateValueId",
+            "onclickFonctionToCall": "dateGetDate",
+            "outputResultId": "dateGetDateIdResult",
+            "idToMarkCodeArea": "dateGetDateFunctionId"
+        },
+        {
+            "title": "The getHour() Method",
+            "subtitle": "The getHours() method returns the hours of a date as a number (0-23).",
+            "paragraph":"In this example it will be  current date.",
+            "inputValueId": "dateGetHourValueId",
+            "onclickFonctionToCall": "dateGetHour",
+            "outputResultId": "dateGetHourIdResult",
+            "idToMarkCodeArea": "dateGetHourFunctionId"
+        },
+        {
+            "title": "The getMinutes() Method",
+            "subtitle": "The getMinutes() method returns the minutes of a date as a number (0-59).",
+            "paragraph":"In this example it will be  current date.",
+            "inputValueId": "dateGetMinutesValueId",
+            "onclickFonctionToCall": "dateGetMinutes",
+            "outputResultId": "dateGetMinutesIdResult",
+            "idToMarkCodeArea": "dateGetMinutesFunctionId"
+        },
+        {
+            "title": "The getSeconds() Method",
+            "subtitle": "The getSeconds() method returns the seconds of a date as a number (0-59).",
+            "paragraph":"In this example it will be  current date.",
+            "inputValueId": "dateGetsecondsValueId",
+            "onclickFonctionToCall": "dateGetseconds",
+            "outputResultId": "dateGetsecondsIdResult",
+            "idToMarkCodeArea": "dateGetsecondsFunctionId"
+        },
+        {
+            "title": "The getMilliseconds() Method",
+            "subtitle": "The getMilliseconds() method returns the milliseconds of a date as a number (0-999).",
+            "paragraph":"In this example it will be current date.",
+            "inputValueId": "dateGetMillisecondsValueId",
+            "onclickFonctionToCall": "dateGetMilliseconds",
+            "outputResultId": "dateGetMillisecondsIdResult",
+            "idToMarkCodeArea": "dateGetMillisecondsFunctionId"
+        },
+        {
+            "title": "The getDay() Method",
+            "subtitle": "The getDay() method returns the weekday of a date as a number (0-6).",
+            "paragraph":"In this example it will be current date.",
+            "inputValueId": "dateGetdayValueId",
+            "onclickFonctionToCall": "dateGetday",
+            "outputResultId": "dateGetdayIdResult",
+            "idToMarkCodeArea": "dateGetdayFunctionId"
         }
     ]
 }
