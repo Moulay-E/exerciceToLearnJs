@@ -71,3 +71,12 @@ function dateGetday() {
         The return value ${day} <br>
         The day: ${dayName[day]} `
 }
+function dateGetTime() {
+    const data = document.getElementById("dateGetTimeValueId").value;
+    const showResult = document.getElementById("dateGetTimeIdResult");
+    let date = new Date() ;
+    let time = date.getTime();
+    let datee = ["Sunday","Monday ","Tuesday ","Wednesday ","Thursday ","Friday","Saturday "];
+
+    showResult.innerHTML = `The time:  ${time}. `
+}
