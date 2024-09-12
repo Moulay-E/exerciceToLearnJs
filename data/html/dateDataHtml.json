@@ -178,7 +178,7 @@
         {
             "title": "The getTime() Method",
             "subtitle": "The getTime() method returns the number of milliseconds since January 1, 1970:",
-            "paragraph":"In this example it will be current time.",
+            "paragraph":"In this example, we will use it to compare from the millisecond of the current minute and hour:",
             "inputValueId": "dateGetTimeValueId",
             "onclickFonctionToCall": "dateGetTime",
             "outputResultId": "dateGetTimeIdResult",

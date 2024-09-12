@@ -76,7 +76,17 @@ function dateGetTime() {
     const showResult = document.getElementById("dateGetTimeIdResult");
     let date = new Date() ;
     let time = date.getTime();
-    let datee = ["Sunday","Monday ","Tuesday ","Wednesday ","Thursday ","Friday","Saturday "];
+ // Millisecondes écoulées depuis le début de la minute actuelle
+ let millisecondsSinceMinute = date.getSeconds() * 1000 + date.getMilliseconds();
 
-    showResult.innerHTML = `The time:  ${time}. `
+ // Millisecondes écoulées depuis le début de l'heure actuelle
+ let millisecondsSinceHour = (date.getMinutes() * 60 * 1000) + millisecondsSinceMinute;
+
+ // Affichage des résultats
+ showResult.innerHTML = `
+     The time (since 1970): ${time} ms.<br>
+     Milliseconds since the start of the current minute: ${millisecondsSinceMinute} ms.<br>
+     Milliseconds since the start of the current hour: ${millisecondsSinceHour} ms.
+ `; 
+
 }
