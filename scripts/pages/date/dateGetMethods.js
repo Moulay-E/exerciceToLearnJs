@@ -76,17 +76,24 @@ function dateGetTime() {
     const showResult = document.getElementById("dateGetTimeIdResult");
     let date = new Date() ;
     let time = date.getTime();
- // Millisecondes écoulées depuis le début de la minute actuelle
- let millisecondsSinceMinute = date.getSeconds() * 1000 + date.getMilliseconds();
 
- // Millisecondes écoulées depuis le début de l'heure actuelle
- let millisecondsSinceHour = (date.getMinutes() * 60 * 1000) + millisecondsSinceMinute;
+    const minute = 1000 * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+    const year = day * 365;
+
+    let years = Math.round(Date.now() / year );
+
+    let millisecondsSinceMinute = date.getSeconds() * 1000 + date.getMilliseconds();
+    let millisecondsSinceHour = (date.getMinutes() * minute) + millisecondsSinceMinute;
 
  // Affichage des résultats
  showResult.innerHTML = `
      The time (since 1970): ${time} ms.<br>
      Milliseconds since the start of the current minute: ${millisecondsSinceMinute} ms.<br>
-     Milliseconds since the start of the current hour: ${millisecondsSinceHour} ms.
+     Milliseconds since the start of the current hour: ${millisecondsSinceHour} ms. <br>
+     Years since 1970: ${years} years.<br>
+
  `; 
 
 }
