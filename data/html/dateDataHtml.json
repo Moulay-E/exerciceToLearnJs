@@ -142,11 +142,11 @@
         {
             "title": "The getMinutes() Method",
             "subtitle": "The getMinutes() method returns the minutes of a date as a number (0-59).",
-            "paragraph":"In this example it will be  current date.",
-            "inputValueId": "dateGetMinutesValueId",
-            "onclickFonctionToCall": "dateGetMinutes",
-            "outputResultId": "dateGetMinutesIdResult",
-            "idToMarkCodeArea": "dateGetMinutesFunctionId"
+            "paragraph":"In this example it will be  current date and minutes.",
+            "inputValueId": "dateGetMinuteValueId",
+            "onclickFonctionToCall": "dateGetMinute",
+            "outputResultId": "dateGetMinuteIdResult",
+            "idToMarkCodeArea": "dateGetMinuteFunctionId"
         },
         {
             "title": "The getSeconds() Method",
@@ -183,6 +183,15 @@
             "onclickFonctionToCall": "dateGetTime",
             "outputResultId": "dateGetTimeIdResult",
             "idToMarkCodeArea": "dateGetTimeFunctionId"
+        },
+        {
+            "title": "The getTimezoneOffset() Method",
+            "subtitle": "The getTimezoneOffset() method returns the difference (in minutes) between local time an UTC time (Universal time coordinated):",
+            "paragraph":"We will convert it in hour to see the difference.",
+            "inputValueId": "dateGetTimeZoneValueId",
+            "onclickFonctionToCall": "dateGetTimeZone",
+            "outputResultId": "dateGetTimeZoneIdResult",
+            "idToMarkCodeArea": "dateGetTimeZoneFunctionId"
         }
     ]
 }

@@ -42,6 +42,15 @@ function dateGetHour() {
     showResult.innerHTML = `The date:  ${date}. <br>
         The hour: ${hour} `
 }
+function dateGetMinute() {
+    const data = document.getElementById("dateGetMinuteValueId").value;
+    const showResult = document.getElementById("dateGetMinuteIdResult");
+    let date = new Date() ;
+    let minutes = date.getMinutes();
+
+    showResult.innerHTML = `The date:  ${date}. <br>
+        The minutes: ${minutes} `
+}
 function dateGetseconds() {
     const data = document.getElementById("dateGetsecondsValueId").value;
     const showResult = document.getElementById("dateGetsecondsIdResult");
@@ -93,7 +102,17 @@ function dateGetTime() {
      Milliseconds since the start of the current minute: ${millisecondsSinceMinute} ms.<br>
      Milliseconds since the start of the current hour: ${millisecondsSinceHour} ms. <br>
      Years since 1970: ${years} years.<br>
+    `; 
 
- `; 
+}
+function dateGetTimeZone() {
+    const data = document.getElementById("dateGetTimeZoneValueId").value;
+    const showResult = document.getElementById("dateGetTimeZoneIdResult");
+    let date = new Date() ;
+    let timeZoneOffSet = date.getTimezoneOffset();
+    let timeDifferenceInHour = timeZoneOffSet / 60;
 
+    showResult.innerHTML = `Time difference between local and UTC:  ${timeZoneOffSet}. <br>
+        Time difference in hour: ${timeDifferenceInHour} <br>
+        `
 }

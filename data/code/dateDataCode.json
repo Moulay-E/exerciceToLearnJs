@@ -29,7 +29,37 @@
     ],
     "dateGetMethods": [
         {
-            "isoDateFunctionId": "// JavaScript code here\n\nfunction isoDate() {\n    const data = document.getElementById(\"isoDateValueId\").value;\n    const showResult = document.getElementById(\"isoDateIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
-        }
+            "newDateConstructorFunctionId": "// JavaScript code here\n\nfunction newDateConstructor() {\n    const data = document.getElementById(\"newDateConstructorValueId\").value;\n    const showResult = document.getElementById(\"newDateConstructorIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `;\n}"
+        },
+        {
+            "getFullYearFunctionId": "// JavaScript code here\n\nfunction getFullYear() {\n    const data = document.getElementById(\"getFullYearValueId\").value;\n    const showResult = document.getElementById(\"getFullYearIdResult\");\n    let date = new Date();\n    let year = date.getFullYear();\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The year: ${year}`;\n}"
+        },
+        {
+            "getMonthFunctionId": "// JavaScript code here\n\nfunction getMonth() {\n    const data = document.getElementById(\"getMonthValueId\").value;\n    const showResult = document.getElementById(\"getMonthIdResult\");\n    let date = new Date();\n    let month = date.getMonth();\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The month: ${month+1}`;\n}"
+        },
+        {
+            "dateGetDateFunctionId": "// JavaScript code here\n\nfunction dateGetDate() {\n    const data = document.getElementById(\"dateGetDateValueId\").value;\n    const showResult = document.getElementById(\"dateGetDateIdResult\");\n    let date = new Date();\n    let day = date.getDate();\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The day: ${day}`;\n}"
+        },
+        {
+            "dateGetHourFunctionId": "// JavaScript code here\n\nfunction dateGetHour() {\n    const data = document.getElementById(\"dateGetHourValueId\").value;\n    const showResult = document.getElementById(\"dateGetHourIdResult\");\n    let date = new Date();\n    let hour = date.getHours();\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The hour: ${hour}`;\n}"
+        },
+        {
+            "dateGetMinuteFunctionId": "// JavaScript code here\n\nfunction dateGetMinute() {\n    const data = document.getElementById(\"dateGetMinuteValueId\").value;\n    const showResult = document.getElementById(\"dateGetMinuteIdResult\");\n    let date = new Date();\n    let minutes = date.getMinutes();\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The minutes: ${minutes}`;\n}"
+        },        
+        {
+            "dateGetsecondsFunctionId": "// JavaScript code here\n\nfunction dateGetseconds() {\n    const data = document.getElementById(\"dateGetsecondsValueId\").value;\n    const showResult = document.getElementById(\"dateGetsecondsIdResult\");\n    let date = new Date();\n    let seconds = date.getSeconds();\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The seconds: ${seconds}`;\n}"
+        },
+        {
+            "dateGetMillisecondsFunctionId": "// JavaScript code here\n\nfunction dateGetMilliseconds() {\n    const data = document.getElementById(\"dateGetMillisecondsValueId\").value;\n    const showResult = document.getElementById(\"dateGetMillisecondsIdResult\");\n    let date = new Date();\n    let milliseconds = date.getMilliseconds();\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The milliseconds: ${milliseconds}`;\n}"
+        },
+        {
+            "dateGetdayFunctionId": "// JavaScript code here\n\nfunction dateGetday() {\n    const data = document.getElementById(\"dateGetdayValueId\").value;\n    const showResult = document.getElementById(\"dateGetdayIdResult\");\n    let date = new Date();\n    let day = date.getDay();\n    let dayName = [\"Sunday\",\"Monday \",\"Tuesday \",\"Wednesday \",\"Thursday \",\"Friday\",\"Saturday \"];\n\n    showResult.innerHTML = `The date:  ${date}. <br>\n        The return value ${day} <br>\n        The day: ${dayName[day]}`;\n}"
+        },
+        {
+            "dateGetTimeFunctionId": "// JavaScript code here\n\nfunction dateGetTime() {\n    const data = document.getElementById(\"dateGetTimeValueId\").value;\n    const showResult = document.getElementById(\"dateGetTimeIdResult\");\n    let date = new Date();\n    let time = date.getTime();\n\n    const minute = 1000 * 60;\n    const hour = minute * 60;\n    const day = hour * 24;\n    const year = day * 365;\n\n    let years = Math.round(Date.now() / year);\n\n    let millisecondsSinceMinute = date.getSeconds() * 1000 + date.getMilliseconds();\n    let millisecondsSinceHour = (date.getMinutes() * minute) + millisecondsSinceMinute;\n\n    // Affichage des résultats\n    showResult.innerHTML = `\n        The time (since 1970): ${time} ms.<br>\n        Milliseconds since the start of the current minute: ${millisecondsSinceMinute} ms.<br>\n        Milliseconds since the start of the current hour: ${millisecondsSinceHour} ms. <br>\n        Years since 1970: ${years} years.<br>\n    `;\n}"
+        },
+        {
+            "dateGetTimeZoneFunctionId": "// JavaScript code here\n\nfunction dateGetTimeZone() {\n    const data = document.getElementById(\"dateGetTimeZoneValueId\").value;\n    const showResult = document.getElementById(\"dateGetTimeZoneIdResult\");\n    let date = new Date();\n    let timeZoneOffSet = date.getTimezoneOffset();\n    let timeDifferenceInHour = timeZoneOffSet / 60;\n\n    showResult.innerHTML = `Time difference between local and UTC:  ${timeZoneOffSet}. <br>\n        Time difference in hour: ${timeDifferenceInHour} <br>\n        `;\n}"
+        } 
     ]
 }
