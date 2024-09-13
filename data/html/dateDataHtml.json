@@ -193,5 +193,16 @@
             "outputResultId": "dateGetTimeZoneIdResult",
             "idToMarkCodeArea": "dateGetTimeZoneFunctionId"
         }
+    ],
+    "dateSetMethods":[
+        {
+            "title": "The new Date() Constructor",
+            "subtitle": "In JavaScript, date objects are created with new Date().",
+            "paragraph":"new Date() returns a date object with the current date and time. <br> Type the date  you want, example: 2015-03-25 ",
+            "inputValueId": "newDateConstructorValueId",
+            "onclickFonctionToCall": "newDateConstructor",
+            "outputResultId": "newDateConstructorIdResult",
+            "idToMarkCodeArea": "newDateConstructorFunctionId"
+        }
     ]
 }

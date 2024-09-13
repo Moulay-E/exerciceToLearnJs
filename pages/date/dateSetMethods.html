@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Interactive JavaScript Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+</head>
+
+<body class="baseCss"  >
+
+    <div class="baseCss flexColumn" id="darkModeSwitchId">
+        <nav id="nav" class="navigation flexRow flexCenter">
+        </nav>
+        <main class="mainDisplay flexColumn flexCenter">
+            <div class="main__title borderRadius">
+                <h1>JavaScript Date Formats</h1>
+            </div>
+
+
+            <div id="generateContentJs" class="generateContent flexColumn">
+            </div>
+
+        </main>
+    </div>
+
+    <footer id="footer">
+    </footer>
+    <script src="/scripts/components/navBar.js"></script>
+
+    <script type="module" >
+        import {codeToHtml} from "/scripts/components/codeToHtml.js";
+        import {articles} from "/scripts/components/articles.js";
+        import {navList} from "/scripts/components/navList.js";
+        import {footer} from "/scripts/components/footer.js";
+
+        const dataHtmlUrl = "/data/html/dateDataHtml.json";
+        const dataCodeUrl = "/data/code/dateDataCode.json";
+
+        articles(dataHtmlUrl, 'dateSetMethods').then(()=>{
+            codeToHtml(dataCodeUrl, 'dateSetMethods');
+            showHideMenu();
+            navList();
+            footer();
+        })
+      </script>
+      
+</body>
+<script src="/script.js"></script>
+<script  src="/basicScript.js"></script>
+<script src="/scripts/pages/date/dateSetMethods.js"></script>
+
+
+</html>

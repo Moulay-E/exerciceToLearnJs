@@ -49,6 +49,10 @@
             "link": "/pages/date/dateGetMethods.html"
         },
         {
+            "title": "dateSetMethods",
+            "link": "/pages/date/dateSetMethods.html"
+        },
+        {
             "title": "Destructuring",
             "link": "/pages/destructuring/destructuring.html"
         },

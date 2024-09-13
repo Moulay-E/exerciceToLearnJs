@@ -61,5 +61,10 @@
         {
             "dateGetTimeZoneFunctionId": "// JavaScript code here\n\nfunction dateGetTimeZone() {\n    const data = document.getElementById(\"dateGetTimeZoneValueId\").value;\n    const showResult = document.getElementById(\"dateGetTimeZoneIdResult\");\n    let date = new Date();\n    let timeZoneOffSet = date.getTimezoneOffset();\n    let timeDifferenceInHour = timeZoneOffSet / 60;\n\n    showResult.innerHTML = `Time difference between local and UTC:  ${timeZoneOffSet}. <br>\n        Time difference in hour: ${timeDifferenceInHour} <br>\n        `;\n}"
         } 
+    ],
+    "dateSetMethods": [
+        {
+            "newDateConstructorFunctionId": "// JavaScript code here\n\nfunction newDateConstructor() {\n    const data = document.getElementById(\"newDateConstructorValueId\").value;\n    const showResult = document.getElementById(\"newDateConstructorIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `;\n}"
+        }
     ]
 }
