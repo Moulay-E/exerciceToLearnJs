@@ -1,36 +1,31 @@
-function dateGetday() {
-    const data = document.getElementById("dateGetdayValueId").value;
-    const showResult = document.getElementById("dateGetdayIdResult");
+function dateSetYear() {
+    const data = document.getElementById("dateSetYearValueId").value;
+    const showResult = document.getElementById("dateSetYearIdResult");
     let date = new Date() ;
-    let day = date.getDay();
-    let dayName = ["Sunday","Monday ","Tuesday ","Wednesday ","Thursday ","Friday","Saturday "];
+    let day = date.setFullYear(2020, 11, 3);
 
-    showResult.innerHTML = `The date:  ${date}. <br>
-        The return value ${day} <br>
-        The day: ${dayName[day]} `
+    showResult.innerHTML = `The date:  ${date}. <br> `
 }
-function dateGetTime() {
-    const data = document.getElementById("dateGetTimeValueId").value;
-    const showResult = document.getElementById("dateGetTimeIdResult");
+function dateSetMonth() {
+    const data = document.getElementById("dateSetMonthValueId").value;
+    const showResult = document.getElementById("dateSetMonthIdResult");
     let date = new Date() ;
-    let time = date.getTime();
+    let dataResult = 11;
+    if(data >=0 && data <= 11){
+        dataResult = data;
+    }
 
-    const minute = 1000 * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
-    const year = day * 365;
-
-    let years = Math.round(Date.now() / year );
-
-    let millisecondsSinceMinute = date.getSeconds() * 1000 + date.getMilliseconds();
-    let millisecondsSinceHour = (date.getMinutes() * minute) + millisecondsSinceMinute;
-
- // Affichage des résultats
- showResult.innerHTML = `
-     The time (since 1970): ${time} ms.<br>
-     Milliseconds since the start of the current minute: ${millisecondsSinceMinute} ms.<br>
-     Milliseconds since the start of the current hour: ${millisecondsSinceHour} ms. <br>
-     Years since 1970: ${years} years.<br>
-    `; 
-
+    showResult.innerHTML = `The date:  ${date}. <br> `
 }
+function dateSetDate() {
+    const data = document.getElementById("dateSetDateValueId").value;
+    const showResult = document.getElementById("dateSetDateIdResult");
+    let date = new Date() ;
+    let dataResult = 11;
+    if(data >=0 && data <= 31){
+        dataResult = data;
+    }
+
+    showResult.innerHTML = `The date:  ${date}. <br> `
+}
+

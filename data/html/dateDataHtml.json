@@ -196,13 +196,31 @@
     ],
     "dateSetMethods":[
         {
-            "title": "The new Date() Constructor",
-            "subtitle": "In JavaScript, date objects are created with new Date().",
-            "paragraph":"new Date() returns a date object with the current date and time. <br> Type the date  you want, example: 2015-03-25 ",
-            "inputValueId": "newDateConstructorValueId",
-            "onclickFonctionToCall": "newDateConstructor",
-            "outputResultId": "newDateConstructorIdResult",
-            "idToMarkCodeArea": "newDateConstructorFunctionId"
+            "title": "The setFullYear() Method",
+            "subtitle": "The setFullYear() method sets the year of a date object. In this example to 2020:",
+            "paragraph":"The setFullYear() method can optionally set month and day, example :2020, 11, 3 ",
+            "inputValueId": "dateSetYearValueId",
+            "onclickFonctionToCall": "dateSetYear",
+            "outputResultId": "dateSetYearIdResult",
+            "idToMarkCodeArea": "dateSetYearFunctionId"
+        },
+        {
+            "title": "The setMonth() Method",
+            "subtitle": "The setMonth() method sets the month of a date object (0-11):",
+            "paragraph":"Type a number beetween 0 and 11 incusive:",
+            "inputValueId": "dateSetMonthValueId",
+            "onclickFonctionToCall": "dateSetMonth",
+            "outputResultId": "dateSetMonthIdResult",
+            "idToMarkCodeArea": "dateSetMonthFunctionId"
+        },
+        {
+            "title": "The setDate() Method",
+            "subtitle": "The setDate() method sets the day of a date object (1-31):",
+            "paragraph":"Type a number beetween 0 and 31 incusive:",
+            "inputValueId": "dateSetDateValueId",
+            "onclickFonctionToCall": "dateSetDate",
+            "outputResultId": "dateSetDateIdResult",
+            "idToMarkCodeArea": "dateSetDateFunctionId"
         }
     ]
 }
