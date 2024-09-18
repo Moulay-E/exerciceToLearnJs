@@ -221,6 +221,35 @@
             "onclickFonctionToCall": "dateSetDate",
             "outputResultId": "dateSetDateIdResult",
             "idToMarkCodeArea": "dateSetDateFunctionId"
+        },
+        {
+            "title": "The setHours() Method",
+            "subtitle": "The setHours() method sets the hours of a date object (0-23):",
+            "paragraph":"Type a number beetween 0 and 23 incusive:",
+            "inputValueId": "dateSetHourValueId",
+            "onclickFonctionToCall": "dateSetHour",
+            "outputResultId": "dateSetHourIdResult",
+            "idToMarkCodeArea": "dateSetHourFunctionId"
+        }
+        ,
+        {
+            "title": "The setMinutes() Method",
+            "subtitle": "The setMinutes() method sets the minutes of a date object (0-59):",
+            "paragraph":"Type a number beetween 0 and 59 incusive:",
+            "inputValueId": "dateSetMinutesValueId",
+            "onclickFonctionToCall": "dateSetMinutes",
+            "outputResultId": "dateSetMinutesIdResult",
+            "idToMarkCodeArea": "dateSetMinutesFunctionId"
+        }
+        ,
+        {
+            "title": "Dates can easily be compared",
+            "subtitle": "The following example compares today's date with January 14, 2100:",
+            "paragraph":"",
+            "inputValueId": "dateCompareExampleValueId",
+            "onclickFonctionToCall": "dateCompareExample",
+            "outputResultId": "dateCompareExampleIdResult",
+            "idToMarkCodeArea": "dateCompareExampleFunctionId"
         }
     ]
 }
