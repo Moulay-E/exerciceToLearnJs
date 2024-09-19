@@ -1,0 +1,8 @@
+ {
+    "math":
+    [
+        {
+            "isoDateFunctionId": "// JavaScript code here\n\nfunction isoDate() {\n    const data = document.getElementById(\"isoDateValueId\").value;\n    const showResult = document.getElementById(\"isoDateIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `\n}"
+        }
+    ]
+ }

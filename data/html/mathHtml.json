@@ -1,0 +1,32 @@
+{
+    "math":
+    [
+        {
+            "title": "Math.round()",
+            "subtitle": "Math.round(x) returns the nearest integer:",
+            "paragraph":"Type a float number, example: 44.6",
+            "inputValueId": "mathRoundValueId",
+            "onclickFonctionToCall": "mathRound",
+            "outputResultId": "mathRoundIdResult",
+            "idToMarkCodeArea": "mathRoundFunctionId"
+        },
+        {
+            "title": "Math.ceil()",
+            "subtitle": "Math.ceil(x) returns the value of x rounded up to its nearest integer",
+            "paragraph":"Type a float number, example: 44.6",
+            "inputValueId": "mathCeilValueId",
+            "onclickFonctionToCall": "mathCeil",
+            "outputResultId": "mathCeilIdResult",
+            "idToMarkCodeArea": "mathCeilFunctionId"
+        },
+        {
+            "title": "Math.floor()",
+            "subtitle": "Math.floor(x) returns the value of x rounded down to its nearest integer.",
+            "paragraph":"Type a float number, example: 44.6",
+            "inputValueId": "mathFloorValueId",
+            "onclickFonctionToCall": "mathFloor",
+            "outputResultId": "mathFloorIdResult",
+            "idToMarkCodeArea": "mathFloorFunctionId"
+        }
+    ]
+}

@@ -53,6 +53,10 @@
             "link": "/pages/date/dateSetMethods.html"
         },
         {
+            "title": "math",
+            "link": "/pages/math/math.html"
+        },
+        {
             "title": "Destructuring",
             "link": "/pages/destructuring/destructuring.html"
         },
