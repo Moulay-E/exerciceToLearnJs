@@ -64,7 +64,26 @@
     ],
     "dateSetMethods": [
         {
-            "newDateConstructorFunctionId": "// JavaScript code here\n\nfunction newDateConstructor() {\n    const data = document.getElementById(\"newDateConstructorValueId\").value;\n    const showResult = document.getElementById(\"newDateConstructorIdResult\");\n    let result = new Date(data);\n\n    showResult.innerHTML = `The date now:  ${result}. `;\n}"
-        }
+            "dateSetYearFunctionId": "// JavaScript code here\n\nfunction dateSetYear() {\n    const data = document.getElementById(\"dateSetYearValueId\").value;\n    const showResult = document.getElementById(\"dateSetYearIdResult\");\n    let date = new Date();\n\n    showResult.innerHTML = `The date:  ${date}. <br> `;\n}"
+        },
+        {
+            "dateSetMonthFunctionId": "// JavaScript code here\n\nfunction dateSetMonth() {\n    const data = document.getElementById(\"dateSetMonthValueId\").value;\n    const showResult = document.getElementById(\"dateSetMonthIdResult\");\n    let date = new Date();\n    let monthResult = 11;\n    let dataToNumber = Number(data);\n    \n    if( !isNaN(Number(dataToNumber))  && dataToNumber >= 0 && dataToNumber <= 31 ){\n        monthResult = dataToNumber;\n    }\n    date.setMonth(monthResult);\n\n    showResult.innerHTML = `Your number:  ${monthResult}. <br> \n        The date changed: ${date}.    `;\n}"
+        },
+        {
+            "dateSetDateFunctionId": "// JavaScript code here\n\nfunction dateSetDate() {\n    const data = document.getElementById(\"dateSetDateValueId\").value;\n    const showResult = document.getElementById(\"dateSetDateIdResult\");\n    let date = new Date();\n    let dayResult = 11;\n    let dataToNumber = Number(data);\n    \n    if( !isNaN(Number(dataToNumber))  && dataToNumber >= 0 && dataToNumber <= 31 ){\n        dayResult = dataToNumber;\n    }\n\n    date.setDate(dayResult);\n\n    showResult.innerHTML = `The date:  ${date}. <br> `;\n}"
+        },
+        {
+            "dateSetHourFunctionId": "// JavaScript code here\n\nfunction dateSetHour() {\n    const data = document.getElementById(\"dateSetHourValueId\").value;\n    const showResult = document.getElementById(\"dateSetHourIdResult\");\n    let date = new Date();\n    let hourResult = 11;\n    let dataToNumber = Number(data);\n    \n    if( !isNaN(Number(dataToNumber))  && dataToNumber >= 0 && dataToNumber <= 59 ){\n        hourResult = dataToNumber;\n    }\n\n    date.setHours(hourResult);\n\n    showResult.innerHTML = `The date with hour change:  ${date}. <br> `;\n}"
+        },
+        {
+            "dateSetMinutesFunctionId": "// JavaScript code here\n\nfunction dateSetMinutes() {\n    const data = document.getElementById(\"dateSetMinutesValueId\").value;\n    const showResult = document.getElementById(\"dateSetMinutesIdResult\");\n    let date = new Date();\n    let minuteResult = 11;\n    let dataToNumber = Number(data);\n    \n    if( !isNaN(Number(dataToNumber))  && dataToNumber >= 0 && dataToNumber <= 59 ){\n        minuteResult = dataToNumber;\n    }\n\n    date.setMinutes(minuteResult);\n\n    showResult.innerHTML = `The date with minutes change:  ${date}. <br> `;\n}"
+        },
+        {
+            "dateSetSecondsFunctionId": "// JavaScript code here\n\nfunction dateSetSeconds() {\n    const data = document.getElementById(\"dateSetSecondsValueId\").value;\n    const showResult = document.getElementById(\"dateSetSecondsIdResult\");\n    let date = new Date();\n    let secondResult = 11;\n    let dataToNumber = Number(data);\n    \n    if( !isNaN(Number(dataToNumber))  && dataToNumber >= 0 && dataToNumber <= 59 ){\n        secondResult = dataToNumber;\n    }\n\n    date.setSeconds(secondResult);\n\n    showResult.innerHTML = `The date with seconds change:  ${date}. <br> `;\n}"
+        },
+        {
+            "dateCompareExampleFunctionId": "// JavaScript code here\n\nfunction dateCompareExample() {\n    const data = document.getElementById(\"dateCompareExampleValueId\").value;\n    const showResult = document.getElementById(\"dateCompareExampleIdResult\");\n    let text = \"\";\n    let today = new Date();\n    let someday = new Date();\n    someday.setFullYear(2100, 0, 14);\n\n    if(someday > today){\n        text = \"Today is before January 14, 2100\";\n    }\n    else{\n        text = \"Today is after January 14, 2100\";\n    }\n  \n    showResult.innerHTML = ` ${text}. <br> `;\n}"
+        }        
+         
     ]
 }

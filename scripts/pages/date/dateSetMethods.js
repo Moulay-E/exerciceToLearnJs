@@ -2,7 +2,6 @@ function dateSetYear() {
     const data = document.getElementById("dateSetYearValueId").value;
     const showResult = document.getElementById("dateSetYearIdResult");
     let date = new Date() ;
-    let day = date.setFullYear(2020, 11, 3);
 
     showResult.innerHTML = `The date:  ${date}. <br> `
 }
@@ -97,6 +96,6 @@ function dateCompareExample() {
     }
   
 
-    showResult.innerHTML = `l ${text}. <br> `
+    showResult.innerHTML = ` ${text}. <br> `
 }
 
