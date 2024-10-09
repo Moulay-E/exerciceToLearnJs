@@ -27,6 +27,78 @@
             "onclickFonctionToCall": "mathFloor",
             "outputResultId": "mathFloorIdResult",
             "idToMarkCodeArea": "mathFloorFunctionId"
+        },
+        {
+            "title": "Math.trunc()",
+            "subtitle": "Math.trunc(x) returns the integer part of x:",
+            "paragraph":"Type a float number, example: 44.6",
+            "inputValueId": "mathTruncValueId",
+            "onclickFonctionToCall": "mathTrunc",
+            "outputResultId": "mathTruncIdResult",
+            "idToMarkCodeArea": "mathTruncFunctionId"
+        },
+        {
+            "title": "math.sign()",
+            "subtitle": "Math.sign(x) returns if x is negative, null or positive:",
+            "paragraph":"Type a postive number , a negative number or null, example: 44, -44, null",
+            "inputValueId": "mathSignValueId",
+            "onclickFonctionToCall": "mathSign",
+            "outputResultId": "mathSignIdResult",
+            "idToMarkCodeArea": "mathSignFunctionId"
+        },
+        {
+            "title": "math.pow()",
+            "subtitle": "Math.pow(x, y) returns the value of x to the power of y:",
+            "paragraph":"Example 8 power 2:",
+            "inputValueId": "mathPowValueId",
+            "onclickFonctionToCall": "mathPow",
+            "outputResultId": "mathPowIdResult",
+            "idToMarkCodeArea": "mathPowFunctionId"
+        },
+        {
+            "title": "math.sqrt()",
+            "subtitle": "Math.sqrt(x) returns the square root of x:",
+            "paragraph":"Type your number ,example 32 :",
+            "inputValueId": "mathSqrtValueId",
+            "onclickFonctionToCall": "mathSqrt",
+            "outputResultId": "mathSqrtIdResult",
+            "idToMarkCodeArea": "mathSqrtFunctionId"
+        },
+        {
+            "title": "math.abs()",
+            "subtitle": "Math.abs(x) returns the absolute (positive) value of x:",
+            "paragraph":"Type your number ,example -32 :",
+            "inputValueId": "mathAbsValueId",
+            "onclickFonctionToCall": "mathAbs",
+            "outputResultId": "mathAbsIdResult",
+            "idToMarkCodeArea": "mathAbsFunctionId"
+        },
+        {
+            "title": "math.sin()",
+            "subtitle": "Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians).",
+            "paragraph":"If you want to use degrees instead of radians, you have to convert degrees to radians: Angle in radians = Angle in degrees x PI / 180. </br> Type your angle degree:",
+            "inputValueId": "mathSinValueId",
+            "onclickFonctionToCall": "mathSin",
+            "outputResultId": "mathSinIdResult",
+            "idToMarkCodeArea": "mathSinFunctionId"
+        },
+        {
+            "title": "math.cos()",
+            "subtitle": "Math.cos(x) returns the cosine (a value between -1 and 1) of the angle x (given in radians).",
+            "paragraph":"If you want to use degrees instead of radians, you have to convert degrees to radians: Angle in radians = Angle in degrees x PI / 180. </br> Type your angle:",
+            "inputValueId": "mathCosValueId",
+            "onclickFonctionToCall": "mathCos",
+            "outputResultId": "mathCosIdResult",
+            "idToMarkCodeArea": "mathCosFunctionId"
+        },
+        {
+            "title": "math.MinMax()",
+            "subtitle": "Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:",
+            "paragraph":"In this example we will use it on this list of number to display the min and max, : [4,44,1, 300, 444, 6]",
+            "inputValueId": "mathMinMaxValueId",
+            "onclickFonctionToCall": "mathMinMax",
+            "outputResultId": "mathMinMaxIdResult",
+            "idToMarkCodeArea": "mathMinMaxFunctionId"
         }
     ]
 }
