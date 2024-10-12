@@ -1,2 +1,1 @@
-const izi = 'iei';
-let lol = "eee";
+const izi = 'iei'; let caca = 55
