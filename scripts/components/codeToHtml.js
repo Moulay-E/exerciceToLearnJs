@@ -1,4 +1,4 @@
-import { fetchData } from "../fetch/fetchData.js";
+import { fetchData } from "./../fetch/fetchData.js";
 export async function codeToHtml(arrLocation , arrayName){
     let dataCodeUrl = arrLocation;
     try{

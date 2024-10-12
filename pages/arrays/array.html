@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Interactive JavaScript Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./../../style.css" />
 
 </head>
 
@@ -29,18 +29,18 @@
 
     <footer id="footer">
     </footer>
-    <script src="/scripts/components/navBar.js"></script>
+    <script src="./../../scripts/components/navBar.js"></script>
 
 
     <script type="module" >
-        import {codeToHtml} from "/scripts/components/codeToHtml.js";
-        import {articles} from "/scripts/components/articles.js";
-        import {navList} from "/scripts/components/navList.js";
-        import {footer} from "/scripts/components/footer.js";
+        import {codeToHtml} from "./../../scripts/components/codeToHtml.js";
+        import {articles} from "./../../scripts/components/articles.js";
+        import {navList} from "./../../scripts/components/navList.js";
+        import {footer} from "./../../scripts/components/footer.js";
 
 
-        const dataHtmlUrl = "/data/html/arrayDataHtml.json";
-        const dataCodeUrl = "/data/code/arrayDataCode.json";
+        const dataHtmlUrl = "./../../data/html/arrayDataHtml.json";
+        const dataCodeUrl = "./../../data/code/arrayDataCode.json";
 
         articles(dataHtmlUrl, 'array').then(()=>{
             codeToHtml(dataCodeUrl, 'array');
@@ -51,9 +51,9 @@
       </script>
       
 </body>
-<script src="/script.js"></script>
-<script  src="/basicScript.js"></script>
-<script src="/scripts/pages/arrays/array.js"></script>
+<script src="./../../script.js"></script>
+<script  src="./../../basicScript.js"></script>
+<script src="./../../scripts/pages/arrays/array.js"></script>
 
 
 

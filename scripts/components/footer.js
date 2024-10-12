@@ -1,7 +1,7 @@
-import { fetchData } from "../fetch/fetchData.js";
+import { fetchData } from "./../fetch/fetchData.js";
 
 export async function footer() {
-    const url = "/data/dataFooter.json";
+    const url = "./../../data/dataFooter.json";
     const data = await fetchData(url) 
 
     const footerTag = document.getElementById("footer");
