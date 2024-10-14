@@ -4,7 +4,7 @@ function navBar(){
     let htmlToShow = `
     <div class="navigation__button">
         <a class="navigation__button__home flexCenter" href="/index.html" > 
-            <img class="navigation__home__img" src="/assets/home-white-svg.svg" alt="home"/>
+            <img class="navigation__home__img" src="assets/home-white-svg.svg" alt="home"/>
         </a> 
         <a class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
             <img class="navigation__darkmode__img" src="/assets/night-white-mode-svg.svg" alt="dark-mode" />
