@@ -1,3 +1,6 @@
+The url of the project:  
+https://moulay-e.github.io/exerciceToLearnJs/
+
 this project is to rewrite the javascript documentation and to make it more pleasant to look at.
 And try to make all in vanilla.
 
