@@ -1,5 +1,5 @@
 // import { ShowCodeAndHideHimself } from "../../basicScript.js";
-import { fetchData } from "../fetch/fetchData.js";
+import { fetchData } from "./../fetch/fetchData.js";
 import { ShowCodeAndHideHimself, HideAndShowBtn } from "./btnCallFonction.js";
 export async function  articles(arrLocation, arrayName){
     // const dataHtmlUrl = "/data/dataToGenerateHtml.json";
