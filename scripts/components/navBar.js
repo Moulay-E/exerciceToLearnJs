@@ -1,5 +1,5 @@
-// basePath is imported from configJs via the window object
-function navBar(){
+import { basePath } from "./../../config.js";
+export function navBar(){
     let nav = document.getElementById("nav");
     let htmlToShow = `
     <div class="navigation__button">
@@ -7,7 +7,7 @@ function navBar(){
             <img class="navigation__home__img" src="assets/home-white-svg.svg" alt="home"/>
         </a> 
         <a class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
-            <img class="navigation__darkmode__img" src="./assets/night-white-mode-svg.svg" alt="dark-mode" />
+            <img class="navigation__darkmode__img" src="${basePath}assets/night-white-mode-svg.svg" alt="dark-mode" />
         </a>
 
     </div>
@@ -35,4 +35,3 @@ function navBar(){
     `
 nav.innerHTML = htmlToShow;
 }
-navBar();
