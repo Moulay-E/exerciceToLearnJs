@@ -2,67 +2,67 @@
     "navLink": [
         {
             "title": "String",
-            "link": "/pages/strings/pageString.html"
+            "link": "pages/strings/pageString.html"
         },
         {
             "title": "String Search",
-            "link": "/pages/strings/stringSearch.html"
+            "link": "pages/strings/stringSearch.html"
         },
         {
             "title": "Numbers Methods",
-            "link": "/pages/numbers/numberMethods.html"
+            "link": "pages/numbers/numberMethods.html"
         },
         {
             "title": "Number Properties",
-            "link": "/pages/numbers/numberProperties.html"
+            "link": "pages/numbers/numberProperties.html"
         },
         {
             "title": "Array",
-            "link": "/pages/arrays/array.html"
+            "link": "pages/arrays/array.html"
         },
         {
             "title": "Array Methods",
-            "link": "/pages/arrays/arrayMethods.html"
+            "link": "pages/arrays/arrayMethods.html"
         },
         {
             "title": "Array Search",
-            "link": "/pages/arrays/arraySearch.html"
+            "link": "pages/arrays/arraySearch.html"
         },
         {
             "title": "Array Sort",
-            "link": "/pages/arrays/arraySort.html"
+            "link": "pages/arrays/arraySort.html"
         },
         {
             "title": "Array Iteration",
-            "link": "/pages/arrays/arrayIteration.html"
+            "link": "pages/arrays/arrayIteration.html"
         },
         {
             "title": "Date",
-            "link": "/pages/date/date.html"
+            "link": "pages/date/date.html"
         },
         {
             "title": "Date Format",
-            "link": "/pages/date/dateFormat.html"
+            "link": "pages/date/dateFormat.html"
         },
         {
             "title": "dateGetMethods",
-            "link": "/pages/date/dateGetMethods.html"
+            "link": "pages/date/dateGetMethods.html"
         },
         {
             "title": "dateSetMethods",
-            "link": "/pages/date/dateSetMethods.html"
+            "link": "pages/date/dateSetMethods.html"
         },
         {
             "title": "math",
-            "link": "/pages/math/math.html"
+            "link": "pages/math/math.html"
         },
         {
             "title": "Destructuring",
-            "link": "/pages/destructuring/destructuring.html"
+            "link": "pages/destructuring/destructuring.html"
         },
         {
             "title": "Destructuring",
-            "link": "/pages/destructuring/destructuring.html"
+            "link": "pages/destructuring/destructuring.html"
         }
     ]
 }
