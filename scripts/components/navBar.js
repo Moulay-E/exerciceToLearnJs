@@ -7,7 +7,7 @@ function navBar(){
             <img class="navigation__home__img" src="assets/home-white-svg.svg" alt="home"/>
         </a> 
         <a class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
-            <img class="navigation__darkmode__img" src="/assets/night-white-mode-svg.svg" alt="dark-mode" />
+            <img class="navigation__darkmode__img" src="./assets/night-white-mode-svg.svg" alt="dark-mode" />
         </a>
 
     </div>
