@@ -3,19 +3,19 @@
         {
             "title": "Me",
             "link": "https://github.com/Moulay-E",
-            "img": "/assets/github.svg",
+            "img": "assets/github.svg",
             "imgAlt": "github logo"
         },
         {
             "title": "Source",
             "link": "https://www.w3schools.com/js/",
-            "img": "/assets/W3Schools_logo.webp",
+            "img": "assets/W3Schools_logo.webp",
             "imgAlt": "github logo"
         },
         {
             "title": "Code",
             "link": "https://github.com/Moulay-E",
-            "img": "/assets/github-svg.svg",
+            "img": "assets/github-svg.svg",
             "imgAlt": "github logo"
         }
     ]

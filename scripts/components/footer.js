@@ -1,7 +1,8 @@
 import { fetchData } from "./../fetch/fetchData.js";
+import { basePath } from "../../config.js";
 
 export async function footer() {
-    const url = "./../../data/dataFooter.json";
+    const url = "data/dataFooter.json";
     const data = await fetchData(url) 
 
     const footerTag = document.getElementById("footer");
@@ -23,7 +24,7 @@ export async function footer() {
         if(e.img){
             const image = document.createElement("img");
             image.classList.add("footer__ul__a__image");
-            image.src = e.img;
+            image.src = basePath + e.img;
             image.alt = e.imgAlt;
             a.appendChild(image);
         }

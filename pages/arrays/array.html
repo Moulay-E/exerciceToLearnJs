@@ -29,7 +29,7 @@
 
     <footer id="footer">
     </footer>
-    <script src="./../../scripts/components/navBar.js"></script>
+    <!-- <script src="./../../scripts/components/navBar.js"></script> -->
 
 
     <script type="module" >
@@ -37,15 +37,17 @@
         import {articles} from "./../../scripts/components/articles.js";
         import {navList} from "./../../scripts/components/navList.js";
         import {footer} from "./../../scripts/components/footer.js";
+        import {navBar} from "./../../scripts/components/navBar.js";
 
 
-        const dataHtmlUrl = "./../../data/html/arrayDataHtml.json";
-        const dataCodeUrl = "./../../data/code/arrayDataCode.json";
+        const dataHtmlUrl = "data/html/arrayDataHtml.json";
+        const dataCodeUrl = "data/code/arrayDataCode.json";
 
         articles(dataHtmlUrl, 'array').then(()=>{
             codeToHtml(dataCodeUrl, 'array');
-            showHideMenu();
+            navBar()
             navList();
+            showHideMenu();
             footer();
         })
       </script>

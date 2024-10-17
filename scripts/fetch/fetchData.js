@@ -1,6 +1,9 @@
+import { basePath } from "../../config.js";
 export async function fetchData(urlName){
     try{
-        const response = await fetch(urlName);
+        const fullUrl = basePath + urlName;
+        console.log("full", fullUrl);
+        const response = await fetch( fullUrl );
         if(!response.ok){
             throw new Error(`HTTP error! status: ${response.status}`)
         }
