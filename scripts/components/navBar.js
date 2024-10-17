@@ -3,7 +3,7 @@ export function navBar(){
     let nav = document.getElementById("nav");
     let htmlToShow = `
     <div class="navigation__button">
-        <a class="navigation__button__home flexCenter" href="/index.html" > 
+        <a class="navigation__button__home flexCenter" href="${basePath}index.html" > 
             <img class="navigation__home__img" src="${basePath}assets/home-white-svg.svg" alt="home"/>
         </a> 
         <a class="navigation__darkmode" id="darkModeBtn" onclick="darkModeSwitch()">
