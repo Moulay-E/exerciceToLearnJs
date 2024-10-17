@@ -29,27 +29,27 @@
 
     <footer id="footer">
     </footer>
-    <script src="./../../scripts/components/navBar.js"></script>
 
     <script type="module" >
         import {codeToHtml} from "./../../scripts/components/codeToHtml.js";
         import {articles} from "./../../scripts/components/articles.js";
         import {navList} from "./../../scripts/components/navList.js";
         import {footer} from "./../../scripts/components/footer.js";
+        import {navBar} from "./../../scripts/components/navBar.js";
 
-        const dataHtmlUrl = "./../../data/html/numbersDataHtml.json";
-        const dataCodeUrl = "./../../data/code/numbersDataCode.Json";
+        const dataHtmlUrl = "data/html/numbersDataHtml.json";
+        const dataCodeUrl = "data/code/numbersDataCode.Json";
 
         articles(dataHtmlUrl, 'numberMethods').then(()=>{
             codeToHtml(dataCodeUrl, 'numberMethods');
-            showHideMenu();
+            navBar()
             navList();
+            showHideMenu();
             footer();
         })
       </script>
       
 </body>
-<script src="./../../script.js"></script>
 <script  src="./../../basicScript.js"></script>
 <script src="./../../scripts/pages/numbers/numberMethods.js"></script>
 

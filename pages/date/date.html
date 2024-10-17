@@ -28,27 +28,28 @@
 
     <footer id="footer">
     </footer>
-    <script src="./../../scripts/components/navBar.js"></script>
 
     <script type="module" >
         import {codeToHtml} from "./../../scripts/components/codeToHtml.js";
         import {articles} from "./../../scripts/components/articles.js";
         import {navList} from "./../../scripts/components/navList.js";
         import {footer} from "./../../scripts/components/footer.js";
+        import {navBar} from "./../../scripts/components/navBar.js";
 
-        const dataHtmlUrl = "./../../data/html/dateDataHtml.json";
-        const dataCodeUrl = "./../../data/code/dateDataCode.json";
+
+        const dataHtmlUrl = "data/html/dateDataHtml.json";
+        const dataCodeUrl = "data/code/dateDataCode.json";
 
         articles(dataHtmlUrl, 'date').then(()=>{
             codeToHtml(dataCodeUrl, 'date');
-            showHideMenu();
+            navBar();
             navList();
+            showHideMenu();
             footer();
         })
       </script>
       
 </body>
-<script src="./../../script.js"></script>
 <script  src="./../../basicScript.js"></script>
 <script src="./../../scripts/pages/date/date.js"></script>
 
