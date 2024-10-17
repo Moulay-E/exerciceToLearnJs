@@ -1,4 +1,4 @@
-import { fetchData } from "./../../scripts/fetch/fetchData.js";
+import { fetchData } from "./../fetch/fetchData.js";
 export async function navList(){
     const url = "./../../data/dataNavLink.json" ;
     const data = await fetchData(url);
